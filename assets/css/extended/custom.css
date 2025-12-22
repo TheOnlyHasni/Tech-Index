@@ -152,6 +152,112 @@ body {
     box-shadow: 0 20px 40px rgba(56, 56, 56, 0.4);
 }
 
+/* Modern Search UI */
+.modern-search {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.search-input-group {
+    display: flex;
+    align-items: center;
+    background: var(--header-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--header-border);
+    border-radius: 16px;
+    padding: 4px 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-input-group:focus-within {
+    border-color: var(--nav-active);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+#searchInput {
+    flex: 1;
+    background: transparent !important;
+    border: none !important;
+    padding: 12px 16px !important;
+    font-size: 18px !important;
+    color: var(--content-text) !important;
+    outline: none !important;
+}
+
+#searchButton {
+    background: var(--nav-active);
+    color: var(--theme);
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-left: 8px;
+}
+
+#searchButton:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+#searchButton svg {
+    stroke: var(--theme);
+}
+
+/* Search Results Styling */
+#searchResults {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+#searchResults li {
+    background: var(--entry-bg);
+    border: 1px solid var(--entry-border);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 20px;
+    box-shadow: var(--entry-shadow);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: reveal 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+#searchResults li:hover {
+    translate: 0 -6px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.dark #searchResults li:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+#searchResults a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+#searchResults .result-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--nav-active);
+}
+
+#searchResults .result-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--content-text);
+    opacity: 0.8;
+}
+
 /* Reveal Animation */
 @keyframes reveal {
     from {

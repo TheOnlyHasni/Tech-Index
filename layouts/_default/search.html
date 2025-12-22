@@ -1,0 +1,41 @@
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+</header>
+
+<div id="searchbox" class="modern-search">
+    <div class="search-input-group">
+        <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf " %s ↵" .Title) }}"
+            aria-label="search" type="search" autocomplete="off" maxlength="64">
+        <button id="searchButton" title="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
+    </div>
+    <ul id="searchResults" aria-label="search results"></ul>
+</div>
+
+<script>
+    document.getElementById('searchButton').addEventListener('click', function () {
+        document.getElementById('searchInput').focus();
+        // The search logic is handled by PaperMod's search script which listens for input events.
+        // Focusing the input is the most natural action for a search button in this context.
+    });
+</script>
+
+{{- end }}{{/* end main */}}
