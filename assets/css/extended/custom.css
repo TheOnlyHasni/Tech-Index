@@ -2,38 +2,102 @@
 
 /* Smooth Transitions for Theme Switching */
 body {
-    transition: background 0.5s ease, color 0.5s ease;
+    transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1), color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--theme);
 }
 
-.header,
-.footer,
-.post-entry,
-.theme-switcher,
-.theme-switcher button {
-    transition: background 0.5s ease, border-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
-}
-
-/* Root Variables for High Contrast */
+/* Root Variables for High Contrast & Aesthetics */
 :root {
-    --header-bg: #f8f9fa;
-    --header-border: #e0e0e0;
+    --theme: #fdfdfd;
+    --header-bg: rgba(248, 249, 250, 0.8);
+    --header-border: rgba(224, 224, 224, 0.5);
     --content-text: #1d1d1f;
     --switcher-bg: #eeeeee;
     --switcher-active: #ffffff;
+    --entry-bg: #ffffff;
+    --entry-border: #e8e8e8;
+    --entry-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --nav-link: #444;
+    --nav-active: #000;
 }
 
 .dark {
-    --header-bg: #1d1d1e;
-    --header-border: #333;
+    --theme: #121212;
+    --header-bg: rgba(29, 29, 30, 0.8);
+    --header-border: rgba(51, 51, 51, 0.5);
     --content-text: #e1e1e3;
     --switcher-bg: #2e2e33;
     --switcher-active: #444449;
+    --entry-bg: #1d1d1e;
+    --entry-border: #333;
+    --entry-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --nav-link: #ababab;
+    --nav-active: #fff;
 }
 
-/* Header Styling */
+/* Header & Glassmorphism */
 .header {
     background: var(--header-bg) !important;
     border-bottom: 1px solid var(--header-border) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+/* Nav Link Hover & Active States */
+.nav a {
+    color: var(--nav-link);
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 8px 0;
+}
+
+.nav a:hover {
+    color: var(--nav-active);
+}
+
+/* Fix PaperMod duplicate active line */
+#menu .active {
+    border-bottom: none !important;
+}
+
+.nav a span.active {
+    color: var(--nav-active);
+    font-weight: 600;
+}
+
+.nav a span.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--nav-active);
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+/* Nav Hover Effect */
+.nav a:not(.active)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--nav-active);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    opacity: 0.5;
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
 }
 
 /* Theme Switcher Styling */
@@ -54,16 +118,49 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary);
+    color: var(--nav-link);
+    transition: all 0.3s ease;
 }
 
 .theme-switcher button.active {
     background: var(--switcher-active);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--nav-active);
 }
 
-.theme-switcher button:hover:not(.active) {
-    background: rgba(128, 128, 128, 0.1);
+/* Post Card Refinement */
+.post-entry {
+    background: var(--entry-bg);
+    border: 1px solid var(--entry-border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--entry-shadow);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s ease;
+    animation: reveal 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.post-entry:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.dark .post-entry:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Reveal Animation */
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Article Body Typography */
@@ -73,13 +170,17 @@ body {
     color: var(--content-text);
 }
 
-/* Post-Entry Card Hover Effect */
-.post-entry {
-    background: var(--entry);
-    border: 1px solid var(--border);
+/* Reveal for other elements */
+.main {
+    animation: fadeIn 1s ease-in;
 }
 
-.post-entry:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

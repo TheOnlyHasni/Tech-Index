@@ -11,11 +11,16 @@
                 {{- end }}
             </div>
         </div>
+        {{- $currentPage := . }}
         <ul id="menu">
             {{- range site.Menus.main }}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $page_url:= $currentPage.Permalink | absLangURL }}
             <li>
                 <a href="{{ .URL | absLangURL }}" title="{{ .Name }}">
-                    <span>{{ .Name }}</span>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- .Name -}}
+                    </span>
                 </a>
             </li>
             {{- end }}
