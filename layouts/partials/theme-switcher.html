@@ -1,0 +1,90 @@
+<div class="theme-switcher">
+    <button id="theme-light" title="Light Mode" aria-label="Light Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+    <button id="theme-dark" title="Dark Mode" aria-label="Dark Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+    <button id="theme-system" title="System Theme" aria-label="System Theme">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+    </button>
+</div>
+
+<script>
+    (function () {
+        const lightBtn = document.getElementById('theme-light');
+        const darkBtn = document.getElementById('theme-dark');
+        const systemBtn = document.getElementById('theme-system');
+        const html = document.documentElement;
+        const body = document.body;
+
+        const applyTheme = (theme) => {
+            if (theme === 'dark') {
+                body.classList.add('dark');
+                html.dataset.theme = 'dark';
+                localStorage.setItem('pref-theme', 'dark');
+            } else if (theme === 'light') {
+                body.classList.remove('dark');
+                html.dataset.theme = 'light';
+                localStorage.setItem('pref-theme', 'light');
+            } else {
+                localStorage.removeItem('pref-theme');
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    body.classList.add('dark');
+                    html.dataset.theme = 'dark';
+                } else {
+                    body.classList.remove('dark');
+                    html.dataset.theme = 'light';
+                }
+            }
+            updateActiveButton(theme);
+        };
+
+        const updateActiveButton = (theme) => {
+            [lightBtn, darkBtn, systemBtn].forEach(btn => btn.classList.remove('active'));
+            if (theme === 'dark') darkBtn.classList.add('active');
+            else if (theme === 'light') lightBtn.classList.add('active');
+            else systemBtn.classList.add('active');
+        };
+
+        lightBtn.addEventListener('click', () => applyTheme('light'));
+        darkBtn.addEventListener('click', () => applyTheme('dark'));
+        systemBtn.addEventListener('click', () => applyTheme('system'));
+
+        // Initialize
+        const savedTheme = localStorage.getItem('pref-theme') || 'system';
+        applyTheme(savedTheme);
+
+        // Listen for system changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!localStorage.getItem('pref-theme')) {
+                if (e.matches) {
+                    body.classList.add('dark');
+                    html.dataset.theme = 'dark';
+                } else {
+                    body.classList.remove('dark');
+                    html.dataset.theme = 'light';
+                }
+            }
+        });
+    })();
+</script>

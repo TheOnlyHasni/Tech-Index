@@ -1,0 +1,85 @@
+/* Custom CSS for Tech Mastery Hub */
+
+/* Smooth Transitions for Theme Switching */
+body {
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+.header,
+.footer,
+.post-entry,
+.theme-switcher,
+.theme-switcher button {
+    transition: background 0.5s ease, border-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Root Variables for High Contrast */
+:root {
+    --header-bg: #f8f9fa;
+    --header-border: #e0e0e0;
+    --content-text: #1d1d1f;
+    --switcher-bg: #eeeeee;
+    --switcher-active: #ffffff;
+}
+
+.dark {
+    --header-bg: #1d1d1e;
+    --header-border: #333;
+    --content-text: #e1e1e3;
+    --switcher-bg: #2e2e33;
+    --switcher-active: #444449;
+}
+
+/* Header Styling */
+.header {
+    background: var(--header-bg) !important;
+    border-bottom: 1px solid var(--header-border) !important;
+}
+
+/* Theme Switcher Styling */
+.theme-switcher {
+    display: flex;
+    background: var(--switcher-bg);
+    padding: 4px;
+    border-radius: 20px;
+    gap: 2px;
+}
+
+.theme-switcher button {
+    background: transparent;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.theme-switcher button.active {
+    background: var(--switcher-active);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.theme-switcher button:hover:not(.active) {
+    background: rgba(128, 128, 128, 0.1);
+}
+
+/* Article Body Typography */
+.post-content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--content-text);
+}
+
+/* Post-Entry Card Hover Effect */
+.post-entry {
+    background: var(--entry);
+    border: 1px solid var(--border);
+}
+
+.post-entry:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}

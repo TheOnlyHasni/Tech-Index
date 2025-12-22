@@ -1,0 +1,83 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Tech Mastery Hub'
+theme = 'PaperMod'
+
+[pagination]
+pagerSize = 6
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[menu]
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 10
+[[menu.main]]
+name = "Tutorials"
+url = "/tutorials"
+weight = 20
+[[menu.main]]
+name = "About Us"
+url = "/about"
+weight = 30
+[[menu.main]]
+name = "Contact"
+url = "/contact"
+weight = 40
+[[menu.main]]
+name = "Search"
+url = "/search"
+weight = 50
+
+[params]
+defaultTheme = "auto"
+env = "production"
+mainSections = ["posts", "tutorials"]
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 100
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+description = "High-utility tech tutorials and SaaS guides designed to help you master modern software development and digital tools."
+author = "Tech Mastery Hub"
+
+# Home-Info Mode
+[params.homeInfoParams]
+Title = "Master Your Tech Stack"
+Content = "Welcome to Tech Mastery Hub. We provide high-utility tutorials and SaaS guides to help you build, scale, and optimize your digital presence with precision."
+
+# AdSense/SEO Features
+ShowReadingTime = true
+ShowShareButtons = true
+ShowCodeCopyButtons = true
+ShowBreadCrumbs = true
+ShowPostNavLinks = true
+
+# Social Proof
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/"
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/"
+[[params.socialIcons]]
+name = "youtube"
+url = "https://youtube.com/"
+
+# Footer Cleanliness
+hideFooter = false # We want the footer, but we will override the content
+ShowFullTextinRSS = false
+
+[params.assets]
+disableHLJS = false
+
+[sitemap]
+changefreq = "weekly"
+priority = 0.5
+filename = "sitemap.xml"

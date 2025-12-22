@@ -1,0 +1,24 @@
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            {{- $label_text := (site.Params.label.text | default site.Title) }}
+            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+                {{- $label_text -}}
+            </a>
+            <div class="logo-switches">
+                {{- if (not site.Params.disableThemeToggle) }}
+                {{- partial "theme-switcher.html" . }}
+                {{- end }}
+            </div>
+        </div>
+        <ul id="menu">
+            {{- range site.Menus.main }}
+            <li>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Name }}">
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+    </nav>
+</header>

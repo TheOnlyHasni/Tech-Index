@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tech Mastery Hub</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Tech Mastery Hub</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use Obsidian for Beginners (2025 Guide)</title>
+      <link>http://localhost:1313/tutorials/how-to-use-obsidian/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/how-to-use-obsidian/</guid>
+      <description>A step-by-step guide to setting up your second brain using Obsidian.</description>
+    </item>
+    <item>
+      <title>About Us</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Welcome to &lt;strong&gt;Tech Mastery Hub&lt;/strong&gt;, your premier destination for high-utility tech tutorials and SaaS guides. Our mission is simple: to simplify the complex world of modern software development and digital tools for professionals and enthusiasts alike.&lt;/p&gt;
+&lt;h3 id=&#34;who-we-are&#34;&gt;Who We Are&lt;/h3&gt;
+&lt;p&gt;We are a dedicated team of senior software architects, developers, and tech enthusiasts who believe that quality education should be accessible, precise, and actionable. With decades of combined experience in the industry, we have seen the tech landscape evolve and understand the challenges that come with mastering new stacks and tools.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact Us</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;We value your feedback and are here to help with any queries you may have regarding our tutorials or services.&lt;/p&gt;
+&lt;h3 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h3&gt;
+&lt;p&gt;For general inquiries, technical support, or partnership opportunities, please reach out to us via email at:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;mailto:support@techmasteryhub.com&#34;&gt;support@techmasteryhub.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;response-time&#34;&gt;Response Time&lt;/h3&gt;
+&lt;p&gt;Our team of experts reviews every message we receive. We aim to respond to all specific queries within &lt;strong&gt;48 hours&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Please include as much detail as possible in your email (such as the specific tutorial title or error message) so that we can provide you with the most accurate assistance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disclaimer</title>
+      <link>http://localhost:1313/disclaimer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/disclaimer/</guid>
+      <description>&lt;p&gt;Last updated: December 23, 2025&lt;/p&gt;
+&lt;p&gt;The information provided by Tech Mastery Hub (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) on {{ .Site.BaseURL }} (the &amp;ldquo;Site&amp;rdquo;) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.&lt;/p&gt;
+&lt;h3 id=&#34;professional-disclaimer&#34;&gt;Professional Disclaimer&lt;/h3&gt;
+&lt;p&gt;The Site cannot and does not contain software development or legal advice. The technical information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of software development or legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THE SITE IS SOLELY AT YOUR OWN RISK.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy/</guid>
+      <description>&lt;p&gt;Last updated: December 23, 2025&lt;/p&gt;
+&lt;p&gt;At Tech Mastery Hub, accessible from {{ .Site.BaseURL }}, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Tech Mastery Hub and how we use it.&lt;/p&gt;
+&lt;h3 id=&#34;log-files&#34;&gt;Log Files&lt;/h3&gt;
+&lt;p&gt;Tech Mastery Hub follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services&amp;rsquo; analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users&amp;rsquo; movement on the website, and gathering demographic information.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Terms of Service</title>
+      <link>http://localhost:1313/terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/terms/</guid>
+      <description>&lt;p&gt;Last updated: December 23, 2025&lt;/p&gt;
+&lt;p&gt;Welcome to Tech Mastery Hub. By accessing this website, we assume you accept these terms and conditions. Do not continue to use Tech Mastery Hub if you do not agree to take all of the terms and conditions stated on this page.&lt;/p&gt;
+&lt;h3 id=&#34;license&#34;&gt;License&lt;/h3&gt;
+&lt;p&gt;Unless otherwise stated, Tech Mastery Hub and/or its licensors own the intellectual property rights for all material on Tech Mastery Hub. All intellectual property rights are reserved. You may access this from Tech Mastery Hub for your own personal use subjected to restrictions set in these terms and conditions.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
