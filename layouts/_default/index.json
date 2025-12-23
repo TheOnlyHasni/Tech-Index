@@ -1,0 +1,18 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range site.RegularPages -}}
+    {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
+    {{- $image := "" }}
+    {{- if .Params.cover.image }}
+        {{- if (findRE "^[hH][tT][tT][pP][sS]?://" .Params.cover.image) }}
+            {{- $image = .Params.cover.image }}
+        {{- else }}
+            {{- $img := (.Resources.GetMatch .Params.cover.image) | default (resources.Get .Params.cover.image) }}
+            {{- if $img }}
+                {{- $image = $img.Permalink }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    {{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary "image" $image "section" .Section) -}}
+    {{- end }}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

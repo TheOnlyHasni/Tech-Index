@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on Tech Mastery Hub</title>
+    <title>Tags on Tech Index</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Tech Mastery Hub</description>
+    <description>Recent content in Tags on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AI Tools</title>
+      <link>http://localhost:1313/tags/ai-tools/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChatGPT</title>
+      <link>http://localhost:1313/tags/chatgpt/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Productivity</title>
       <link>http://localhost:1313/tags/productivity/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt Engineering</title>
+      <link>http://localhost:1313/tags/prompt-engineering/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/prompt-engineering/</guid>
       <description></description>
     </item>
     <item>
@@ -27,6 +48,13 @@
       <link>http://localhost:1313/tags/tutorial/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Workflow Automation</title>
+      <link>http://localhost:1313/tags/workflow-automation/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/workflow-automation/</guid>
       <description></description>
     </item>
   </channel>

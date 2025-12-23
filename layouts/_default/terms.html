@@ -1,0 +1,32 @@
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{ i18n "topics" | default "Explore Topics" }}</h1>
+    <div class="post-description">
+        {{ i18n "topics_description" | default "Discover content by category and technology." }}
+    </div>
+</header>
+
+<div class="topics-grid">
+    {{- $type := .Type }}
+    {{- range $key, $value := .Data.Terms.Alphabetical }}
+    {{- $name := .Name }}
+    {{- $count := .Count }}
+    {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+    <a href="{{ .Permalink }}" class="topic-card">
+        <div class="topic-info">
+            <span class="topic-name">{{ .Name }}</span>
+            <span class="topic-count">{{ $count }} {{ if eq $count 1 }}Post{{ else }}Posts{{ end }}</span>
+        </div>
+        <div class="topic-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6" />
+            </svg>
+        </div>
+    </a>
+    {{- end }}
+    {{- end }}
+</div>
+
+{{- end }}

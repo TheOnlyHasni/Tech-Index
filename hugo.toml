@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://linguistindex.site/'
 languageCode = 'en-us'
-title = 'Tech Mastery Hub'
+title = 'Tech Index'
 theme = 'PaperMod'
 
 [pagination]
@@ -9,15 +9,18 @@ pagerSize = 6
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
-[menu]
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 10
+name = "Posts"
+url = "/posts"
+weight = 15
 [[menu.main]]
 name = "Tutorials"
 url = "/tutorials"
 weight = 20
+[[menu.main]]
+name = "Topics"
+url = "/tags"
+weight = 25
 [[menu.main]]
 name = "About Us"
 url = "/about"
@@ -45,12 +48,12 @@ threshold = 0.4
 minMatchCharLength = 0
 keys = ["title", "permalink", "summary", "content"]
 description = "High-utility tech tutorials and SaaS guides designed to help you master modern software development and digital tools."
-author = "Tech Mastery Hub"
+author = "Tech Index"
 
 # Home-Info Mode
 [params.homeInfoParams]
 Title = "Master Your Tech Stack"
-Content = "Welcome to Tech Mastery Hub. We provide high-utility tutorials and SaaS guides to help you build, scale, and optimize your digital presence with precision."
+Content = "Welcome to Tech Index. We provide high-utility tutorials and SaaS guides to help you build, scale, and optimize your digital presence with precision."
 
 # AdSense/SEO Features
 ShowReadingTime = true
