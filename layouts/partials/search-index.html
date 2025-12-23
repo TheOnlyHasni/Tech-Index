@@ -1,0 +1,32 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range site.RegularPages -}}
+{{- if and (not .Params.searchHidden) (ne .Layout "archives") (ne .Layout "search") -}}
+{{- $image := "" -}}
+{{- if .Params.cover.image -}}
+{{- if (findRE "^[hH][tT][tT][pP][sS]?://" .Params.cover.image) -}}
+{{- $image = .Params.cover.image -}}
+{{- else -}}
+{{- $img := (.Resources.GetMatch .Params.cover.image) | default (resources.Get .Params.cover.image) -}}
+{{- if $img -}}
+{{- $image = $img.Permalink -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- $summary := .Description | default .Summary | plainify -}}
+{{- $item := (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" $summary "image" $image "section"
+.Section) -}}
+{{- $key := .Permalink -}}
+{{- $existing := $.Scratch.Get $key -}}
+{{- if or (not $existing) (and (not (index $existing "image")) $image) -}}
+{{- $.Scratch.Set $key $item -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- $.Scratch.Add "index_slice" slice -}}
+{{- range site.RegularPages -}}
+{{- if $.Scratch.Get .Permalink -}}
+{{- $.Scratch.Add "index_slice" (slice ($.Scratch.Get .Permalink)) -}}
+{{- $.Scratch.Delete .Permalink -}}
+{{- end -}}
+{{- end -}}
+{{- $.Scratch.Get "index_slice" | jsonify -}}

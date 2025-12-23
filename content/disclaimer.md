@@ -2,6 +2,7 @@
 title: "Disclaimer"
 layout: "page"
 hidemeta: true
+searchHidden: true
 ---
 
 Last updated: December 23, 2025

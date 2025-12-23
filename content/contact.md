@@ -2,6 +2,7 @@
 title: "Contact Us"
 layout: "page"
 hidemeta: true
+searchHidden: true
 ---
 
 We value your feedback and are here to help with any queries you may have regarding our tutorials or services.

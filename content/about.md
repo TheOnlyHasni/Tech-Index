@@ -2,6 +2,7 @@
 title: "About Us"
 layout: "page"
 hidemeta: true
+searchHidden: true
 ---
 
 Welcome to **Tech Index**, your premier destination for high-utility tech tutorials and SaaS guides. Our mission is simple: to simplify the complex world of modern software development and digital tools for professionals and enthusiasts alike.

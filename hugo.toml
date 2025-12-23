@@ -7,7 +7,14 @@ theme = 'PaperMod'
 pagerSize = 6
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "SEARCHJSON"]
+
+[outputFormats]
+[outputFormats.SEARCHJSON]
+mediaType = "application/json"
+baseName = "index"
+isPlainText = true
+notAlternative = true
 
 [taxonomies]
 category = 'categories'

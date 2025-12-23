@@ -2,6 +2,7 @@
 title: "Privacy Policy"
 layout: "page"
 hidemeta: true
+searchHidden: true
 ---
 
 Last updated: December 23, 2025

@@ -7,7 +7,7 @@ tags: ["ChatGPT", "Email Management", "Zapier", "AI Automation"]
 categories: ["AI & Programming"]
 author: "The Senior Editor"
 cover:
-    image: "cover-email-automation.png"
+    image: "cover.png"
     alt: "A graphic representation of email and ChatGPT workflow efficiency"
     relative: true
 ---

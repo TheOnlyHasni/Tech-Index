@@ -340,21 +340,30 @@ body {
 
 /* Text-only search results (About, Legal, etc.) */
 .search-result-card.no-image {
-    padding: 20px;
+    padding: 0;
     height: auto;
-    /* Height matches text */
+    min-height: 120px;
+}
+
+.search-result-card.no-image .entry-overlay {
+    position: relative;
+    background: var(--entry-bg);
+    padding: 24px;
+    height: auto;
+    color: var(--content-text) !important;
 }
 
 .search-result-card.no-image .result-title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
-    color: var(--nav-active);
+    color: var(--nav-active) !important;
+    text-shadow: none;
 }
 
 .search-result-card.no-image .result-content {
     font-size: 16px;
-    color: var(--content-text);
+    color: var(--content-text) !important;
     opacity: 0.8;
 }
 
