@@ -126,7 +126,7 @@ sInput.onkeyup = function (e) {
             last = resList.lastChild;
         } else {
             resultsAvailable = false;
-            resList.innerHTML = '';
+            resList.innerHTML = '<li class="no-results-message">No results found</li>';
         }
     }
 }
