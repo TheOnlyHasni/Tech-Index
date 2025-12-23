@@ -6,8 +6,22 @@
     <description>Recent content on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploying Hugo to GitHub Pages: The Ultimate 2025 Guide</title>
+      <link>http://localhost:1313/posts/hugo-deployment-github-pages/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hugo-deployment-github-pages/</guid>
+      <description>Master the art of static site hosting. A step-by-step guide to deploying Hugo using GitHub Actions and custom domains.</description>
+    </item>
+    <item>
+      <title>Mastering Cursor AI: The Definitive Guide to the World&#39;s Best AI Code Editor (2025)</title>
+      <link>http://localhost:1313/posts/mastering-cursor-ai/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/mastering-cursor-ai/</guid>
+      <description>Learn how to leverage Cursor AI to 10x your development speed. A deep dive into Composer, Tab, and Chat features.</description>
+    </item>
     <item>
       <title>How to Use Obsidian for Beginners (2025 Guide)</title>
       <link>http://localhost:1313/tutorials/how-to-use-obsidian/</link>

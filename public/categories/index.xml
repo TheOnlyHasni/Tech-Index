@@ -6,6 +6,28 @@
     <description>Recent content in Categories on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI &amp; Programming</title>
+      <link>http://localhost:1313/categories/ai--programming/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/ai--programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps &amp; Cloud</title>
+      <link>http://localhost:1313/categories/devops--cloud/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/devops--cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity &amp; Workflow</title>
+      <link>http://localhost:1313/categories/productivity--workflow/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/productivity--workflow/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

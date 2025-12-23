@@ -9,6 +9,10 @@ pagerSize = 6
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+
 [[menu.main]]
 name = "Posts"
 url = "/posts"
@@ -19,7 +23,7 @@ url = "/tutorials"
 weight = 20
 [[menu.main]]
 name = "Topics"
-url = "/tags"
+url = "/categories"
 weight = 25
 [[menu.main]]
 name = "About Us"

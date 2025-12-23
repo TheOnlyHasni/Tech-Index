@@ -3,7 +3,8 @@ title: "The 3-Step Guide to Automating Your Email Workflow with ChatGPT"
 date: 2025-12-22
 draft: false
 description: "I tested a workflow to automate email drafting, summarization, and triage using custom ChatGPT prompts and API integration."
-tags: ["ChatGPT", "Workflow Automation", "Productivity", "AI Tools", "Prompt Engineering"]
+tags: ["ChatGPT", "Email Management", "Zapier", "AI Automation"]
+categories: ["AI & Programming"]
 author: "The Senior Editor"
 cover:
     image: "cover-email-automation.png"

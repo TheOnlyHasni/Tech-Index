@@ -4,7 +4,8 @@ date: 2025-12-22
 draft: false
 description: "A step-by-step guide to setting up your second brain using Obsidian."
 summary: "Learn how to link notes, use markdown, and organize your life with this free tool."
-tags: ["Productivity", "Software", "Tutorial"]
+tags: ["Obsidian", "Knowledge Management", "Markdown"]
+categories: ["Productivity & Workflow"]
 cover:
     image: "screenshot1.png"
     alt: "Obsidian Software Interface"

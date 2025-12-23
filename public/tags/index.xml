@@ -6,13 +6,69 @@
     <description>Recent content in Tags on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AI Tools</title>
-      <link>http://localhost:1313/tags/ai-tools/</link>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CI/CD</title>
+      <link>http://localhost:1313/tags/ci/cd/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ci/cd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coding Automation</title>
+      <link>http://localhost:1313/tags/coding-automation/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/coding-automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cursor</title>
+      <link>http://localhost:1313/tags/cursor/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cursor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub Actions</title>
+      <link>http://localhost:1313/tags/github-actions/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/github-actions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Static Hosting</title>
+      <link>http://localhost:1313/tags/static-hosting/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/static-hosting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Automation</title>
+      <link>http://localhost:1313/tags/ai-automation/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai-tools/</guid>
+      <guid>http://localhost:1313/tags/ai-automation/</guid>
       <description></description>
     </item>
     <item>
@@ -23,38 +79,38 @@
       <description></description>
     </item>
     <item>
-      <title>Productivity</title>
-      <link>http://localhost:1313/tags/productivity/</link>
+      <title>Email Management</title>
+      <link>http://localhost:1313/tags/email-management/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/productivity/</guid>
+      <guid>http://localhost:1313/tags/email-management/</guid>
       <description></description>
     </item>
     <item>
-      <title>Prompt Engineering</title>
-      <link>http://localhost:1313/tags/prompt-engineering/</link>
+      <title>Knowledge Management</title>
+      <link>http://localhost:1313/tags/knowledge-management/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/prompt-engineering/</guid>
+      <guid>http://localhost:1313/tags/knowledge-management/</guid>
       <description></description>
     </item>
     <item>
-      <title>Software</title>
-      <link>http://localhost:1313/tags/software/</link>
+      <title>Markdown</title>
+      <link>http://localhost:1313/tags/markdown/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/software/</guid>
+      <guid>http://localhost:1313/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
-      <title>Tutorial</title>
-      <link>http://localhost:1313/tags/tutorial/</link>
+      <title>Obsidian</title>
+      <link>http://localhost:1313/tags/obsidian/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tutorial/</guid>
+      <guid>http://localhost:1313/tags/obsidian/</guid>
       <description></description>
     </item>
     <item>
-      <title>Workflow Automation</title>
-      <link>http://localhost:1313/tags/workflow-automation/</link>
+      <title>Zapier</title>
+      <link>http://localhost:1313/tags/zapier/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/workflow-automation/</guid>
+      <guid>http://localhost:1313/tags/zapier/</guid>
       <description></description>
     </item>
   </channel>
