@@ -1,11 +1,11 @@
 ---
-title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-date: '{{ .Date }}'
+title: 'How to Use Chatgpt to Automate Your Daily Email Workflow'
+date: '2025-12-23T18:56:39+05:00'
 draft: false
 description: ''
 summary: ''
 tags: []
-categories: []
+categories: [] 
 author: 'Hassan Jan'
 cover:
     image: 'cover.png'
