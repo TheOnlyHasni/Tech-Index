@@ -7,6 +7,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/categories/ai--productivity-tools/</loc>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
     <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -23,11 +28,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/email/</loc>
-    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/productivity/</loc>
     <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

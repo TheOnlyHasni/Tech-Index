@@ -2,15 +2,15 @@
 title: 'Using ChatGPT for Automating Your Daily Mail Sending Process'
 date: '2025-12-24T13:36:41+05:00'
 draft: false
-description: 'A comprehensive guide on how to use ChatGPT to automate your daily email workflow, saving time and increasing productivity.'
+description: 'A detailed guide on using ChatGPT to automate your daily email workflow, saving time and increasing productivity.'
 summary: 'Learn how to automate your email responses, summaries, and task extraction using ChatGPT and simple integrations.'
 tags: ["ChatGPT", "Automation", "Email", "Productivity", "AI"]
-categories: ["Tutorials", "Productivity"]
+categories: ["Tutorials", "AI & Productivity Tools"]
 author: 'Hassan Jan'
 cover:
     image: 'cover.png'
-    alt: 'Cover Image'
-    caption: 'Cover Image'
+    alt: 'ChatGPT and Gmail Oppened in Chrome'
+    caption: 'ChatGPT and Gmail integration'
     relative: true
 ---
 
@@ -24,15 +24,14 @@ Email isn’t going anywhere, but somehow the volume is exploding. I was spendin
 
 My first application was writing client email responses. Instead of your response being just a regurgitation of something like, "Thanks for the update; let's schedule a call next Tuesday," ChatGPT captured that tone perfectly in seconds. The trick is having a GPT that captures your tone after a few samples. Further, you can now use customized GPTs to create email bots.
 
-There’s more to ChatGPT than just drafting. The application is also very good at summarization—condensing a 20-message thread into three bullet points—and extract, such as finding deadlines or to-dos. I think this is especially useful for busy professionals: marketers consolidating feedback, developers weeding out bug reports, salespeople evaluating leads.
+There’s more to ChatGPT than just drafting. The application is also very good at summarization—condensing a 20-message thread into three bullet points—and extract, such as finding deadlines or to-dos. I think this is especially useful for busy professionals: marketers consolidating feedback, developers weeding out bug reports, salespeople evaluating leads by now.
 
-> **[PLACEHOLDER: Infographic of before & after email time savings with a clock graphic & 40% reduction arrow]**
+{{< rawhtml >}} <img src="image1.png" alt="infographic of before & after email time savings" class="center-img-400"> {{< /rawhtml >}}
+
 
 # Getting Started: Prerequisites and Setup
 
-By now,
-
-Before automating, configure ChatGPT correctly. For GPT-4o access, you can use ChatGPT Plus (starting at $20/month)—you can use the free tier, but it will
+Before automating, configure ChatGPT correctly. For GPT-4o access, you can use ChatGPT Plus (starting at $20/month as of now)—you can use the free tier, but it will
 
 ### Step 1: Select the Email Client
 
@@ -52,7 +51,7 @@ Go to chatgpt.com and create a chatbot by clicking "Create a GPT." Name the chat
 
 Upload sample emails to train it to learn your style. Test with: "Draft a reply to this sales pitch declining politely."
 
-> **[PLACEHOLDER: screenshot of Custom GPT creation form with instructions entered]**
+{{< rawhtml >}} <img src="image2.png" alt="Custom GPT creation form with instructions entered" class="center-img-400"> {{< /rawhtml >}}
 
 ## Step-by-Step Guide to Email Automation
 
@@ -78,8 +77,6 @@ ChatGPT comes up with options. I refine 10% of them. Example: When a vendor quot
 
 It is imperative to evaluate for nuances, and sometimes AI systems overlook sarcasm.
 
-> **[Placeholder: screenshot: original email vs. ChatGPT response]**
-
 ### 3. Extraction of Tasks and Scheduling
 
 Question: "From this email, list tasks assigned to me with deadlines. Suggest calendar invites."
@@ -101,7 +98,7 @@ Record voice notes using phone calls and then upload audio files to ChatGPT to t
 
 Game-changer when you need quick responses
 
-> **[PLACEHOLDER: Diagram of entire workflow: Email → Copy → ChatGPT → Output → Paste/Schedule]**
+{{< rawhtml >}} <img src="image3.png" alt="Diagram of entire workflow" class="center-img-400"> {{< /rawhtml >}}
 
 ## Real-World Use Case: Client Onboarding in myFreelance Business
 
@@ -122,7 +119,7 @@ What results I got! Customized emails delivered in minutes, without missing anyt
 > 4. Propose message heading.
 >
 > Replicate the template below:
-> "1. Summarize: [paste]. 2. Tasks/deadlines? 3. Draft reply matching this style: [your sample]. 4"
+> "1. Summarize: [paste]. 2. Tasks/deadlines? 3. Draft reply matching this style: [your sample]. 4. Optimize subject."
 >
 > Bonus: Integrate GPTs with Zapier. Trigger: Create new Gmail label “AI-Review.” Action: Forward email to ChatGPT, send autosaved drafts. I set this up successfully for non-important messages. 95% accuracy achieved after adjusting. Reduces time needed for managing “inbox"
 
@@ -134,7 +131,7 @@ The Users on Reddit and Quora encounter such roadblocks—I faced the same issue
 **Fix**: Feed 5-10 of your own past emails first: “Learn my style from these, then draft.” Iterate twice. This immediately humanizes outputs in my own experiments.
 
 ### 2. "Losing Context in Long Threads"
-*Fix*: Break up bites with "Continue conversation" in ChatGPT. For 50+ emails, summarize each section separately. Pro: Important facts at top of query.
+**Fix**: Break up bites with "Continue conversation" in ChatGPT. For 50+ emails, summarize each section separately. Pro: Important facts at top of query.
 
 ### 3. Privacy Concerns with Sensitive Email Messages
 **Fix**: Refrain from copying PII in chat. Mask names/dates manually or employ local solutions like Ollama with GPT models. I remove details in 10 seconds.
