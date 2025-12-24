@@ -63,8 +63,8 @@ author = "Tech Index"
 
 # Home-Info Mode
 [params.homeInfoParams]
-Title = "Master Your Tech Stack"
-Content = "Welcome to Tech Index. We provide high-utility tutorials and SaaS guides to help you build, scale, and optimize your digital presence with precision."
+Title = "Welcome to Tech Index"
+Content = "Showing you how to get the most out of technology and solving problems you might face. You'll find tutorials and SaaS guides designed to help you learn modern software development and digital tools."
 
 # AdSense/SEO Features
 ShowReadingTime = true
@@ -75,14 +75,17 @@ ShowPostNavLinks = true
 
 # Social Proof
 [[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com/"
+name = "x"
+url = "https://x.com/@I_am_Hasnii"
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/"
+url = "https://github.com/TheOnlyHasni"
 [[params.socialIcons]]
-name = "youtube"
-url = "https://youtube.com/"
+name = "facebook"
+url = "https://facebook.com/61556325603943"
+[[params.socialIcons]]
+name = "instagram"
+url = "https://instagram.com/@i.am.hasni"
 
 # Footer Cleanliness
 hideFooter = false # We want the footer, but we will override the content

@@ -4,8 +4,8 @@ date: '2025-12-23T18:56:39+05:00'
 draft: false
 description: ''
 summary: ''
-tags: []
-categories: [] 
+tags: [AI, LLM, Obsidian, Zapier]
+categories: ["Productivity & Workflow"]
 author: 'Hassan Jan'
 cover:
     image: 'cover.png'

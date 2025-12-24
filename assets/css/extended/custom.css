@@ -47,6 +47,14 @@ body {
     transition: all 0.4s ease;
 }
 
+/* No Underline Utility Class */
+.no-underline {
+    text-decoration: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: none !important;
+}
+
 /* Nav Link Hover & Active States */
 .nav a {
     color: var(--nav-link);
@@ -158,7 +166,7 @@ body {
     background-repeat: no-repeat;
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid var(--entry-border);
+    /* border: 1px dotted var(--entry-border); */
     box-shadow: var(--entry-shadow);
     transition: translate 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s ease;
     animation: reveal 0.8s ease-out forwards;

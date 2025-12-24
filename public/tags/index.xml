@@ -6,13 +6,34 @@
     <description>Recent content in Tags on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Dec 2025 18:56:39 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Dec 2025 18:56:39 +0500</pubDate>
       <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Tue, 23 Dec 2025 18:56:39 +0500</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obsidian</title>
+      <link>http://localhost:1313/tags/obsidian/</link>
+      <pubDate>Tue, 23 Dec 2025 18:56:39 +0500</pubDate>
+      <guid>http://localhost:1313/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zapier</title>
+      <link>http://localhost:1313/tags/zapier/</link>
+      <pubDate>Tue, 23 Dec 2025 18:56:39 +0500</pubDate>
+      <guid>http://localhost:1313/tags/zapier/</guid>
       <description></description>
     </item>
     <item>
@@ -20,20 +41,6 @@
       <link>http://localhost:1313/tags/ci/cd/</link>
       <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ci/cd/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Coding Automation</title>
-      <link>http://localhost:1313/tags/coding-automation/</link>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/coding-automation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cursor</title>
-      <link>http://localhost:1313/tags/cursor/</link>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cursor/</guid>
       <description></description>
     </item>
     <item>
@@ -48,13 +55,6 @@
       <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LLM</title>
-      <link>http://localhost:1313/tags/llm/</link>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/llm/</guid>
       <description></description>
     </item>
     <item>
@@ -97,20 +97,6 @@
       <link>http://localhost:1313/tags/markdown/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Obsidian</title>
-      <link>http://localhost:1313/tags/obsidian/</link>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/obsidian/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Zapier</title>
-      <link>http://localhost:1313/tags/zapier/</link>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/zapier/</guid>
       <description></description>
     </item>
   </channel>
