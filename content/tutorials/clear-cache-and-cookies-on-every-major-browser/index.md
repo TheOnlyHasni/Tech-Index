@@ -17,7 +17,7 @@ cover:
 
 Browser glitches drive you nuts—pages half-load, logins vanish, ads loop forever. Cache and cookies pile up like digital hoarder junk, choking speed and privacy. In 2025, with trackers everywhere and AI sites spitting broken code, clearing them resets everything. I've wrestled this on my Hugo test rig in Pabbi; one Ctrl+Shift+Del blast fixed a stubborn AdSense preview bug last week. Matters now? Core Web Vitals tank without it—Google dings your site. Mobile? Even worse, iOS caps storage tight. This hits all majors: Chrome, Edge, Firefox, Safari. Desktop first, then phones. Follow exact. Your rig purrs after.
 
-[PLACEHOLDER: Screenshot of cluttered Chrome history menu before clear]
+{{< rawhtml >}} <img src="image1.png" alt="Screenshot of cluttered Chrome history menu before clear" class="center-img-400"> {{< /rawhtml >}}
 
 ## Why Bother Clearing Cache?
 

@@ -25,7 +25,7 @@
 {{- $.Scratch.Add "index_slice" slice -}}
 {{- range site.RegularPages -}}
 {{- if $.Scratch.Get .Permalink -}}
-{{- $.Scratch.Add "index_slice" (slice ($.Scratch.Get .Permalink)) -}}
+{{- $.Scratch.Add "index_slice" ($.Scratch.Get .Permalink) -}}
 {{- $.Scratch.Delete .Permalink -}}
 {{- end -}}
 {{- end -}}

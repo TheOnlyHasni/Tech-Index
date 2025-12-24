@@ -366,6 +366,34 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+}
+
+/* Background Image with Blur Effect */
+.search-result-card.has-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    /* Initial state: Blurred */
+    filter: blur(2px);
+    transition: filter 0.5s ease-in-out;
+    /* Triggers GPU rendering to prevent glitches */
+    transform: translateZ(0);
+    will-change: filter;
+}
+
+/* Remove blur on hover */
+.search-result-card.has-image:hover::before {
+    filter: blur(0px);
 }
 
 .search-result-card.has-image .entry-overlay {
@@ -542,12 +570,13 @@ body {
 /* Utility Class for Centered Images with 400px Height */
 .center-img-400 {
     display: block !important;
+    border-radius: 16px !important;
     margin: 1em auto !important;
     height: 400px !important;
     width: auto !important;
     object-fit: contain !important;
     max-width: 100%;
     filter: drop-shadow(0 10px 8px rgb(88, 88, 88)) !important;
-    border-radius: 5% !important;
+
 
 }
