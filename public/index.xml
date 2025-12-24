@@ -53,7 +53,7 @@
       <description>&lt;p&gt;We look forward to hearing your feedback and are ready to answer any questions that you may have about our tutorials or services.&lt;/p&gt;
 &lt;h3 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h3&gt;
 &lt;p&gt;For general inquiries, technical assistance, and collaboration requests, kindly send your emails to:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;mailto:e.net.lectures.01@gmail.coms&#34;&gt;e.net.lectures.01@gmail.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;mailto:e.net.lectures.01@gmail.com&#34;&gt;e.net.lectures.01@gmail.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;response-time&#34;&gt;Response Time&lt;/h3&gt;
 &lt;p&gt;Our team checks all the messages we receive. We always strive to respond to all specific inquiries within &lt;strong&gt;48 hours&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;In your email, please provide as many details as possible, such as the name of the tutorial or error message. This helps us guide you better.&lt;/p&gt;</description>
@@ -64,7 +64,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/disclaimer/</guid>
       <description>&lt;p&gt;Last updated: December 23, 2025&lt;/p&gt;
-&lt;p&gt;The information provided by Tech Index (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) on {{ .Site.BaseURL }} (the &amp;ldquo;Site&amp;rdquo;) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.&lt;/p&gt;
+&lt;p&gt;The information provided by Tech Index (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) on 
+http://localhost:1313/ (the &amp;ldquo;Site&amp;rdquo;) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.&lt;/p&gt;
 &lt;h3 id=&#34;professional-disclaimer&#34;&gt;Professional Disclaimer&lt;/h3&gt;
 &lt;p&gt;The Site cannot and does not contain software development or legal advice. The technical information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of software development or legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THE SITE IS SOLELY AT YOUR OWN RISK.&lt;/p&gt;</description>
     </item>
@@ -74,7 +75,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/privacy/</guid>
       <description>&lt;p&gt;Last updated: December 23, 2025&lt;/p&gt;
-&lt;p&gt;At Tech Index, accessible from {{ .Site.BaseURL }}, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Tech Index and how we use it.&lt;/p&gt;
+&lt;p&gt;Tech Index, accessible from &lt;code&gt;
+http://localhost:1313/&lt;/code&gt;, has one of its major priorities being the privacy of our visitors. This Privacy Policy document contains types of information that is gathered and recorded by Tech Index and how we use it.&lt;/p&gt;
 &lt;h3 id=&#34;log-files&#34;&gt;Log Files&lt;/h3&gt;
 &lt;p&gt;Tech Index follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services&amp;rsquo; analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users&amp;rsquo; movement on the website, and gathering demographic information.&lt;/p&gt;</description>
     </item>
@@ -84,9 +86,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/terms/</guid>
       <description>&lt;p&gt;Last updated: December 23, 2025&lt;/p&gt;
-&lt;p&gt;Welcome to Tech Index. By accessing this website, we assume you accept these terms and conditions. Do not continue to use Tech Index if you do not agree to take all of the terms and conditions stated on this page.&lt;/p&gt;
+&lt;p&gt;The use of this website assumes your acceptance of these terms and conditions. You should NOT use Tech Index if you do NOT agree to abide by all that is stated within these terms and conditions on this page.&lt;/p&gt;
 &lt;h3 id=&#34;license&#34;&gt;License&lt;/h3&gt;
-&lt;p&gt;Unless otherwise stated, Tech Index and/or its licensors own the intellectual property rights for all material on Tech Index. All intellectual property rights are reserved. You may access this from Tech Index for your own personal use subjected to restrictions set in these terms and conditions.&lt;/p&gt;</description>
+&lt;p&gt;If not otherwise indicated, the intellectual property rights to the contents of the Tech Index lie with the Tech Index and/or with the licensors of the Tech Index. All rights to the said property rights are hereby reserved. But you can access the same from the Tech Index and use the same solely for your purpose.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

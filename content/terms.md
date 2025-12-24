@@ -7,19 +7,23 @@ searchHidden: true
 
 Last updated: December 23, 2025
 
-Welcome to Tech Index. By accessing this website, we assume you accept these terms and conditions. Do not continue to use Tech Index if you do not agree to take all of the terms and conditions stated on this page.
+The use of this website assumes your acceptance of these terms and conditions. You should NOT use Tech Index if you do NOT agree to abide by all that is stated within these terms and conditions on this page.
 
 ### License
-Unless otherwise stated, Tech Index and/or its licensors own the intellectual property rights for all material on Tech Index. All intellectual property rights are reserved. You may access this from Tech Index for your own personal use subjected to restrictions set in these terms and conditions.
 
-You must not:
-- Republish material from Tech Index
-- Sell, rent or sub-license material from Tech Index
-- Reproduce, duplicate or copy material from Tech Index
-- Redistribute content from Tech Index
+If not otherwise indicated, the intellectual property rights to the contents of the Tech Index lie with the Tech Index and/or with the licensors of the Tech Index. All rights to the said property rights are hereby reserved. But you can access the same from the Tech Index and use the same solely for your purpose.
+
+You shall not:
+
+- Republish content from Tech Index
+- Sell, rent, or sublicense material on Tech Index
+- Copy, duplicate, or reproduce content from Tech Index
+- Redistribution of content from Tech Index
 
 ### User Comments
-Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Tech Index does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Tech Index, its agents and/or affiliates.
 
-### Content Liability
-We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libellous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.
+There are parts of this website where users are accorded an opportunity to make posts and exchange opinions and information in various sectors of this website. Tech Index does not filter, edit, publish, or review any of these Comments prior to them being on the website. These Comments also do not represent the opinions of Tech Index, its agents, and/or affiliates.
+
+#### Content Responsibility
+
+We shall not be liable to you or any third-party user for any content that appears on your Website. You undertake to defend and hold us harmless from all claims that arise from your Website. No direct link shall appear on any Website that can be classified under libelous, obscene, and criminal acts or that violates any third-party right.

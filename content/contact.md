@@ -10,7 +10,7 @@ We look forward to hearing your feedback and are ready to answer any questions t
 
 For general inquiries, technical assistance, and collaboration requests, kindly send your emails to:
 
-**[e.net.lectures.01@gmail.com](mailto:e.net.lectures.01@gmail.coms)**
+**[e.net.lectures.01@gmail.com](mailto:e.net.lectures.01@gmail.com)**
 
 ### Response Time
  Our team checks all the messages we receive. We always strive to respond to all specific inquiries within **48 hours**. 
