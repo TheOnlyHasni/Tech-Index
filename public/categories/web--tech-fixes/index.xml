@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Web &amp; Tech Fixes on Tech Index</title>
+    <link>http://localhost:1313/categories/web--tech-fixes/</link>
+    <description>Recent content in Web &amp; Tech Fixes on Tech Index</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/web--tech-fixes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Clear Cache and Cookies on Every Major Browser (2025 Guide)</title>
+      <link>http://localhost:1313/tutorials/clear-cache-and-cookies-on-every-major-browser/</link>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/clear-cache-and-cookies-on-every-major-browser/</guid>
+      <description>Complete 2025 guide to clearing cache and cookies on Chrome, Firefox, Safari, Edge, and more. Step-by-step instructions for desktop and mobile with troubleshooting tips to fix site glitches, improve performance, and boost privacy.</description>
+    </item>
+  </channel>
+</rss>

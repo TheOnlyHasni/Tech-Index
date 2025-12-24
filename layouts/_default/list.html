@@ -42,7 +42,7 @@
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
@@ -52,33 +52,36 @@
 {{- end }}
 
 <div class="list-grid">
-{{- $term := .Data.Term }}
-{{- range $index, $page := $paginator.Pages }}
+  {{- $term := .Data.Term }}
+  {{- range $index, $page := $paginator.Pages }}
 
-{{- $class := "post-entry" }}
+  {{- $class := "post-entry" }}
 
-{{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
-{{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-{{- $class = "first-entry" }}
-{{- else if $term }}
-{{- $class = "post-entry tag-entry" }}
-{{- end }}
+  {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
+  {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
+  {{- $class = "first-entry" }}
+  {{- else if $term }}
+  {{- $class = "post-entry tag-entry" }}
+  {{- end }}
 
-{{- $cover := .Param "cover" }}
-{{- $cover_image := "" }}
-{{- if $cover.image }}
-    {{- if (findRE "^[hH][tT][tT][pP][sS]?://" $cover.image) }}
-        {{- $cover_image = $cover.image }}
-    {{- else }}
-        {{- $img := (resources.Get $cover.image) | default (.Resources.GetMatch $cover.image) }}
-        {{- if $img }}
-            {{- $cover_image = $img.Permalink }}
-        {{- end }}
+  {{- $cover := .Param "cover" }}
+  {{- $cover_image := "" }}
+  {{- if $cover.image }}
+  {{- if (findRE "^[hH][tT][tT][pP][sS]?://" $cover.image) }}
+  {{- $cover_image = $cover.image }}
+  {{- else }}
+  {{- $img := (resources.Get $cover.image) | default (.Resources.GetMatch $cover.image) }}
+  {{- if $img }}
+  {{- $cover_image = $img.Permalink }}
+  {{- end }}
+  {{- end }}
+  {{- end }}
+
+  <article class="{{ $class }}">
+    {{- if $cover_image }}
+    <div class="entry-background" style="background-image: url('{{ $cover_image }}');"></div>
     {{- end }}
-{{- end }}
-
-<article class="{{ $class }}" {{- if $cover_image }} style="background-image: url('{{ $cover_image }}');" {{- end }}>
-  <div class="entry-overlay">
+    <div class="entry-overlay">
       <header class="entry-header">
         <h2 class="entry-hint-parent">
           {{- .Title }}
@@ -102,10 +105,10 @@
         {{- partial "post_meta.html" . -}}
       </footer>
       {{- end }}
-  </div>
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-</article>
-{{- end }}
+    </div>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
 </div>
 
 {{- if gt $paginator.TotalPages 1 }}

@@ -1,10 +1,10 @@
 ---
 title: 'Using ChatGPT for Automating Your Daily Mail Sending Process'
-date: '2025-12-24T13:36:41+05:00'
+date: '2025-12-02T13:36:41+05:00'
 draft: false
 description: 'A detailed guide on using ChatGPT to automate your daily email workflow, saving time and increasing productivity.'
 summary: 'Learn how to automate your email responses, summaries, and task extraction using ChatGPT and simple integrations.'
-tags: ["ChatGPT", "Automation", "Email", "Productivity", "AI"]
+tags: ["ChatGPT", "Automation", "Email", "Productivity", "AI", "2025"]
 categories: ["Tutorials", "AI & Productivity Tools"]
 author: 'Hassan Jan'
 cover:
