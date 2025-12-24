@@ -6,21 +6,6 @@
     <description>Recent content in Latest Posts on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Dec 2025 18:56:39 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to Use Chatgpt to Automate Your Daily Email Workflow</title>
-      <link>http://localhost:1313/posts/how-to-use-chatgpt-to-automate-your-daily-email-workflow/</link>
-      <pubDate>Tue, 23 Dec 2025 18:56:39 +0500</pubDate>
-      <guid>http://localhost:1313/posts/how-to-use-chatgpt-to-automate-your-daily-email-workflow/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Deploying Hugo to GitHub Pages: The Ultimate 2025 Guide</title>
-      <link>http://localhost:1313/posts/hugo-deployment-github-pages/</link>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hugo-deployment-github-pages/</guid>
-      <description>Master the art of static site hosting. A step-by-step guide to deploying Hugo using GitHub Actions and custom domains.</description>
-    </item>
   </channel>
 </rss>

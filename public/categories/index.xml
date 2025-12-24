@@ -6,27 +6,20 @@
     <description>Recent content in Categories on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Dec 2025 18:56:39 +0500</lastBuildDate>
+    <lastBuildDate>Wed, 24 Dec 2025 13:36:41 +0500</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Productivity &amp; Workflow</title>
-      <link>http://localhost:1313/categories/productivity--workflow/</link>
-      <pubDate>Tue, 23 Dec 2025 18:56:39 +0500</pubDate>
-      <guid>http://localhost:1313/categories/productivity--workflow/</guid>
+      <title>Productivity</title>
+      <link>http://localhost:1313/categories/productivity/</link>
+      <pubDate>Wed, 24 Dec 2025 13:36:41 +0500</pubDate>
+      <guid>http://localhost:1313/categories/productivity/</guid>
       <description></description>
     </item>
     <item>
-      <title>DevOps &amp; Cloud</title>
-      <link>http://localhost:1313/categories/devops--cloud/</link>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/devops--cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI &amp; Programming</title>
-      <link>http://localhost:1313/categories/ai--programming/</link>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/ai--programming/</guid>
+      <title>Tutorials</title>
+      <link>http://localhost:1313/categories/tutorials/</link>
+      <pubDate>Wed, 24 Dec 2025 13:36:41 +0500</pubDate>
+      <guid>http://localhost:1313/categories/tutorials/</guid>
       <description></description>
     </item>
   </channel>

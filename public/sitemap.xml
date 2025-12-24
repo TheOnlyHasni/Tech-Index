@@ -3,127 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/automation/</loc>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/posts/how-to-use-chatgpt-to-automate-your-daily-email-workflow/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/llm/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/obsidian/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/productivity--workflow/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/zapier/</loc>
-    <lastmod>2025-12-23T18:56:39+05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/ci/cd/</loc>
-    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/posts/hugo-deployment-github-pages/</loc>
-    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/devops--cloud/</loc>
-    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/github-actions/</loc>
-    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/static-hosting/</loc>
-    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/ai--programming/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/ai-automation/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/chatgpt/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/email-management/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/email/</loc>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tutorials/how-to-use-obsidian/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/productivity/</loc>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/knowledge-management/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/productivity/</loc>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tutorials/automating-your-email-workflow-with-chatgpt/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/tutorials/</loc>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/using-chatgpt-for-automating-your-daily-mail-sending-process/</loc>
+    <lastmod>2025-12-24T13:36:41+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -136,6 +71,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/disclaimer/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
