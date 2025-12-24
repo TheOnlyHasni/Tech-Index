@@ -473,3 +473,16 @@ body {
         opacity: 1;
     }
 }
+
+/* Footer Logo Styling */
+.footer-logo {
+    width: 200px;
+    margin: 0 auto 10px auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.dark .footer-logo {
+    filter: invert(1);
+    opacity: 0.9;
+}
