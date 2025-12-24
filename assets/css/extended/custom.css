@@ -486,3 +486,17 @@ body {
     filter: invert(1);
     opacity: 0.9;
 }
+
+/* Post Cover Image Resizing */
+.entry-cover {
+    text-align: center;
+}
+
+.entry-cover img {
+    max-height: 400px;
+    /* Adjust this value to increase/decrease size */
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    /* Prevents cropping */
+}
