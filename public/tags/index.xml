@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apple Tips</title>
+      <link>http://localhost:1313/tags/apple-tips/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/apple-tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Battery Calibration</title>
+      <link>http://localhost:1313/tags/battery-calibration/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/battery-calibration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Battery Health</title>
+      <link>http://localhost:1313/tags/battery-health/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/battery-health/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IOS 18</title>
+      <link>http://localhost:1313/tags/ios-18/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ios-18/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IPhone</title>
+      <link>http://localhost:1313/tags/iphone/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/iphone/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Deployment</title>
       <link>http://localhost:1313/tags/deployment/</link>

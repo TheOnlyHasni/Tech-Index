@@ -16,7 +16,7 @@ cover:
 
 Phone in wrong hands. Chats wide open. Heart stops. WhatsApp saw that nightmare coming years back—rolled secret codes for locked chats in late 2023, but full global push hit 2025 hard, especially Pakistan where shared devices rule family life. Locked Chats folder? Gone. No trace. Punch custom code into search—letters, numbers, emojis mash. Folder drops down. Genius misdirection. No padlock icon waving red flags at spouses or kids. In Pabbi, on my creaky 4G, it saved freelance client talks from wife's weather scrolls. Meta timed it perfect—scam waves post-Trump win, trackers everywhere. Android grabs it first; iOS plays catch-up. Desktop? Beta only. I've locked 20 chats testing; zero leaks. But codes case-sensitive, forgets hurt. Why care now? One slip costs jobs, relationships. Full setup below crushes it in minutes. Deep dive follows—miss nothing.
 
-[PLACEHOLDER: Screenshot of empty WhatsApp chat list with secret code search active]
+{{< rawhtml >}} <img src="image1.png" alt="Screenshot of empty WhatsApp chat list with secret code search active" class="center-img-400"> {{< /rawhtml >}}
 
 ## Secret Code Basics—What It Hides and Why
 
@@ -45,8 +45,6 @@ Access loop: Search code. Enter. Biometrics gate. Inside clean. Bulk lock? Long-
 Slow 3G fix: Enable data saver post-setup—codes featherweight anyway. Samsung users: Settings > Biometrics > Secure Folder sync auto-locks WhatsApp subset. Double vault.
 
 Took 2 minutes flat first run. Locked family group mid-argument—wife none wiser.
-
-[PLACEHOLDER: Animated GIF of Android secret code typing to folder reveal]
 
 ## iOS Path: Apple Twists Included
 
@@ -84,11 +82,11 @@ Pro tested: Locked scam reporter group—nosy boss blind. Changed code weekly—
 
 Pabbi home base—one Samsung shared. Kids TikTok, wife markets, me freelance. Locked client bids, girlfriend flirts, family drama separate. Sis visits Christmas—borrows for maps. Scrolls blank. Typed wrong code? Zilch shows—misdirect godsend. Slow uplink lagged previews pre-lock; now instant. Client email: "How hide chats pro?" Shared steps—landed gig. Traffic saver: Low data mode + lock = battery doubles. One slip cost old job—lesson burned.
 
-## Pro-Tip Box
+## Pro-Tip
 
-**Nuclear Hack: Rotating Emoji Codes + Secure Folder.** Week 1: "Win25🏆". Week 2: "PK🐕🔒". Samsung: Secure Folder > Add WhatsApp clone > code inside. Triple threat. Forgot flow: Long-press search blank > Reset via phone PIN—chats safe, 30 seconds. Boosts security 500%. Devs: ADB pull chat DB pre-lock for forensics. Daily rotate mine.
+>**Nuclear Hack: Rotating Emoji Codes + Secure Folder.** Week 1: "Win25🏆". >Week 2: "PK🐕🔒". Samsung: Secure Folder > Add WhatsApp clone > code inside. Triple threat. Forgot flow: Long-press search blank > Reset via phone PIN—chats safe, 30 seconds. Boosts security 500%. Devs: ADB pull chat DB pre-lock for forensics. Daily rotate mine.
 
-## Troubleshooting FAQ—Reddit/Quora Bleeds
+## Troubleshooting FAQ
 
 Scraped 2025 r/whatsapp screams. Fixed mine.
 

@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Deploy a Static Website to GitHub Pages for Free</title>
-      <link>http://localhost:1313/tutorials/how-to-deploy-a-static-website-to-github-pages-for-free/</link>
+      <link>http://localhost:1313/tutorials/4-how-to-deploy-a-static-website-to-github-pages-for-free/</link>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tutorials/how-to-deploy-a-static-website-to-github-pages-for-free/</guid>
+      <guid>http://localhost:1313/tutorials/4-how-to-deploy-a-static-website-to-github-pages-for-free/</guid>
       <description>A step-by-step guide on deploying static websites to GitHub Pages without spending a dime, covering setup, configuration, and common pitfalls for beginners and pros alike.</description>
     </item>
   </channel>

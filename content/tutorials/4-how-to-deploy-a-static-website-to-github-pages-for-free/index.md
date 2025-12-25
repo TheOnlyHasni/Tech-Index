@@ -129,8 +129,8 @@ Here's the meat. I'll break it down numbered, since skipping steps bites you lat
 For custom domains: In settings, add domain under Custom domain. Then DNS CNAME to username.github.io.
 
 But that's extra. Free works sans domain.
+{{< rawhtml >}} <img src="image1.png" alt="Screenshot showing the GitHub Pages settings menu" class="center-img-400"> {{< /rawhtml >}}
 
-[PLACEHOLDER: Screenshot showing the GitHub Pages settings menu]
 
 ## Real-World Use Case: My Portfolio Launch
 
@@ -182,8 +182,8 @@ jobs:
 Commit. Now pushes build automatically.
 
 Saves time on big sites. I use it daily.
+{{< rawhtml >}} <img src="image2.png" alt="Diagram of the GitHub Actions workflow" class="center-img-400"> {{< /rawhtml >}}
 
-[PLACEHOLDER: Diagram of the GitHub Actions workflow]
 
 ## Troubleshooting and FAQ
 

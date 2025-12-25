@@ -6,12 +6,19 @@
     <description>Recent content in Categories on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gadget Hacks &amp; Optimization</title>
+      <link>http://localhost:1313/categories/gadget-hacks--optimization/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/gadget-hacks--optimization/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tutorials</title>
       <link>http://localhost:1313/categories/tutorials/</link>
-      <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/tutorials/</guid>
       <description></description>
     </item>
