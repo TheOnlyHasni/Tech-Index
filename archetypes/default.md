@@ -9,8 +9,7 @@ categories: []
 author: 'Hassan Jan'
 cover:
     image: 'cover.png'
-    alt: 'Cover Image'
-    caption: 'Cover Image'
+    alt: ''
+    caption: ''
     relative: true
 ---
-

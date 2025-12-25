@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Social Media &amp; App Tutorials on Tech Index</title>
+    <link>http://localhost:1313/categories/social-media--app-tutorials/</link>
+    <description>Recent content in Social Media &amp; App Tutorials on Tech Index</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Dec 2025 15:16:59 +0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/social-media--app-tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use the New Whatsapp Secret Code Feature for Locked Chats</title>
+      <link>http://localhost:1313/tutorials/how-to-use-the-new-whatsapp-secret-code-feature-for-locked-chats/</link>
+      <pubDate>Thu, 25 Dec 2025 15:16:59 +0500</pubDate>
+      <guid>http://localhost:1313/tutorials/how-to-use-the-new-whatsapp-secret-code-feature-for-locked-chats/</guid>
+      <description>WhatsApp&amp;#39;s secret code hides locked chats completely—type it in search to unlock. Android/iOS steps inside, plus PK tweaks for slow nets. No more nosy eyes.</description>
+    </item>
+  </channel>
+</rss>

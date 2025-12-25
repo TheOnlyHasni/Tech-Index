@@ -20,6 +20,13 @@ notAlternative = true
 category = 'categories'
 tag = 'tags'
 
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+    noClasses = true
+
+
 [[menu.main]]
 name = "Posts"
 url = "/posts"

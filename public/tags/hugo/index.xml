@@ -6,14 +6,14 @@
     <description>Recent content in Hugo on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Deploying Hugo to GitHub Pages: The Ultimate 2025 Guide</title>
-      <link>http://localhost:1313/posts/hugo-deployment-github-pages/</link>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hugo-deployment-github-pages/</guid>
-      <description>Master the art of static site hosting. A step-by-step guide to deploying Hugo using GitHub Actions and custom domains.</description>
+      <title>How to Deploy a Static Website to GitHub Pages for Free</title>
+      <link>http://localhost:1313/tutorials/how-to-deploy-a-static-website-to-github-pages-for-free/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/how-to-deploy-a-static-website-to-github-pages-for-free/</guid>
+      <description>GitHub Pages deploys Hugo, Jekyll, or plain HTML sites free—custom domains, HTTPS auto. Full steps from repo to live site, PK net tweaks, and pro Hugo tricks inside.</description>
     </item>
   </channel>
 </rss>
