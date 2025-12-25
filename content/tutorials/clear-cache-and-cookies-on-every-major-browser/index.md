@@ -32,7 +32,7 @@ Chrome dominates—80% share. Easiest clear ever.
 **Windows/Mac Desktop**  
 Hit Ctrl+Shift+Delete (Cmd+Shift+Del Mac). Boom—dialog pops. Pick "All time." Tick **Cookies and other site data** plus **Cached images and files**. Smash **Clear data**. Restart browser. Done in 10 seconds.  
 
-Tried Incognito first? Nah, full wipe rules for deep cleans. [web:30]
+Tried Incognito first? Nah, full wipe rules for deep cleans.
 
 **Android**  
 Three dots top-right. Settings > Privacy and security > Clear browsing data. Time range: All time. Check cookies/cache. Delete. Phone breathes free.  
@@ -40,7 +40,7 @@ Three dots top-right. Settings > Privacy and security > Clear browsing data. Tim
 **iOS**  
 Bottom dots. Settings > Privacy > Clear Browsing Data. Same checks. Confirm. Safari-like but Chrome-tuned.
 
-[PLACEHOLDER: Diagram of Chrome clear data dialog boxes]
+{{< rawhtml >}} <img src="image2.png" alt="Diagram of Chrome clear data dialog boxes" class="center-img-400"> {{< /rawhtml >}} 
 
 ## Firefox: The Privacy Purist's Path
 
@@ -49,7 +49,7 @@ Firefox fights trackers hard—Enhanced Tracking Protection shines. But cache bl
 **Desktop (Win/Mac/Linux)**  
 Menu burger > Settings > Privacy & Security. Scroll "Cookies and Site Data." **Clear Data**. Tick both boxes: Cookies/site data, Cached web content. Clear. Shortcut: Ctrl+Shift+Del.  
 
-Enable auto-wipe on exit—custom history settings. Check "Clear history when Firefox closes." Pick data types. Genius for paranoia mode. [web:30]
+Enable auto-wipe on exit—custom history settings. Check "Clear history when Firefox closes." Pick data types. Genius for paranoia mode.
 
 **Mobile**  
 Android/iOS: Three dots > Settings > Delete browsing data. All time. Cookies/cache. Wipe. iOS calls it Data Management—same deal.
@@ -94,7 +94,7 @@ Chrome/Edge: DevTools (F12) > Application tab > Storage > Clear site data. Pick 
 Ripped from Reddit/Quora 2025 threads—real pain points.
 
 **Q1: Cleared but site still broken?**  
-Hard refresh: Ctrl+F5 (Cmd+Shift+R Mac). Or private mode test. DNS cache? ipconfig /flushdns (Win). [web:32]
+Hard refresh: Ctrl+F5 (Cmd+Shift+R Mac). Or private mode test. DNS cache? ipconfig /flushdns (Win).
 
 **Q2: Lost all logins—how recover?**  
 Sync enabled? Re-log from phone. Chrome: Settings > Sync > Manage > passwords. Backup next time.
