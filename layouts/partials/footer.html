@@ -8,4 +8,6 @@
         <a href="/disclaimer" rel="noopener">Disclaimer</a> &middot;
         <a href="/sitemap.xml" rel="noopener">Sitemap</a>
     </span>
+    {{- $copyCode := resources.Get "js/copy-code.js" | minify | fingerprint -}}
+    <script src="{{ $copyCode.Permalink }}" integrity="{{ $copyCode.Data.Integrity }}" crossorigin="anonymous"></script>
 </footer>

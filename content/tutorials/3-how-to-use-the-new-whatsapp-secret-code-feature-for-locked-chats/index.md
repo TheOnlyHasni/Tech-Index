@@ -1,6 +1,6 @@
 ---
 title: 'How to Use the New Whatsapp Secret Code Feature for Locked Chats'
-date: '2025-12-25T15:16:59+05:00'
+date: '2025-12-04'
 draft: false
 description: "WhatsApp's secret code hides locked chats completely—type it in search to unlock. Android/iOS steps inside, plus PK tweaks for slow nets. No more nosy eyes."
 summary: ''

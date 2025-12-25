@@ -1,11 +1,11 @@
 ---
 title: 'How to Deploy a Static Website to GitHub Pages for Free'
-date: '2025-12-25'
+date: '2025-12-05'
 draft: false
 description: 'A step-by-step guide on deploying static websites to GitHub Pages without spending a dime, covering setup, configuration, and common pitfalls for beginners and pros alike.'
 summary: 'Learn how to host your static site on GitHub Pages for free, from creating a repository to going live, with tips and troubleshooting.'
 tags: ['github', 'static-site', 'web-development', 'deployment', 'free-hosting']
-categories: ['tutorials', 'web-dev']
+categories: ['tutorials', 'Website & Software Development']
 author: 'Hassan Jan'
 cover:
     image: 'cover.png'
@@ -208,7 +208,5 @@ Soft 1GB repo limit. Bandwidth 100GB/month. Exceed? They email. For most, fine.
 ## Wrapping It Up? Nah, Just Keep Building
 
 So there you have it. Deployment demystified. I've lost count of sites I've thrown up this way. Experiment. Break things. Fix 'em. That's the fun.
-
-Word count: 1157 (counted manually, excluding frontmatter).
 
 But honestly, once live, focus on content. GitHub Pages handles the rest.
