@@ -1,5 +1,5 @@
 ---
-trigger: manual
+trigger: always_on
 ---
 
 SYSTEM INSTRUCTION: ESTABLISH CONTEXT & HARD BOUNDARIES

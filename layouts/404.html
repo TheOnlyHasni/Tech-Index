@@ -1,0 +1,33 @@
+{{- define "main" }}
+<div class="not-found-container">
+    <div class="not-found-content">
+        <h1 class="not-found-code">404</h1>
+        <h2 class="not-found-title">Oops! Page Not Found</h2>
+        <p class="not-found-text">
+            It looks like the link you followed might be broken or the page has been moved. 
+            Don't worry, we can help you find what you're looking for.
+        </p>
+
+        <div class="not-found-search">
+            <form action="{{ "search" | absURL }}" method="get">
+                <input type="text" name="q" placeholder="What are you looking for?" aria-label="Search content">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="not-found-actions">
+            <a href="{{ "" | absURL }}" class="not-found-btn primary">Back to Home</a>
+            <a href="{{ "tutorials" | absURL }}" class="not-found-btn secondary">Browse Tutorials</a>
+        </div>
+
+        <div class="not-found-popular">
+            <h3>Popular Topics</h3>
+            <ul class="popular-links">
+                {{- range first 3 (where .Site.RegularPages "Section" "tutorials") }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{- end }}
+            </ul>
+        </div>
+    </div>
+</div>
+{{- end }}

@@ -42,6 +42,14 @@ window.onload = function () {
                         }
                     }
                     fuse = new Fuse(data, options); // build the index from the json file
+
+                    // Check for query parameter on load
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const query = urlParams.get('q');
+                    if (query) {
+                        sInput.value = query;
+                        sInput.dispatchEvent(new Event('keyup'));
+                    }
                 }
             } else {
                 console.log(xhr.responseText);
