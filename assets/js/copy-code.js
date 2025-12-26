@@ -30,6 +30,16 @@
                 });
             });
 
+            // Add Language Label
+            const codeElement = highlight.querySelector('code[data-lang]');
+            if (codeElement) {
+                const lang = codeElement.getAttribute('data-lang').toUpperCase();
+                const langLabel = document.createElement('span');
+                langLabel.className = 'code-lang-label';
+                langLabel.innerText = lang;
+                highlight.appendChild(langLabel);
+            }
+
             highlight.appendChild(button);
         });
     }
