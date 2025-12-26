@@ -84,9 +84,9 @@ I test Hugo previews here—cache ghosts previews forever sans this. Pro move.
 
 Week ago, Hugo site's AdSense code previewed wrong—old CSS cached. Chrome clean fixed preview. Firefox held ghost; nuke + hard refresh (Ctrl+F5). Mobile Edge in Pakistan? Uplink lag amplified bloat—post-clear, approvals flowed smooth. Personal tip: Script it. Chrome extension "Clear Cache" one-clicks. Saved hours across five browsers.
 
-## Pro-Tip Box
+## Pro Tip
 
-**Hack: Site-Specific Nuke (No Full Wipe)**  
+> **Hack: Site-Specific Nuke (No Full Wipe)**  
 Chrome/Edge: DevTools (F12) > Application tab > Storage > Clear site data. Pick domain only—logins safe. Firefox: about:preferences#privacy > Manage Data > site search. Safari: Dev menu > per-site. Gold for devs. Boosts testing 10x. Deploy daily.
 
 ## Troubleshooting FAQ

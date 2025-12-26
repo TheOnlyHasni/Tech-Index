@@ -6,8 +6,36 @@
     <description>Recent content in Categories on Tech Index</description>
     <generator>Hugo -- 0.150.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>http://localhost:1313/categories/artificial-intelligence/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/categories/technology/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI &amp; Productivity Tools</title>
+      <link>http://localhost:1313/categories/ai--productivity-tools/</link>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/ai--productivity-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Posts</title>
+      <link>http://localhost:1313/categories/posts/</link>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/posts/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Gadget Hacks &amp; Optimization</title>
       <link>http://localhost:1313/categories/gadget-hacks--optimization/</link>
@@ -41,13 +69,6 @@
       <link>http://localhost:1313/categories/web--tech-fixes/</link>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/web--tech-fixes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI &amp; Productivity Tools</title>
-      <link>http://localhost:1313/categories/ai--productivity-tools/</link>
-      <pubDate>Tue, 02 Dec 2025 13:36:41 +0500</pubDate>
-      <guid>http://localhost:1313/categories/ai--productivity-tools/</guid>
       <description></description>
     </item>
   </channel>
