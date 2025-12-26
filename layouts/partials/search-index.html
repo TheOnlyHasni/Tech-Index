@@ -13,8 +13,8 @@
 {{- end -}}
 {{- end -}}
 {{- $summary := .Description | default .Summary | plainify -}}
-{{- $item := (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" $summary "image" $image "section"
-.Section) -}}
+{{- $item := (dict "title" .Title "permalink" .Permalink "summary" $summary "image" $image "section" .Section "tags"
+.Params.tags "categories" .Params.categories "author" .Params.author) -}}
 {{- $key := .Permalink -}}
 {{- $existing := $.Scratch.Get $key -}}
 {{- if or (not $existing) (and (not (index $existing "image")) $image) -}}

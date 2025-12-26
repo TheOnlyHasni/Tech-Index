@@ -17,26 +17,34 @@ window.onload = function () {
                     // fuse.js options; check fuse.js website for details
                     let options = {
                         distance: 100,
-                        threshold: 0.4,
+                        threshold: 0.5,
+                        includeScore: true,
                         ignoreLocation: true,
                         keys: [
-                            'title',
-                            'permalink',
-                            'summary',
-                            'content'
+                            { name: 'title', weight: 1.0 },
+                            { name: 'tags', weight: 0.8 },
+                            { name: 'categories', weight: 0.8 },
+                            { name: 'author', weight: 0.6 },
+                            { name: 'summary', weight: 0.2 }
                         ]
                     };
                     if (params.fuseOpts) {
                         options = {
                             isCaseSensitive: params.fuseOpts.iscasesensitive ?? false,
-                            includeScore: params.fuseOpts.includescore ?? false,
+                            includeScore: true,
                             includeMatches: params.fuseOpts.includematches ?? false,
                             minMatchCharLength: params.fuseOpts.minmatchcharlength ?? 1,
                             shouldSort: params.fuseOpts.shouldsort ?? true,
                             findAllMatches: params.fuseOpts.findallmatches ?? false,
-                            keys: params.fuseOpts.keys ?? ['title', 'permalink', 'summary', 'content'],
+                            keys: [
+                                { name: 'title', weight: 1.0 },
+                                { name: 'tags', weight: 0.8 },
+                                { name: 'categories', weight: 0.8 },
+                                { name: 'author', weight: 0.6 },
+                                { name: 'summary', weight: 0.2 }
+                            ],
                             location: params.fuseOpts.location ?? 0,
-                            threshold: params.fuseOpts.threshold ?? 0.4,
+                            threshold: params.fuseOpts.threshold ?? 0.5,
                             distance: params.fuseOpts.distance ?? 100,
                             ignoreLocation: params.fuseOpts.ignorelocation ?? true
                         }
@@ -91,31 +99,40 @@ sInput.onkeyup = function (e) {
         }
 
         if (results.length !== 0) {
-            // Sort results: "posts" and "tutorials" first
-            results.sort((a, b) => {
-                const prioritySections = ['posts', 'tutorials'];
-                const aIsPriority = prioritySections.includes(a.item.section);
-                const bIsPriority = prioritySections.includes(b.item.section);
+            let relevant = [];
+            let suggested = [];
 
+            results.forEach(res => {
+                // Score < 0.35 is generally a very strong match for titles/tags
+                if (res.score < 0.35) {
+                    relevant.push(res.item);
+                } else if (suggested.length < 5) {
+                    suggested.push(res.item);
+                }
+            });
+
+            // Sort relevant: "posts" and "tutorials" first
+            const sortBySection = (a, b) => {
+                const prioritySections = ['posts', 'tutorials'];
+                const aIsPriority = prioritySections.includes(a.section);
+                const bIsPriority = prioritySections.includes(b.section);
                 if (aIsPriority && !bIsPriority) return -1;
                 if (!aIsPriority && bIsPriority) return 1;
                 return 0;
-            });
+            };
+
+            relevant.sort(sortBySection);
 
             let resultSet = '';
 
-            for (let i in results) {
-                const item = results[i].item;
+            const renderItem = (item) => {
                 const prioritySections = ['posts', 'tutorials'];
                 const isPrimary = prioritySections.includes(item.section);
-
-                // Only allow images for primary sections (posts/tutorials)
-                // Secondary content (Legal, About, etc.) is ALWAYS text-only
                 const hasImage = isPrimary && item.image && item.image !== "";
                 const cardClass = hasImage ? "search-result-card has-image" : "search-result-card no-image";
                 const bgStyle = hasImage ? `style="background-image: url('${item.image}')"` : "";
 
-                resultSet += `<li class="${cardClass}" ${bgStyle}>
+                return `<li class="${cardClass}" ${bgStyle}>
                     <div class="entry-overlay">
                         <header class="entry-header">
                             <h2 class="result-title">${item.title}</h2>
@@ -126,6 +143,21 @@ sInput.onkeyup = function (e) {
                     </div>
                     <a href="${item.permalink}" aria-label="${item.title}"></a>
                 </li>`;
+            };
+
+            if (relevant.length > 0) {
+                relevant.forEach(item => {
+                    resultSet += renderItem(item);
+                });
+            }
+
+            if (suggested.length > 0) {
+                resultSet += `<li class="search-divider">
+                    <h3>You Might Also Like</h3>
+                </li>`;
+                suggested.forEach(item => {
+                    resultSet += renderItem(item);
+                });
             }
 
             resList.innerHTML = resultSet;

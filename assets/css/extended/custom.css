@@ -460,6 +460,31 @@ body {
     }
 }
 
+/* Search Divider for "You Might Also Like" */
+.search-divider {
+    margin: 40px 0 20px 0;
+    padding: 15px 0 10px 0;
+    border-bottom: 2px solid var(--header-border);
+    list-style: none;
+    text-align: left;
+    grid-column: 1 / -1;
+}
+
+.search-divider h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+.dark .search-divider h3 {
+    color: var(--primary);
+    opacity: 1;
+}
+
 /* Article Body Typography */
 .post-content {
     font-size: 18px;
