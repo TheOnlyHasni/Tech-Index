@@ -88,9 +88,9 @@ First run was a disaster—it scheduled forty posts about the same trend. After 
 
 Another friend in e-commerce uses one to monitor price changes across suppliers, reorder stock automatically when thresholds hit, and flag anomalies. He claims it paid for itself in the first quarter.
 
-## Pro-Tip Box
+## Pro Tip
 
-Want agents to stay on track longer? Add a "memory bank" file. Every ten steps, make the agent summarize what it has done so far and append to a text file. When context windows fill up, feed the summary back in. Old trick from the Auto-GPT days, but it still prevents drift better than anything fancy.
+>Want agents to stay on track longer? Add a "memory bank" file. Every ten steps, make the agent summarize what it has done so far and append to a text file. When context windows fill up, feed the summary back in. Old trick from the Auto-GPT days, but it still prevents drift better than anything fancy.
 
 ## Potential Downsides People Ignore
 

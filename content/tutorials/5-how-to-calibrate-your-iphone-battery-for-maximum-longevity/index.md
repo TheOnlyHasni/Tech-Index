@@ -53,7 +53,7 @@ I run an iPhone 15 Pro as my work phone now. After calibration in October 2025, 
 
 Your results will vary, but I’ve done this on six different iPhones this year – from an old 12 mini to a 16 Pro Max belonging to a friend – and every single one gained at least 3% reported capacity, usually more.
 
-## Pro-Tip Box: The Secret 2% Trick Apple Doesn’t Want You to Know
+## Pro Tip: The Secret 2% Trick Apple Doesn’t Want You to Know
 
 If your maximum capacity is stuck and calibration alone doesn’t budge it, do this: after the full charge in step 5, put the phone in the fridge (in a ziplock bag) for exactly 15 minutes, then let it warm up to room temperature while still charging. The cold forces an even deeper voltage reset. I picked this up from an ex-Apple Genius Bar tech on Reddit. It bumped my 14 Pro from 84% to 89% when nothing else worked. Use at your own risk, obviously.
 

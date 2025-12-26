@@ -105,9 +105,9 @@ Takes maybe fifteen minutes once you do it a couple times.
 
 I manage a tiny agency—me plus three contractors. We switched everything to a hybrid of the Client Portal and Agile templates back in March 2025. Revenue tracking, task assignment, client feedback—all centralized. Billing hours dropped because I stopped chasing files across Drive and Slack. One client even commented how organized the portal looked compared to previous agencies. That kind of feedback pays for itself.
 
-## Pro-Tip Box
+## Pro Tip
 
-Want dependencies without paying for premium add-ons? Create a multi-select property called “Blocks” and another called “Blocked By.” Then add a formula that grays out tasks when Blocked By isn’t empty. Not perfect, but beats nothing—and it’s free.
+> Want dependencies without paying for premium add-ons? Create a multi-select property called “Blocks” and another called “Blocked By.” Then add a formula that grays out tasks when Blocked By isn’t empty. Not perfect, but beats nothing—and it’s free.
 
 ## Troubleshooting / FAQ
 

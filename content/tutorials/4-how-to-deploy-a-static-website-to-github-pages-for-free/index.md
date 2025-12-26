@@ -146,13 +146,11 @@ It felt liberating. No hosting bills eating freelance earnings.
 
 You could do a blog. Or docs for a project.
 
-## Pro-Tip: Automate with GitHub Actions
+## Pro Tip: Automate with GitHub Actions
 
-Here's a gem not everyone knows. Set up CI/CD.
-
-In repo, create .github/workflows/deploy.yml
-
-Paste:
+>Here's a gem not everyone knows. Set up CI/CD.  
+>In repo, create .github/workflows/deploy.yml  
+>Paste:  
 
 ```yaml
 name: Deploy to GitHub Pages
@@ -179,9 +177,9 @@ jobs:
           publish_dir: ./public
 ```
 
-Commit. Now pushes build automatically.
+>Commit. Now pushes build automatically.  
+>Saves time on big sites. I use it daily. 
 
-Saves time on big sites. I use it daily.
 {{< rawhtml >}} <img src="image2.png" alt="Diagram of the GitHub Actions workflow" class="center-img-400"> {{< /rawhtml >}}
 
 
