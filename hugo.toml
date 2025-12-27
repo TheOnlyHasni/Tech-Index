@@ -100,11 +100,11 @@ ShowFullTextinRSS = false
 
 [params.assets]
 disableHLJS = false
-favicon = "/svgs/favicon.svg"
-favicon16x16 = "/svgs/favicon.svg"
-favicon32x32 = "/svgs/favicon.svg"
-apple_touch_icon = "/svgs/favicon.svg"
-safari_pinned_tab = "/svgs/favicon.svg"
+favicon = "svgs/favicon.svg"
+favicon16x16 = "svgs/favicon.svg"
+favicon32x32 = "svgs/favicon.svg"
+apple_touch_icon = "svgs/favicon.svg"
+safari_pinned_tab = "svgs/favicon.svg"
 
 [params.label]
 text = "Tech Index"
