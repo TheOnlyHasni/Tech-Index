@@ -218,5 +218,26 @@
       <guid>http://localhost:1313/tags/email/</guid>
       <description></description>
     </item>
+    <item>
+      <title>LLMs</title>
+      <link>http://localhost:1313/tags/llms/</link>
+      <pubDate>Tue, 15 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/llms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://localhost:1313/tags/search/</link>
+      <pubDate>Tue, 15 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/tags/technology/</link>
+      <pubDate>Tue, 15 Oct 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/technology/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
