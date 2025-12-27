@@ -1,4 +1,4 @@
 ---
 title: "Latest Tutorials"
-description: "Here you'll find tips and tutorials about different tools and gadgets."
+description: "Master new skills with our step-by-step tech tutorials. From software development to gadget optimization, we simplify the complex."
 ---

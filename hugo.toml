@@ -53,6 +53,8 @@ url = "/search"
 weight = 50
 
 [params]
+description = "High-utility tech tutorials and SaaS guides designed to help you master modern software development and digital tools."
+author = "Tech Index"
 defaultTheme = "auto"
 env = "production"
 mainSections = ["posts", "tutorials"]
@@ -65,8 +67,6 @@ distance = 100
 threshold = 0.4
 minMatchCharLength = 0
 keys = ["title", "permalink", "summary", "content"]
-description = "High-utility tech tutorials and SaaS guides designed to help you master modern software development and digital tools."
-author = "Tech Index"
 
 # Home-Info Mode
 [params.homeInfoParams]

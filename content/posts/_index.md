@@ -1,4 +1,4 @@
 ---
 title: "Latest Posts"
-description: "Insights, trends, and deep dives into the world of tech and SaaS."
+description: "Explore our latest deep dives, tech trends, and expert insights into the rapidly evolving world of software and AI."
 ---
