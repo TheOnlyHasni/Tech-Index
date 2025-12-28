@@ -721,3 +721,24 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
 }
+
+/* Reviewer Info Styling */
+.reviewer-info {
+  margin-top: 20px;
+  padding: 15px;
+  background: var(--entry-bg);
+  border-radius: 12px;
+  border-left: 4px solid var(--nav-active);
+  font-size: 16px;
+  color: var(--content-text);
+}
+
+.reviewer-info a {
+  color: var(--nav-active);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.reviewer-info a:hover {
+  opacity: 0.8;
+}

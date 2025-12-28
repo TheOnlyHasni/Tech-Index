@@ -1,17 +1,20 @@
 ---
-title: 'Why 2025 Is The Year Of Agentic AI'
-date: '2025-12-26'
+title: "Why 2025 Is The Year Of Agentic AI"
+date: "2025-12-26"
 draft: false
-description: 'Agentic AI is moving from passive chat interfaces to systems that take initiative, execute tasks autonomously, and get real work done. In 2025, these agents are finally maturing into practical tools that save time and boost productivity.'
-summary: '2025 marks the shift where AI stops just answering questions and starts handling complex workflows on its own. We look at why agentic systems are exploding now, how they work in practice, and what it means for everyday users and developers.'
-tags: ['AI', 'Agentic AI', 'Automation', 'Productivity Tools', 'Machine Learning']
-categories: ['Posts', 'AI & Productivity Tools']
-author: 'Hassan Jan'
+description: "Agentic AI is moving from passive chat interfaces to systems that take initiative, execute tasks autonomously, and get real work done. In 2025, these agents are finally maturing into practical tools that save time and boost productivity."
+summary: "2025 marks the shift where AI stops just answering questions and starts handling complex workflows on its own. We look at why agentic systems are exploding now, how they work in practice, and what it means for everyday users and developers."
+tags:
+  ["AI", "Agentic AI", "Automation", "Productivity Tools", "Machine Learning"]
+categories: ["Posts", "AI & Productivity Tools"]
+author: "Hassan Jan"
 cover:
-    image: 'cover.png'
-    alt: 'Illustration of multiple AI agents collaborating on tasks across screens'
-    caption: 'Agentic AI in action: systems that plan, execute, and adapt without constant human input'
-    relative: true
+  image: "cover.png"
+  alt: "Illustration of multiple AI agents collaborating on tasks across screens"
+  caption: "Agentic AI in action: systems that plan, execute, and adapt without constant human input"
+  relative: true
+reviewed_by: "Tech Mastery Team"
+reviewer_link: "https://value1.shop"
 ---
 
 Chatbots dominated the AI conversation for years, spitting out answers, generating text, maybe cracking a joke if you asked nicely. They felt revolutionary at first. Then the novelty wore off quick. You still had to copy-paste their output, feed it into other apps, check everything yourself because half the time it hallucinated nonsense. By late 2024, most people I know treated tools like ChatGPT as fancy search engines—useful, sure, but hardly life-changing. The real frustration boiled down to this: AI could talk a big game yet never actually rolled up its sleeves and did the grunt work. Enter agentic AI. These aren't passive responders. They plan steps, use tools, fix their own mistakes, and complete multi-step jobs while you grab coffee. In 2025, the tech finally clicked—better models, cheaper compute, and frameworks that let agents chain actions reliably. We're seeing them book flights, scrape data, write and deploy code, even negotiate simple deals. This shift matters because it turns AI from a curiosity into a genuine coworker. And right now, with economic pressure on productivity and remote teams stretched thin, agentic systems offer a way to offload repetitive crap that eats hours every week.
@@ -90,7 +93,7 @@ Another friend in e-commerce uses one to monitor price changes across suppliers,
 
 ## Pro Tip
 
->Want agents to stay on track longer? Add a "memory bank" file. Every ten steps, make the agent summarize what it has done so far and append to a text file. When context windows fill up, feed the summary back in. Old trick from the Auto-GPT days, but it still prevents drift better than anything fancy.
+> Want agents to stay on track longer? Add a "memory bank" file. Every ten steps, make the agent summarize what it has done so far and append to a text file. When context windows fill up, feed the summary back in. Old trick from the Auto-GPT days, but it still prevents drift better than anything fancy.
 
 ## Potential Downsides People Ignore
 

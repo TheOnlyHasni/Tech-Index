@@ -1,15 +1,17 @@
 ---
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-date: '{{ .Date }}'
+date: "{{ .Date }}"
 draft: false
-description: ''
-summary: ''
+description: ""
+summary: ""
 tags: []
 categories: []
-author: 'Hassan Jan'
+author: "Hassan Jan"
 cover:
-    image: 'cover.png'
-    alt: ''
-    caption: ''
-    relative: true
+  image: "cover.png"
+  alt: ""
+  caption: ""
+  relative: true
+reviewed_by: ""
+reviewer_link: ""
 ---
