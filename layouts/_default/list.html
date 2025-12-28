@@ -72,7 +72,9 @@
   {{- else }}
   {{- $img := (resources.Get $cover.image) | default (.Resources.GetMatch $cover.image) }}
   {{- if $img }}
-  {{- $cover_image = $img.Permalink }}
+  {{- /* Optimize thumbnail: 800x450 for grid, lower quality for speed */}}
+  {{- $thumb := $img.Fill "800x450 q75 webp" }}
+  {{- $cover_image = $thumb.Permalink }}
   {{- end }}
   {{- end }}
   {{- end }}

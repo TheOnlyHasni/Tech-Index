@@ -612,7 +612,7 @@ body {
 .entry-cover img {
   max-height: 400px;
   /* Adjust this value to increase/decrease size */
-  width: auto;
+  width: fit-content;
   margin: 0 auto;
   object-fit: contain;
   /* Prevents cropping */
@@ -625,7 +625,7 @@ body {
   display: block !important;
   border-radius: 16px !important;
   margin: 1em auto !important;
-  height: 400px !important;
+  height: 500px !important;
   width: auto !important;
   object-fit: contain !important;
   max-width: 100%;

@@ -8,7 +8,8 @@
 {{- else -}}
 {{- $img := (.Resources.GetMatch .Params.cover.image) | default (resources.Get .Params.cover.image) -}}
 {{- if $img -}}
-{{- $image = $img.Permalink -}}
+{{- $thumb := $img.Fill "800x450 q75 webp" -}}
+{{- $image = $thumb.Permalink -}}
 {{- end -}}
 {{- end -}}
 {{- end -}}

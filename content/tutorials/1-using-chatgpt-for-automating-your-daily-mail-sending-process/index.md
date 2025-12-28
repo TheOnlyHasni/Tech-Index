@@ -1,17 +1,17 @@
 ---
-title: 'Using ChatGPT for Automating Your Daily Mail Sending Process'
-date: '2025-12-02T13:36:41+05:00'
+title: "Using ChatGPT for Automating Your Daily Mail Sending Process"
+date: "2025-12-02T13:36:41+05:00"
 draft: false
-description: 'A detailed guide on using ChatGPT to automate your daily email workflow, saving time and increasing productivity.'
-summary: 'Learn how to automate your email responses, summaries, and task extraction using ChatGPT and simple integrations.'
+description: "A detailed guide on using ChatGPT to automate your daily email workflow, saving time and increasing productivity."
+summary: "Learn how to automate your email responses, summaries, and task extraction using ChatGPT and simple integrations."
 tags: ["ChatGPT", "Automation", "Email", "Productivity", "AI", "2025"]
 categories: ["Tutorials", "AI & Productivity Tools"]
-author: 'Hassan Jan'
+author: "Hassan Jan"
 cover:
-    image: 'cover.png'
-    alt: 'ChatGPT and Gmail Oppened in Chrome'
-    caption: 'ChatGPT and Gmail integration'
-    relative: true
+  image: "cover.png"
+  alt: "ChatGPT and Gmail Oppened in Chrome"
+  caption: "ChatGPT and Gmail integration"
+  relative: true
 ---
 
 I’ve been buried under an ocean of emails—the hundreds pouring in every day from my job, newsletters, and even client messages. The thought of organizing them by hand was akin to rolling a boulder up a hill, taking away precious time from actual projects I could focus on. Now, I’ve been playing around with this tool called ChatGPT, and my emails are under control. The blank response screen, the risk of forgetting to respond to messages, all taken care of by AI, which drafts my messages, summarizes emails, and even marks what’s important.
@@ -26,8 +26,7 @@ My first application was writing client email responses. Instead of your respons
 
 There’s more to ChatGPT than just drafting. The application is also very good at summarization—condensing a 20-message thread into three bullet points—and extract, such as finding deadlines or to-dos. I think this is especially useful for busy professionals: marketers consolidating feedback, developers weeding out bug reports, salespeople evaluating leads by now.
 
-{{< rawhtml >}} <img src="image1.png" alt="infographic of before & after email time savings" class="center-img-400"> {{< /rawhtml >}}
-
+{{< img src="image1.png" alt="infographic of before & after email time savings" class="center-img-400" >}}
 
 # Getting Started: Prerequisites and Setup
 
@@ -51,7 +50,7 @@ Go to chatgpt.com and create a chatbot by clicking "Create a GPT." Name the chat
 
 Upload sample emails to train it to learn your style. Test with: "Draft a reply to this sales pitch declining politely."
 
-{{< rawhtml >}} <img src="image2.png" alt="Custom GPT creation form with instructions entered" class="center-img-400"> {{< /rawhtml >}}
+{{< img src="image2.png" alt="Custom GPT creation form with instructions entered" class="center-img-400" >}}
 
 ## Step-by-Step Guide to Email Automation
 
@@ -98,7 +97,7 @@ Record voice notes using phone calls and then upload audio files to ChatGPT to t
 
 Game-changer when you need quick responses
 
-{{< rawhtml >}} <img src="image3.png" alt="Diagram of entire workflow" class="center-img-400"> {{< /rawhtml >}}
+{{< img src="image3.png" alt="Diagram of entire workflow" class="center-img-400" >}}
 
 ## Real-World Use Case: Client Onboarding in myFreelance Business
 
@@ -110,9 +109,10 @@ What results I got! Customized emails delivered in minutes, without missing anyt
 
 # Pro Tips for Power Users
 
->    **Expert Hack: Chain Prompts for Zero-Touch Automation**
+> **Expert Hack: Chain Prompts for Zero-Touch Automation**
 >
 > I constructed an entire prompt chain:
+>
 > 1. To summarise,
 > 2. Extract tasks,
 > 3. Draft response, and
@@ -128,12 +128,15 @@ What results I got! Customized emails delivered in minutes, without missing anyt
 The Users on Reddit and Quora encounter such roadblocks—I faced the same issues.
 
 ### 1. 'Replies Sound Too Robotic'
+
 **Fix**: Feed 5-10 of your own past emails first: “Learn my style from these, then draft.” Iterate twice. This immediately humanizes outputs in my own experiments.
 
 ### 2. "Losing Context in Long Threads"
+
 **Fix**: Break up bites with "Continue conversation" in ChatGPT. For 50+ emails, summarize each section separately. Pro: Important facts at top of query.
 
 ### 3. Privacy Concerns with Sensitive Email Messages
+
 **Fix**: Refrain from copying PII in chat. Mask names/dates manually or employ local solutions like Ollama with GPT models. I remove details in 10 seconds.
 
 # Personal Tips from Months of Testing

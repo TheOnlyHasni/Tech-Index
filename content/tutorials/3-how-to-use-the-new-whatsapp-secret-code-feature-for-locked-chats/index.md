@@ -1,22 +1,22 @@
 ---
-title: 'How to Use the New Whatsapp Secret Code Feature for Locked Chats'
-date: '2025-12-04'
+title: "How to Use the New Whatsapp Secret Code Feature for Locked Chats"
+date: "2025-12-04"
 draft: false
 description: "WhatsApp's secret code hides locked chats completely—type it in search to unlock. Android/iOS steps inside, plus PK tweaks for slow nets. No more nosy eyes."
-summary: ''
+summary: ""
 tags: ["whatsapp", "privacy", "android", "ios", "security"]
 categories: ["tutorials", "Social Media & App Tutorials"]
-author: 'Hassan Jan'
+author: "Hassan Jan"
 cover:
-    image: 'cover.png'
-    alt: 'Cover Image'
-    caption: 'Cover Image'
-    relative: true
+  image: "cover.png"
+  alt: "Cover Image"
+  caption: "Cover Image"
+  relative: true
 ---
 
 Phone in wrong hands. Chats wide open. Heart stops. WhatsApp saw that nightmare coming years back—rolled secret codes for locked chats in late 2023, but full global push hit 2025 hard, especially Pakistan where shared devices rule family life. Locked Chats folder? Gone. No trace. Punch custom code into search—letters, numbers, emojis mash. Folder drops down. Genius misdirection. No padlock icon waving red flags at spouses or kids. In Pabbi, on my creaky 4G, it saved freelance client talks from wife's weather scrolls. Meta timed it perfect—scam waves post-Trump win, trackers everywhere. Android grabs it first; iOS plays catch-up. Desktop? Beta only. I've locked 20 chats testing; zero leaks. But codes case-sensitive, forgets hurt. Why care now? One slip costs jobs, relationships. Full setup below crushes it in minutes. Deep dive follows—miss nothing.
 
-{{< rawhtml >}} <img src="image1.png" alt="Screenshot of empty WhatsApp chat list with secret code search active" class="center-img-400"> {{< /rawhtml >}}
+{{< img src="image1.png" alt="Screenshot of empty WhatsApp chat list with secret code search active" class="center-img-400" >}}
 
 ## Secret Code Basics—What It Hides and Why
 
@@ -84,7 +84,7 @@ Pabbi home base—one Samsung shared. Kids TikTok, wife markets, me freelance. L
 
 ## Pro Tip
 
->**Nuclear Hack: Rotating Emoji Codes + Secure Folder.** Week 1: "Win25🏆". >Week 2: "PK🐕🔒". Samsung: Secure Folder > Add WhatsApp clone > code inside. Triple threat. Forgot flow: Long-press search blank > Reset via phone PIN—chats safe, 30 seconds. Boosts security 500%. Devs: ADB pull chat DB pre-lock for forensics. Daily rotate mine.
+> **Nuclear Hack: Rotating Emoji Codes + Secure Folder.** Week 1: "Win25🏆". >Week 2: "PK🐕🔒". Samsung: Secure Folder > Add WhatsApp clone > code inside. Triple threat. Forgot flow: Long-press search blank > Reset via phone PIN—chats safe, 30 seconds. Boosts security 500%. Devs: ADB pull chat DB pre-lock for forensics. Daily rotate mine.
 
 ## Troubleshooting FAQ
 

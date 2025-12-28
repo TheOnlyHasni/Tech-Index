@@ -1,0 +1,25 @@
+{{- $src := .Get "src" }}
+{{- $alt := .Get "alt" | default "" }}
+{{- $class := .Get "class" | default "" }}
+{{- $img := .Page.Resources.GetMatch $src }}
+{{- if not $img }}
+  {{- $img = resources.Get $src }}
+{{- end }}
+
+{{- if $img }}
+  {{- $processed := $img }}
+  {{- /* Optimize if image is too large or not webp */}}
+  {{- if or (gt $img.Width 1200) (ne $img.MediaType.SubType "webp") }}
+    {{- if gt $img.Width 1200 }}
+      {{- $processed = $img.Resize "1200x webp q85" }}
+    {{- else }}
+      {{- $processed = $img.Resize (printf "%dx%d webp q85" $img.Width $img.Height) }}
+    {{- end }}
+  {{- end }}
+  <img src="{{ $processed.Permalink }}" 
+       alt="{{ $alt }}" 
+       class="{{ $class }}"
+       loading="lazy">
+{{- else }}
+  <img src="{{ $src | safeURL }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy">
+{{- end }}

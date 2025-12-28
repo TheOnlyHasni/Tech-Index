@@ -6,18 +6,17 @@ description: "Complete 2025 guide to clearing cache and cookies on Chrome, Firef
 summary: "This 2025 guide shows you exactly how to clear cache and cookies on every major browser—Chrome, Firefox, Safari, Edge, and beyond. Desktop and mobile steps included."
 tags: ["Browsers", "privacy", "performance", "troubleshooting", "2025"]
 categories: ["Tutorials", "Web & Tech Fixes"]
-author: 'Hassan Jan'
+author: "Hassan Jan"
 cover:
-    image: 'cover.png'
-    alt: 'Browser cache clearing guide 2025'
-    caption: 'Clear cache and cookies across all major browsers'
-    relative: true
+  image: "cover.png"
+  alt: "Browser cache clearing guide 2025"
+  caption: "Clear cache and cookies across all major browsers"
+  relative: true
 ---
-
 
 Browser glitches drive you nuts—pages half-load, logins vanish, ads loop forever. Cache and cookies pile up like digital hoarder junk, choking speed and privacy. In 2025, with trackers everywhere and AI sites spitting broken code, clearing them resets everything. I've wrestled this on my Hugo test rig in Pabbi; one Ctrl+Shift+Del blast fixed a stubborn AdSense preview bug last week. Matters now? Core Web Vitals tank without it—Google dings your site. Mobile? Even worse, iOS caps storage tight. This hits all majors: Chrome, Edge, Firefox, Safari. Desktop first, then phones. Follow exact. Your rig purrs after.
 
-{{< rawhtml >}} <img src="image1.png" alt="Screenshot of cluttered Chrome history menu before clear" class="center-img-400"> {{< /rawhtml >}}
+{{< img src="image1.png" alt="Screenshot of cluttered Chrome history menu before clear" class="center-img-400" >}}
 
 ## Why Bother Clearing Cache?
 
@@ -30,24 +29,24 @@ Quick math—browsers hoard gigs. Firefox hit 5GB on mine once. Nuke weekly keep
 Chrome dominates—80% share. Easiest clear ever.
 
 **Windows/Mac Desktop**  
-Hit Ctrl+Shift+Delete (Cmd+Shift+Del Mac). Boom—dialog pops. Pick "All time." Tick **Cookies and other site data** plus **Cached images and files**. Smash **Clear data**. Restart browser. Done in 10 seconds.  
+Hit Ctrl+Shift+Delete (Cmd+Shift+Del Mac). Boom—dialog pops. Pick "All time." Tick **Cookies and other site data** plus **Cached images and files**. Smash **Clear data**. Restart browser. Done in 10 seconds.
 
 Tried Incognito first? Nah, full wipe rules for deep cleans.
 
 **Android**  
-Three dots top-right. Settings > Privacy and security > Clear browsing data. Time range: All time. Check cookies/cache. Delete. Phone breathes free.  
+Three dots top-right. Settings > Privacy and security > Clear browsing data. Time range: All time. Check cookies/cache. Delete. Phone breathes free.
 
 **iOS**  
 Bottom dots. Settings > Privacy > Clear Browsing Data. Same checks. Confirm. Safari-like but Chrome-tuned.
 
-{{< rawhtml >}} <img src="image2.png" alt="Diagram of Chrome clear data dialog boxes" class="center-img-400"> {{< /rawhtml >}} 
+{{< img src="image2.png" alt="Diagram of Chrome clear data dialog boxes" class="center-img-400" >}}
 
 ## Firefox: The Privacy Purist's Path
 
 Firefox fights trackers hard—Enhanced Tracking Protection shines. But cache bloats anyway.
 
 **Desktop (Win/Mac/Linux)**  
-Menu burger > Settings > Privacy & Security. Scroll "Cookies and Site Data." **Clear Data**. Tick both boxes: Cookies/site data, Cached web content. Clear. Shortcut: Ctrl+Shift+Del.  
+Menu burger > Settings > Privacy & Security. Scroll "Cookies and Site Data." **Clear Data**. Tick both boxes: Cookies/site data, Cached web content. Clear. Shortcut: Ctrl+Shift+Del.
 
 Enable auto-wipe on exit—custom history settings. Check "Clear history when Firefox closes." Pick data types. Genius for paranoia mode.
 
@@ -61,7 +60,7 @@ Mine lagged on PK slow nets til weekly nukes. Night and day.
 Edge Chromium-based—Chrome steps mostly work. Tweaks matter.
 
 **Desktop**  
-Ctrl+Shift+Del. Time range all. Cookies/site data, Cached images/files. Clear now. Or Settings > Privacy > Choose what to clear.  
+Ctrl+Shift+Del. Time range all. Cookies/site data, Cached images/files. Clear now. Or Settings > Privacy > Choose what to clear.
 
 Auto-clear toggle: Privacy/search/services > Clear on close. Select items. RPM eater for power users.
 
@@ -73,7 +72,7 @@ Hamburger bottom. Settings > Privacy > Clear browsing data. Ticks same. Delete. 
 Trickiest—privacy baked deep. macOS/iOS fused.
 
 **macOS Desktop**  
-Safari > Preferences > Privacy > Manage Website Data. Search sites or Remove All. For full cache: Develop menu (enable first: Advanced prefs). Empty Caches. Or History > Clear History (cookies too). Cmd+Option+E nukes cache instant.  
+Safari > Preferences > Privacy > Manage Website Data. Search sites or Remove All. For full cache: Develop menu (enable first: Advanced prefs). Empty Caches. Or History > Clear History (cookies too). Cmd+Option+E nukes cache instant.
 
 **iOS**  
 Settings app (not Safari). Safari > Clear History and Website Data. Nukes all—brutal but total. Per-site? Advanced > Website Data.
@@ -87,7 +86,7 @@ Week ago, Hugo site's AdSense code previewed wrong—old CSS cached. Chrome clea
 ## Pro Tip
 
 > **Hack: Site-Specific Nuke (No Full Wipe)**  
-Chrome/Edge: DevTools (F12) > Application tab > Storage > Clear site data. Pick domain only—logins safe. Firefox: about:preferences#privacy > Manage Data > site search. Safari: Dev menu > per-site. Gold for devs. Boosts testing 10x. Deploy daily.
+> Chrome/Edge: DevTools (F12) > Application tab > Storage > Clear site data. Pick domain only—logins safe. Firefox: about:preferences#privacy > Manage Data > site search. Safari: Dev menu > per-site. Gold for devs. Boosts testing 10x. Deploy daily.
 
 ## Troubleshooting FAQ
 
