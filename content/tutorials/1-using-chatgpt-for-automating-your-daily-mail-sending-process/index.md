@@ -10,8 +10,9 @@ author: "Hassan Jan"
 cover:
   image: "cover.png"
   alt: "ChatGPT and Gmail Oppened in Chrome"
-  caption: "ChatGPT and Gmail integration"
   relative: true
+reviewed_by: "Zohaib Ali - A CS Student"
+reviewer_link: "https://www.instagram.com/silent.soul.67/"
 ---
 
 I’ve been buried under an ocean of emails—the hundreds pouring in every day from my job, newsletters, and even client messages. The thought of organizing them by hand was akin to rolling a boulder up a hill, taking away precious time from actual projects I could focus on. Now, I’ve been playing around with this tool called ChatGPT, and my emails are under control. The blank response screen, the risk of forgetting to respond to messages, all taken care of by AI, which drafts my messages, summarizes emails, and even marks what’s important.

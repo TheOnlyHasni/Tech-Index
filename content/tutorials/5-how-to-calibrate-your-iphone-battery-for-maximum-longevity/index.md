@@ -11,8 +11,9 @@ author: "Hassan Jan"
 cover:
   image: "cover.png"
   alt: "Close-up of iPhone Battery Health screen showing 100% maximum capacity"
-  caption: ""
   relative: true
+reviewed_by: "Anas - BS IT"
+reviewer_link: "https://www.facebook.com/profile.php?id=61557852723641"
 ---
 
 I still remember the day my iPhone 14 Pro dropped to 79% maximum capacity after barely 14 months. That stung. Not because I baby my phones – I don’t – but because I knew most of that degradation was avoidable. Fast-forward to late 2025 and I’m typing this on the same phone sitting pretty at 92% after a proper recalibration routine and some deliberate charging habits. The difference is night and day. Battery percentages suddenly make sense again, random shutdowns at 30% vanished, and I routinely hit 7+ hours screen-on time. If your iPhone feels like it’s lying about its charge or aging faster than it should, you need to recalibrate it right now – especially with iOS 18 and 18.2 introducing even smarter charging algorithms that can get confused by bad data. Here’s exactly how I do it, step by step, in the real world.

@@ -9,9 +9,12 @@ categories: ["tutorials", "Social Media & App Tutorials"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"
-  alt: "Cover Image"
-  caption: "Cover Image"
+  alt: "Image showing WhatsApp security interface"
   relative: true
+reviewed_by: ""
+reviewer_link: ""
+---
+
 ---
 
 Phone in wrong hands. Chats wide open. Heart stops. WhatsApp saw that nightmare coming years back—rolled secret codes for locked chats in late 2023, but full global push hit 2025 hard, especially Pakistan where shared devices rule family life. Locked Chats folder? Gone. No trace. Punch custom code into search—letters, numbers, emojis mash. Folder drops down. Genius misdirection. No padlock icon waving red flags at spouses or kids. In Pabbi, on my creaky 4G, it saved freelance client talks from wife's weather scrolls. Meta timed it perfect—scam waves post-Trump win, trackers everywhere. Android grabs it first; iOS plays catch-up. Desktop? Beta only. I've locked 20 chats testing; zero leaks. But codes case-sensitive, forgets hurt. Why care now? One slip costs jobs, relationships. Full setup below crushes it in minutes. Deep dive follows—miss nothing.

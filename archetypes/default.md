@@ -10,7 +10,6 @@ author: "Hassan Jan"
 cover:
   image: "cover.png"
   alt: ""
-  caption: ""
   relative: true
 reviewed_by: ""
 reviewer_link: ""

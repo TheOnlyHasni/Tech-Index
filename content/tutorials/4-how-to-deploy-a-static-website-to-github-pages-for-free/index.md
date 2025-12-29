@@ -1,17 +1,18 @@
 ---
-title: 'How to Deploy a Static Website to GitHub Pages for Free'
-date: '2025-12-05'
+title: "How to Deploy a Static Website to GitHub Pages for Free"
+date: "2025-12-05"
 draft: false
-description: 'A step-by-step guide on deploying static websites to GitHub Pages without spending a dime, covering setup, configuration, and common pitfalls for beginners and pros alike.'
-summary: 'Learn how to host your static site on GitHub Pages for free, from creating a repository to going live, with tips and troubleshooting.'
-tags: ['github', 'static-site', 'web-development', 'deployment', 'free-hosting']
-categories: ['tutorials', 'Website & Software Development']
-author: 'Hassan Jan'
+description: "A step-by-step guide on deploying static websites to GitHub Pages without spending a dime, covering setup, configuration, and common pitfalls for beginners and pros alike."
+summary: "Learn how to host your static site on GitHub Pages for free, from creating a repository to going live, with tips and troubleshooting."
+tags: ["github", "static-site", "web-development", "deployment", "free-hosting"]
+categories: ["tutorials", "Website & Software Development"]
+author: "Hassan Jan"
 cover:
-    image: 'cover.png'
-    alt: 'GitHub Pages deployment illustration'
-    caption: 'Deploying a static site effortlessly'
-    relative: true
+  image: "cover.png"
+  alt: "GitHub Pages deployment illustration"
+  relative: true
+reviewed_by: "Tahseen - MERN Stack Dev"
+reviewer_link: "https://www.facebook.com/profile.php?id=61583022910518"
 ---
 
 # How to Deploy a Static Website to GitHub Pages for Free
@@ -131,7 +132,6 @@ For custom domains: In settings, add domain under Custom domain. Then DNS CNAME 
 But that's extra. Free works sans domain.
 {{< rawhtml >}} <img src="image1.png" alt="Screenshot showing the GitHub Pages settings menu" class="center-img-400"> {{< /rawhtml >}}
 
-
 ## Real-World Use Case: My Portfolio Launch
 
 Last month, I rebuilt my personal site. Old WordPress dragged. Switched to Hugo for static.
@@ -140,7 +140,7 @@ Generated site, followed steps above. Went live in under 10 minutes.
 
 Traffic from LinkedIn? Handled fine. No costs.
 
-One tweak: Added _config.yml for Jekyll if needed, but Hugo skips that.
+One tweak: Added \_config.yml for Jekyll if needed, but Hugo skips that.
 
 It felt liberating. No hosting bills eating freelance earnings.
 
@@ -148,9 +148,9 @@ You could do a blog. Or docs for a project.
 
 ## Pro Tip: Automate with GitHub Actions
 
->Here's a gem not everyone knows. Set up CI/CD.  
->In repo, create .github/workflows/deploy.yml  
->Paste:  
+> Here's a gem not everyone knows. Set up CI/CD.  
+> In repo, create .github/workflows/deploy.yml  
+> Paste:
 
 ```yaml
 name: Deploy to GitHub Pages
@@ -167,7 +167,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
       - name: Build
         run: hugo --minify
       - name: Deploy
@@ -177,11 +177,10 @@ jobs:
           publish_dir: ./public
 ```
 
->Commit. Now pushes build automatically.  
->Saves time on big sites. I use it daily. 
+> Commit. Now pushes build automatically.  
+> Saves time on big sites. I use it daily.
 
 {{< rawhtml >}} <img src="image2.png" alt="Diagram of the GitHub Actions workflow" class="center-img-400"> {{< /rawhtml >}}
-
 
 ## Troubleshooting and FAQ
 
