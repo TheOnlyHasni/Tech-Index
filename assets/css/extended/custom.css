@@ -743,3 +743,108 @@ body {
 .reviewer-info a:hover {
   opacity: 0.8;
 }
+
+/* Download Section Styling */
+.download-section {
+  margin-top: 60px;
+  /* AdSense-safe spacing */
+  padding: 30px;
+  background: var(--entry-bg);
+  border: 1px solid var(--entry-border);
+  border-radius: 16px;
+  box-shadow: var(--entry-shadow);
+}
+
+.download-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--nav-active);
+  margin-bottom: 10px;
+}
+
+.download-description {
+  font-size: 16px;
+  color: var(--content-text);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .download-buttons {
+    flex-direction: column;
+  }
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: var(--nav-active);
+  color: var(--theme);
+  border: 2px solid var(--nav-active);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+.download-btn:active {
+  transform: translateY(-1px);
+}
+
+.download-btn svg {
+  flex-shrink: 0;
+}
+
+/* Individual button color variations */
+.download-txt {
+  background: #2196f3;
+  border-color: #2196f3;
+}
+
+.download-md {
+  background: #ff9800;
+  border-color: #ff9800;
+}
+
+.download-pdf {
+  background: #f44336;
+  border-color: #f44336;
+}
+
+.download-note {
+  font-size: 14px;
+  color: var(--content-text);
+  opacity: 0.7;
+  margin: 0;
+  padding: 15px;
+  background: var(--header-bg);
+  border-radius: 8px;
+  border-left: 4px solid var(--nav-active);
+}
+
+.download-note kbd {
+  background: var(--entry-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  border: 1px solid var(--entry-border);
+}

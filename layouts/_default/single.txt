@@ -1,0 +1,11 @@
+{{- /* Plain Text Template - Outputs clean text without HTML or markdown */ -}}
+{{- .Title }}
+{{- "\n" }}{{- strings.Repeat (len .Title) "=" }}{{- "\n\n" }}
+
+{{- if .Params.author }}Author: {{ .Params.author }}{{ "\n" }}{{ end -}}
+{{- if .Date }}Date: {{ .Date.Format "January 2, 2006" }}{{ "\n" }}{{ end -}}
+{{- if .Description }}{{ "\n" }}{{ .Description }}{{ "\n\n" }}{{ end -}}
+
+{{- strings.Repeat 80 "-" }}{{ "\n\n" }}
+
+{{- .Plain -}}

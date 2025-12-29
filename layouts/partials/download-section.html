@@ -1,0 +1,58 @@
+{{- /* Download Section Partial - Provides downloadable versions of the post */ -}}
+{{- if or (eq .Section "posts") (eq .Section "tutorials") }}
+<div class="download-section">
+    <h3 class="download-heading">📥 Download This Article</h3>
+    <p class="download-description">Get this article in your preferred format for offline reading:</p>
+    
+    <div class="download-buttons">
+        {{- /* Generate direct links based on permalink structure */ -}}
+        {{- $baseURL := .Permalink -}}
+        {{- $relURL := .RelPermalink -}}
+        
+        {{- /* TXT Download Button */ -}}
+        <a href="{{ $baseURL }}index.txt" 
+           download="{{ .Title | urlize }}.txt" 
+           rel="nofollow" 
+           class="download-btn download-txt"
+           title="Download as plain text file">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Download TXT</span>
+        </a>
+        
+        {{- /* Markdown Download Button */ -}}
+        <a href="{{ $baseURL }}index.md" 
+           download="{{ .Title | urlize }}.md" 
+           rel="nofollow" 
+           class="download-btn download-md"
+           title="Download as markdown file">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <span>Download Markdown</span>
+        </a>
+        
+        {{- /* Print/PDF Button - Hugo generates at /print/{section}/{slug}/ */ -}}
+        <a href="/print{{ $relURL }}" 
+           target="_blank"
+           rel="nofollow" 
+           class="download-btn download-pdf"
+           title="Open print version (use Ctrl+P to save as PDF)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save as PDF</span>
+        </a>
+    </div>
+    
+    <p class="download-note">💡 <strong>Tip:</strong> For PDF, click the button above and use <kbd>Ctrl+P</kbd> (or <kbd>Cmd+P</kbd> on Mac) to save as PDF.</p>
+</div>
+{{- end }}

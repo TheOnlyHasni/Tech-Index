@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /*.txt$
+Disallow: /*.md$
+Disallow: /*/print/
+Allow: /
+
+Sitemap: https://value1.shop/sitemap.xml

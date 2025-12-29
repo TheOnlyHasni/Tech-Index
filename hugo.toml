@@ -8,6 +8,7 @@ pagerSize = 6
 
 [outputs]
 home = ["HTML", "RSS", "SEARCHJSON"]
+page = ["HTML", "PlainText", "RawMarkdown", "PrintHTML"]
 
 [outputFormats]
 [outputFormats.SEARCHJSON]
@@ -15,6 +16,31 @@ mediaType = "application/json"
 baseName = "index"
 isPlainText = true
 notAlternative = true
+
+[outputFormats.PlainText]
+mediaType = "text/plain"
+baseName = "index"
+isPlainText = true
+notAlternative = false
+path = ""
+permalinkable = false
+
+[outputFormats.RawMarkdown]
+mediaType = "text/markdown"
+baseName = "index"
+isPlainText = true
+notAlternative = false
+path = ""
+permalinkable = false
+
+[outputFormats.PrintHTML]
+mediaType = "text/html"
+baseName = "index"
+isPlainText = false
+notAlternative = true
+path = "print"
+permalinkable = true
+suffix = "html"
 
 [taxonomies]
 category = 'categories'

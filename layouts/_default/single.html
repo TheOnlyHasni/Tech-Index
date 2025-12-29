@@ -55,6 +55,9 @@
   </div>
   {{- end }}
 
+  {{- /* Download Section for Posts/Tutorials */ -}}
+  {{- partial "download-section.html" . -}}
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
