@@ -8,7 +8,8 @@
     {{- $responsiveImages := (.Params.cover.responsiveImages | default site.Params.cover.responsiveImages) | default
     true }}
 
-    {{- $pageBundleCover := (.Resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
+    {{- $exactMatch := .Resources.GetMatch (.Params.cover.image) }}
+    {{- $pageBundleCover := $exactMatch | default ((.Resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image))) }}
     {{- $globalResourcesCover := (resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
     {{- $cover := (or $pageBundleCover $globalResourcesCover)}}
     {{- /* We are not using the .Param.cover.relative to decide the location of image */}}
