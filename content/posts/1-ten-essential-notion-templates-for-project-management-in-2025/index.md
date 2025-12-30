@@ -17,7 +17,7 @@ reviewer_link: ""
 
 Project management tools come and go, but Notion stuck around because it lets you build exactly what you need instead of forcing you into rigid boxes like Asana or Monday.com do sometimes. By late 2025, remote teams grew even more scattered, budgets got tighter, and everyone wants one single hub that handles tasks, docs, and databases without paying for five different apps. That’s where templates shine—they give you a running start. I spent weeks digging through the Notion template gallery, duplicating dozens, tweaking them for actual client work I handle as a freelance consultant. Some felt bloated right away. Others clicked instantly. The ten I landed on here cover solo freelancers up to mid-size teams, and they all play nice with Notion’s newest AI features and relation properties. You won’t waste time rebuilding basics, and that matters more than ever when deadlines hit hard.
 
-{{< rawhtml >}} <img src="image1.png" alt="Notion template gallery search bar with 'project management' typed in" class="center-img-400"> {{< /rawhtml >}}
+{{< img src="image1.png" alt="Notion template gallery search bar with 'project management' typed in" class="center-img-400" >}}
 
 ## Why Notion Still Wins for Projects in 2025
 
@@ -29,7 +29,7 @@ Notion’s own “Projects” template stays my default starting point. It ships
 
 You get pre-built statuses like To Do, In Progress, Done—nothing fancy, yet it scales. The relation between projects and tasks means one change updates everywhere. Simple.
 
-{{< rawhtml >}} <img src="image2.png" alt="Notion’s official Projects template" class="center-img-400"> {{< /rawhtml >}}
+{{< img src="image2.png" alt="Notion's official Projects template" class="center-img-400" >}}
 
 ## 2. Ultimate Tasks by Notion
 
@@ -49,7 +49,7 @@ Development teams swear by this one. It mimics Jira but stays inside Notion, so 
 
 In my testing with a small dev friend group, we finished two sprints without ever leaving the page. The chart updates automatically once you mark stories complete.
 
-{{< rawhtml >}} <img src="image3.png" alt="workflow from backlog to done in the Agile template" class="center-img-400"> {{< /rawhtml >}}
+{{< img src="image3.png" alt="workflow from backlog to done in the Agile template" class="center-img-400" >}}
 
 ## 5. OKR + Project Tracker
 
