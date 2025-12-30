@@ -735,9 +735,9 @@ body {
 }
 
 .reviewer-info a {
+  padding-left: 16px;
   color: var(--nav-active);
   font-weight: 600;
-  text-decoration: underline;
 }
 
 .reviewer-info a:hover {
