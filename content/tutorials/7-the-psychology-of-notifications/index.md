@@ -1,6 +1,6 @@
 ---
 title: "The Psychology Of Notifications: How Apps Are Designed To Keep You Addicted (And How To Break The Cycle)"
-date: "2025-12-31"
+date: "2025-12-28"
 draft: false
 description: "A close look at the tricks apps use to hijack your attention through notifications, backed by design tactics and real fixes that actually work."
 summary: "Notifications ping constantly, pulling you back into apps. I broke down the psychology behind them and tested ways to fight back—here’s what stuck."

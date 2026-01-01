@@ -1,6 +1,6 @@
 ---
 title: "How to Clear Cache and Cookies on Every Major Browser (2025 Guide)"
-date: "2025-12-03"
+date: "2025-12-11"
 draft: false
 description: "Complete 2025 guide to clearing cache and cookies on Chrome, Firefox, Safari, Edge, and more. Step-by-step instructions for desktop and mobile with troubleshooting tips to fix site glitches, improve performance, and boost privacy."
 summary: "This 2025 guide shows you exactly how to clear cache and cookies on every major browser—Chrome, Firefox, Safari, Edge, and beyond. Desktop and mobile steps included."

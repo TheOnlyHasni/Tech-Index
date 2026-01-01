@@ -1,6 +1,6 @@
 ---
 title: "How to Deploy a Static Website to GitHub Pages for Free"
-date: "2025-12-05"
+date: "2025-12-16"
 draft: false
 description: "A step-by-step guide on deploying static websites to GitHub Pages without spending a dime, covering setup, configuration, and common pitfalls for beginners and pros alike."
 summary: "Learn how to host your static site on GitHub Pages for free, from creating a repository to going live, with tips and troubleshooting."

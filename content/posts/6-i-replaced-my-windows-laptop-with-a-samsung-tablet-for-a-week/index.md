@@ -1,6 +1,6 @@
 ---
 title: "I Replaced My Windows Laptop With A Samsung Tablet For A Week: Here Is Exactly Where I Failed"
-date: "2025-12-14"
+date: "2025-12-25"
 draft: false
 description: "A hands-on dive into swapping a trusty Windows laptop for a Samsung Galaxy Tab S10 Ultra over seven days, spotlighting the real snags in productivity and daily use."
 summary: "Switched my Windows rig to a Samsung tablet for a full week. The hype around tablet-laptop hybrids? Not quite there yet—here’s the breakdowns."

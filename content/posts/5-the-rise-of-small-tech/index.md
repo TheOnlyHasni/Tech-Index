@@ -1,6 +1,6 @@
 ---
 title: 'The Rise of "Small Tech": Why People Are Ditching Giant Social Platforms for Private, Smaller Communities'
-date: "2025-12-13"
+date: "2025-12-21"
 draft: false
 description: "Exploring the shift from massive social networks to intimate online spaces where privacy and real talk rule the day."
 summary: "Users fed up with ad overload and data grabs are turning to small tech for better connections—here’s why it matters in 2025."

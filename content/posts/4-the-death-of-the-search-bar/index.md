@@ -1,6 +1,6 @@
 ---
 title: "The Death of the Search Bar?"
-date: "2025-12-12"
+date: "2025-12-18"
 draft: false
 description: "Large language models are pushing traditional search bars toward obsolescence as people shift to conversational queries. This piece explores what that shift means for everyday users, content creators, and the future of online information discovery."
 summary: "Search bars dominated the web for decades, but LLMs like ChatGPT and Grok are rewriting the rules. We look at the real-world impact, the trade-offs, and what you can do to stay ahead."

@@ -1,6 +1,6 @@
 ---
 title: "Quantum Computing In Your Pocket: How Close Are We To Seeing Quantum Chips In Smartphones"
-date: "2025-12-16"
+date: "2025-12-30"
 draft: false
 description: "Diving deep into whether quantum tech could soon squeeze into your smartphone, unpacking the hype, hurdles, and real progress from labs to pockets."
 summary: "Quantum chips in phones? We break down the breakthroughs and barriers keeping this sci-fi dream grounded for now."

@@ -1,6 +1,6 @@
 ---
 title: "10 Essential Notion Templates For Project Management In 2025"
-date: "2025-12-07"
+date: "2025-12-04"
 draft: false
 description: "Discover the top 10 Notion templates that can transform how you handle projects in 2025, from simple task trackers to full-blown team dashboards. I break down what makes each one stand out and why they fit real workflows today."
 summary: "Notion keeps evolving, and these 10 templates cut through the noise for anyone juggling projects. Tested them myself—here’s what actually works in 2025."

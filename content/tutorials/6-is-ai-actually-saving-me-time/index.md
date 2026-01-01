@@ -1,6 +1,6 @@
 ---
 title: "Is AI Actually Saving Me Time? A Breakdown Of My Actual Productivity Hours Using Claude Vs Manual Writing"
-date: "2025-12-17"
+date: "2025-12-23"
 draft: false
 description: "I tracked every minute spent drafting articles with and without Claude AI to see if the tool really boosts output or just creates new bottlenecks."
 summary: "Logged my writing sessions for two weeks—half manual, half with Claude—and the numbers surprised me on where time actually goes."

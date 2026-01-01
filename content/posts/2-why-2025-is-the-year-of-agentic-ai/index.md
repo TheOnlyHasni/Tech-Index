@@ -1,6 +1,6 @@
 ---
 title: "Why 2025 Is The Year Of Agentic AI"
-date: "2025-12-08"
+date: "2025-12-09"
 draft: false
 description: "Agentic AI is moving from passive chat interfaces to systems that take initiative, execute tasks autonomously, and get real work done. In 2025, these agents are finally maturing into practical tools that save time and boost productivity."
 summary: "2025 marks the shift where AI stops just answering questions and starts handling complex workflows on its own. We look at why agentic systems are exploding now, how they work in practice, and what it means for everyday users and developers."
