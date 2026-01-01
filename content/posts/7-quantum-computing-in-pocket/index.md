@@ -5,7 +5,7 @@ draft: false
 description: "Diving deep into whether quantum tech could soon squeeze into your smartphone, unpacking the hype, hurdles, and real progress from labs to pockets."
 summary: "Quantum chips in phones? We break down the breakthroughs and barriers keeping this sci-fi dream grounded for now."
 tags: ["quantum", "computing", "smartphones", "tech", "innovation", "future"]
-categories: ["Future Tech", "Tech Deep Dives"]
+categories: ["Posts", "Future Tech"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"

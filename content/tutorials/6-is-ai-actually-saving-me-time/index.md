@@ -5,7 +5,7 @@ draft: false
 description: "I tracked every minute spent drafting articles with and without Claude AI to see if the tool really boosts output or just creates new bottlenecks."
 summary: "Logged my writing sessions for two weeks—half manual, half with Claude—and the numbers surprised me on where time actually goes."
 tags: ["ai", "productivity", "writing", "claude", "tools", "experiments"]
-categories: ["Personal Experiments", "AI Tools", "Productivity"]
+categories: ["Tutorials", "AI & Productivity Tools"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"
@@ -15,7 +15,7 @@ reviewed_by: "Zohaib Ali - A CS Student"
 reviewer_link: "https://www.instagram.com/silent.soul.67/"
 ---
 
-Everyone swears AI speeds up writing. Drafts in seconds, ideas flow faster, less staring at blank pages. As a tech writer cranking out posts weekly, I bought the hype hard. Claude 3.5 Sonnet dropped mid-2024, people raved about its context grasp and clean prose. So I decided to test it cold. No fluff reviews—just raw hours logged. For fourteen days straight, I split my article work. One week pure manual, fingers to keyboard from outline to polish. The next, heavy Claude reliance: prompts for structure, sections, rewrites. Tracked every minute with Toggl. Emails, research, breaks excluded. Only drafting and editing time. Results? Mixed bag. AI shaved chunks off early stages but bloated others. Prompt crafting ate hours I never expected. And final edits? Often longer to fix tone drifts. In 2025, with tools everywhere, does AI save time or shift where you waste it? My data says the latter mostly. Let's dig in. (154 words)
+Everyone swears AI speeds up writing. Drafts in seconds, ideas flow faster, less staring at blank pages. As a tech writer cranking out posts weekly, I bought the hype hard. Claude 3.5 Sonnet dropped mid-2024, people raved about its context grasp and clean prose. So I decided to test it cold. No fluff reviews—just raw hours logged. For fourteen days straight, I split my article work. One week pure manual, fingers to keyboard from outline to polish. The next, heavy Claude reliance: prompts for structure, sections, rewrites. Tracked every minute with Toggl. Emails, research, breaks excluded. Only drafting and editing time. Results? Mixed bag. AI shaved chunks off early stages but bloated others. Prompt crafting ate hours I never expected. And final edits? Often longer to fix tone drifts. In 2025, with tools everywhere, does AI save time or shift where you waste it? My data says the latter mostly. Let's dig in.
 
 ## How I Set Up the Experiment
 

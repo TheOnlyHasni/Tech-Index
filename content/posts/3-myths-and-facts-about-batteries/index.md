@@ -13,7 +13,7 @@ tags:
     "lithium-ion",
     "battery care",
   ]
-categories: ["Technology", "Creator & Social"]
+categories: ["Posts", "Creator & Social"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"
