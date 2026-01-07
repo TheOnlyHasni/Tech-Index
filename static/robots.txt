@@ -1,4 +1,5 @@
 User-agent: *
+Allow: /ads.txt
 Disallow: /*.txt$
 Disallow: /*.md$
 Disallow: /*/print/
