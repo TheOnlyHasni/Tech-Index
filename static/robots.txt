@@ -3,6 +3,7 @@ Allow: /ads.txt
 Disallow: /*.txt$
 Disallow: /*.md$
 Disallow: /*/print/
+Disallow: /tags/
 Allow: /
 
 Sitemap: https://value1.shop/sitemap.xml

@@ -13,3 +13,9 @@
 <!-- Replace the placeholder below with your actual AdSense script tag. -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3244893243403717"
      crossorigin="anonymous"></script>
+
+{{- if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
+  {{- if or (eq .Data.Plural "tags") (eq .Data.Singular "tag") (eq .Type "tags") -}}
+<meta name="robots" content="noindex, follow">
+  {{- end -}}
+{{- end -}}
