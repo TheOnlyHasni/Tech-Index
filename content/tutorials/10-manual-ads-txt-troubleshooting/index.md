@@ -1,5 +1,5 @@
 ---
-title: "Manual Ads Txt Troubleshooting, Why Google Search Console Still Says Your Hugo Site Is Missing Ads Txt Even After You Uploaded It And The Specific Static Folder Fix"
+title: "Manual Ads.txt Troubleshooting; Hugo Site Missing Ads.txt Even After the Upload"
 date: "2026-01-08"
 draft: false
 description: "Fix the frustrating missing ads.txt error in Google Search Console for Hugo sites by placing the file in the right static subdirectory and avoiding common pitfalls."
@@ -57,7 +57,7 @@ That second line forces ads.txt directly to domain root even with baseURL set. C
 
 Most people only need the basic static folder though.
 
-[PLACEHOLDER: Screenshot showing project structure with static folder and ads.txt inside]
+{{< img src="image1.png" alt="Screenshot showing project structure with static folder and ads.txt inside" class="center-img-400" >}}
 
 In my testing this solved it instantly on Netlify. Deploy finished, ads.txt crawled clean within hours.
 
@@ -79,7 +79,7 @@ In my testing this solved it instantly on Netlify. Deploy finished, ads.txt craw
 
 Google usually clears the error in 24-48 hours. Sometimes faster.
 
-[PLACEHOLDER: Screenshot of Search Console ads.txt status turning green after fix]
+{{< img src="image2.png" alt="Screenshot of Search Console ads.txt status turning green after fix" class="center-img-400" >}}
 
 Our team applied this across five client sites last quarter. Every single one validated without resubmission.
 
