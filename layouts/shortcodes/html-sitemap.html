@@ -1,0 +1,57 @@
+<div class="sitemap-content">
+    {{ range $name, $taxonomy := site.Taxonomies.categories }}
+    <div class="sitemap-section">
+        <h3>{{ $name | humanize }}</h3>
+        <ul>
+            {{ range $taxonomy.Pages }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                {{ if .Params.Description }}
+                <p class="sitemap-desc">{{ .Description }}</p>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</div>
+
+<style>
+.sitemap-content h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid var(--tertiary);
+    padding-bottom: 8px;
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+.sitemap-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.sitemap-content li {
+    margin-bottom: 1.2rem;
+    padding-left: 10px;
+    border-left: 3px solid transparent;
+    transition: border-color 0.2s ease;
+}
+.sitemap-content li:hover {
+    border-left-color: var(--secondary);
+}
+.sitemap-content li a {
+    font-weight: 600;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.sitemap-content li a:hover {
+    color: var(--primary);
+}
+.sitemap-desc {
+    margin: 4px 0 0 0;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    opacity: 0.75;
+    line-height: 1.4;
+}
+</style>

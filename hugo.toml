@@ -2,6 +2,7 @@ baseURL = 'https://value1.shop/'
 languageCode = 'en-us'
 title = 'Tech Index'
 theme = 'PaperMod'
+canonifyURLs = true
 
 [pagination]
 pagerSize = 6
@@ -55,27 +56,27 @@ tag = 'tags'
 
 [[menu.main]]
 name = "Posts"
-url = "/posts"
+url = "/posts/"
 weight = 15
 [[menu.main]]
 name = "Tutorials"
-url = "/tutorials"
+url = "/tutorials/"
 weight = 20
 [[menu.main]]
 name = "Topics"
-url = "/categories"
+url = "/categories/"
 weight = 25
 [[menu.main]]
 name = "About Us"
-url = "/about"
+url = "/about/"
 weight = 30
 [[menu.main]]
 name = "Contact"
-url = "/contact"
+url = "/contact/"
 weight = 40
 [[menu.main]]
 name = "Search"
-url = "/search"
+url = "/search/"
 weight = 50
 
 [params]
