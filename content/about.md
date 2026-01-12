@@ -1,24 +1,46 @@
 ---
-title: "About Us"
+title: "About Tech Index"
 layout: "page"
 hidemeta: true
 searchHidden: true
+description: "Meet Hassan Jan, the founder of Tech Index, and learn about our rigorous tech tutorial verification process."
 ---
 
-Hello and welcome to **Tech Index**, the ultimate source for valuable tech tutorials and SaaS resources. Here at Tech Index, our focus is on the simple: making the complex world of modern software development and gadgetry simple and accessible.
+Welcome to **Tech Index**. My name is **Hassan Jan**; I am a Computer Science student at **NUST Islamabad** and the founder of this project.
 
-### Who We Are
+### The Story Behind the "Index"
 
-I'm Hassan. I run **Tech Index** alone. No team. No sponsors. I write because I wish these things existed when I was stuck with a dead battery or a lagging phone at 3 in the morning. If it helped me, maybe it helps you.
+For years, I’ve been the "tech guy" for my friends, family, and neighbors. Whether it was calibrating a laptop screen, fixing a PC bottleneck, or explaining how to use a new app, I saw a recurring pattern: people weren't stuck because the technology was too hard, but because it wasn't explained in a way that made sense for them.
 
-### What We Do
+Even with the dawn of AI, many are intimidated by the sheer number of new tools and apps coming out each week. I created **Tech Index** to curate, simplify, and index the most useful parts of modern technology—turning confusion into productivity.
 
-At Tech Index, we cut the nonsense. We focus exclusively on indepth tutorials, authoritative SaaS resources, and architectural expertise that you can put to use immediately. Whether you are trying to optimize your cloud infrastructure, learn a new programming language, or learn the secrets to the success of the greatest SaaS companies, we offer the knowhow you are looking for.
+### Expertise & Testing Process
 
-### Our Commitment
+I am a self-taught Frontend Developer and a student of the MERN stack with one year of hands-on experience in Web Development. I don't just write about tech; I build with it. My daily workflow involves **Hugo, GoTemplate, React, and Node.js**, and I am a power user of modern AI models like **Gemini, Claude, and DeepSeek**.
 
-At Tech Index, we are dedicated to providing the highest level of technical accuracy as well as user experience. All guides offered on Tech Index go through rigorous processes to assure that they are updated as well as technically accurate. Our driving force at Tech Index is to encourage lifelong learning as it relates to engineering, by providing the road map on how to pursue it. Thank you for being a part of our community. Let's make something great together.
+To ensure that every tutorial on this site actually works, we follow a strict **Verification Protocol**:
 
-### Contact Us {{< rawhtml >}} <a href="{{< ref "contact.md" >}}" class="no-underline">🔗</a>{{< /rawhtml >}}
+- **Multi-Platform Testing:** Every guide is individually tested on my Windows Laptop, Linux PC, and Android devices. I also utilize macOS and iOS environments for cross-platform accuracy to ensure our solutions work for everyone.
+- **Expert Review:** I am not flying solo. While I handle the research and coding, our more technical articles are reviewed for accuracy by a small circle of friends and—most importantly—my **mentors and teachers**.
+- **AI-Assisted, Human-Verified:** While AI is a powerful tool for research and drafting, every single word is reviewed, edited, and verified by me or my team to ensure technical accuracy and quality.
 
-If you have any questions or feedback, please don't hesitate to reach out to us. We are always looking for ways to improve and provide the best possible experience for our users.
+### Why a ".shop" Domain?
+
+You might wonder why a tech blog uses a `.shop` extension. The answer is simple: I am a student building this project as economically as possible. I took the most affordable path to get this information online because, at the end of the day, it is the **value of the content** that matters more than the letters at the end of the URL.
+
+### Mission Statement
+
+Tech Index is built for:
+
+- **New Developers** who need to understand the "why" behind modern code.
+- **The Modern Audience** seeking to automate their lives and save time.
+- **Tech Enthusiasts** looking for hidden apps and utilities that the rest of the world has not yet noticed.
+
+Even if this site only helps ten people solve a problem they were stuck on, I consider it a success.
+
+---
+
+**Contact Information:**
+P.O.Box 23060 GPO Malakand, Pakistan.  
+**Email:** [contact@value1.shop](mailto:contact@value1.shop)  
+_Want to collaborate? Visit our [Contact Page](/contact/)._ {{< rawhtml >}} <a href="{{< ref "contact.md" >}}" class="no-underline">🔗</a>{{< /rawhtml >}}
