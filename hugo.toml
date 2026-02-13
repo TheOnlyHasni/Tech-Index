@@ -63,6 +63,10 @@ name = "Tutorials"
 url = "/tutorials/"
 weight = 20
 [[menu.main]]
+name = "Solutions"
+url = "/errors/"
+weight = 22
+[[menu.main]]
 name = "Topics"
 url = "/categories/"
 weight = 25
@@ -84,7 +88,7 @@ description = "High-utility tech tutorials and SaaS guides designed to help you 
 author = "Tech Index"
 defaultTheme = "auto"
 env = "production"
-mainSections = ["posts", "tutorials"]
+mainSections = ["posts", "tutorials", "errors"]
 
 # AdSense/SEO Features
 ShowReadingTime = true

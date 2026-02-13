@@ -1,0 +1,94 @@
+{{- define "main" }}
+
+<article class="post-single error-page">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }} {{- if .Draft }}
+      <span class="entry-hint" title="Draft">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="35"
+          viewBox="0 -960 960 960"
+          fill="currentColor"
+        >
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"
+          />
+        </svg>
+      </span>
+      {{- end }}
+    </h1>
+
+    {{/* Error Metadata Bar */}}
+    <div class="error-meta-bar">
+      {{- with .Params.fix_difficulty }}
+      <span class="fix-badge fix-{{ . }}">
+        {{- if eq . "quick" }}⚡ Quick Fix (&lt; 2 min){{- end }} {{- if eq .
+        "medium" }}🔧 Medium Fix (5-10 min){{- end }} {{- if eq . "complex" }}⏱️
+        Complex Fix (30+ min){{- end }}
+      </span>
+      {{- end }} {{- with .Params.error_code }}
+      <span class="error-meta-item">
+        <strong>Error Code:</strong> <code>{{ . }}</code>
+      </span>
+      {{- end }} {{- with .Params.software }}
+      <span class="error-meta-item"> <strong>Software:</strong> {{ . }} </span>
+      {{- end }} {{- with .Params.platforms }}
+      <span class="error-meta-item">
+        <strong>Platforms:</strong>
+        {{- range . }}
+        <span class="platform-badge">{{ . }}</span>
+        {{- end }}
+      </span>
+      {{- end }} {{- with .Params.last_updated }}
+      <span class="error-meta-item"> <strong>Updated:</strong> {{ . }} </span>
+      {{- end }}
+    </div>
+
+    {{- if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{- end }} {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">{{- partial "post_meta.html" . -}}</div>
+    {{- end }}
+  </header>
+
+  {{- if (.Param "ShowToc") }} {{- partial "toc.html" . }} {{- end }} {{- if
+  .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }} {{- partial
+    "anchored_headings.html" .Content -}} {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }} {{/* Verification / Community Info */}} {{- if or
+  .Params.verified_count .Params.success_rate }}
+  <div class="error-verification-box">
+    {{- with .Params.verified_count }}
+    <span>✅ Verified by {{ . }} users</span>
+    {{- end }} {{- with .Params.success_rate }}
+    <span>📊 Success rate: {{ . }}</span>
+    {{- end }} {{- with .Params.last_updated }}
+    <span>🕐 Last updated: {{ . }}</span>
+    {{- end }}
+  </div>
+  {{- end }} {{/* Related Errors */}} {{- with .Params.related_errors }}
+  <div class="related-errors">
+    <h3>Related Errors</h3>
+    <div class="related-errors-list">
+      {{- range . }}
+      <span class="related-error-tag">{{ . }}</span>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- if (.Param "ShowPostNavLinks") }} {{- partial "post_nav_links.html" . }}
+    {{- end }} {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare
+    true)) }} {{- partial "share_icons.html" . -}} {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }} {{- partial "comments.html" . }} {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}

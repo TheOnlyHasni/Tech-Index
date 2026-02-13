@@ -1,0 +1,98 @@
+{{- define "main" }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header error-hero">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>
+    {{ .Title }}
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{/* Show subcategory cards if this section has child sections */}}
+{{- $sections := .Sections }}
+{{- if gt (len $sections) 0 }}
+<div class="error-categories-grid">
+  {{- range $sections }}
+  <a href="{{ .Permalink }}" class="error-category-card">
+    <div class="error-category-info">
+      <span class="error-category-name">{{ .Title }}</span>
+      <span class="error-category-count">{{ len .RegularPagesRecursive }} {{ if eq (len .RegularPagesRecursive) 1 }}solution{{ else }}solutions{{ end }}</span>
+      {{- if .Description }}
+      <span class="error-category-desc">{{ .Description }}</span>
+      {{- end }}
+    </div>
+    <span class="error-category-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </span>
+  </a>
+  {{- end }}
+</div>
+{{- end }}
+
+{{/* Show error pages as cards */}}
+{{- $pages := .RegularPages }}
+{{- if gt (len $pages) 0 }}
+<div class="error-cards-grid">
+  {{- range $pages }}
+  <a href="{{ .Permalink }}" class="error-card">
+    <div class="error-card-header">
+      {{- with .Params.fix_difficulty }}
+      <span class="fix-badge fix-{{ . }}">
+        {{- if eq . "quick" }}⚡ Quick Fix{{- end }}
+        {{- if eq . "medium" }}🔧 Medium Fix{{- end }}
+        {{- if eq . "complex" }}⏱️ Complex Fix{{- end }}
+      </span>
+      {{- end }}
+    </div>
+    <h3 class="error-card-title">{{ .Title }}</h3>
+    {{- with .Params.error_code }}
+    <code class="error-card-code">{{ . }}</code>
+    {{- end }}
+    <p class="error-card-summary">{{ .Description | truncate 120 }}</p>
+    <div class="error-card-meta">
+      {{- with .Params.software }}
+      <span class="error-meta-tag">{{ . }}</span>
+      {{- end }}
+      {{- range first 3 .Params.platforms }}
+      <span class="platform-badge">{{ . }}</span>
+      {{- end }}
+    </div>
+  </a>
+  {{- end }}
+</div>
+{{- end }}
+
+{{/* Pagination */}}
+{{- $paginator := .Paginate (union .RegularPages .Sections) }}
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+      «&nbsp;{{ i18n "prev_page" }}&nbsp;
+    </a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+      {{- i18n "next_page" }}&nbsp;»
+    </a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}
