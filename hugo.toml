@@ -104,11 +104,11 @@ weight = 50
 
   # Global Image Quality Controls
   [params.imaging]
-    quality = 88           # High quality but smaller files than 90
-    quality_thumb = 75     # Faster loading for grids
-    thumb_width = 720      # Optimized for mobile/desktop grid
-    thumb_height = 405     # 16:9 ratio
-    max_content_width = 1600 # Sufficient for Retina in 1200px container (1.3x)
+    quality = 85           # Standard quality
+    quality_thumb = 70     # Leaner thumbnails
+    thumb_width = 720      
+    thumb_height = 405     
+    max_content_width = 1200 # Safer limit for GitHub Actions RAM limits
 
 
 [params.fuseOpts]

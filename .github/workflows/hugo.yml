@@ -54,6 +54,7 @@ jobs:
         run: |
           hugo \
             --minify \
+            --maxWorkers 2 \
             --baseURL "https://value1.shop/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
