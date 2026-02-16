@@ -136,6 +136,12 @@
 </footer>
 {{- end }}
 
+{{- if .Params.footer_content }}
+<div class="post-content footer-content" style="margin-top: 25px; border-top: 1px solid var(--border); padding-top: 20px;">
+  {{ .Params.footer_content | markdownify }}
+</div>
+{{- end }}
+
 {{- end }}{{/* end profileMode */}}
 
 {{- end }}{{- /* end main */ -}}

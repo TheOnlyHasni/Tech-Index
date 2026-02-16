@@ -3,34 +3,45 @@ title: "Contact Us"
 layout: "page"
 hidemeta: true
 searchHidden: true
-description: "Have a technical question or need help with a tutorial? Contact Hassan Jan and the Tech Index team."
+description: "Need help with a tutorial or found an error? We're here to help."
 ---
 
-We value your feedback and are here to help you navigate the tutorials and tools featured on **Tech Index**. Whether you found a bug in a code snippet or have a suggestion for a new guide, we want to hear from you.
+# Contact Tech Index
 
-### Get in Touch
+**Need help with a tutorial or found an error? We're here to help.**
 
-For general inquiries, technical assistance, or collaboration requests, please reach out to us via our official support email:
+For technical inquiries, tutorial requests, or to report issues, contact our team using the information below.
 
-**Email:** [support@value1.shop](mailto:support@value1.shop)
+## Get in Touch
 
-### Response Time & Guidelines
+**Email:** support@value1.shop
 
-I personally review all technical inquiries alongside my small team of contributors. We strive to respond to all specific messages within **48 hours**.
+We review all messages and respond to technical inquiries within 48 hours.
 
-To help us assist you faster, please include:
+## What to Include in Your Message
 
-- The name of the **tutorial** or article you are referring to.
-- Relevant **error messages** or screenshots (if applicable).
-- The **operating system** or environment you are using (e.g., Windows, Linux, Android).
+To help us assist you quickly, please provide:
 
-### Connect on Social Media
+**For tutorial issues:**
 
-For quick updates or to follow my latest development projects at NUST, you can also find me here:
+- Tutorial title or URL
+- Your operating system (Windows, macOS, Linux, etc.)
+- Error messages or screenshots
+- What you expected vs what happened
 
-- **X (Twitter):** [@I_am_Hasnii](https://x.com/@I_am_Hasnii)
-- **GitHub:** [TheOnlyHasni](https://github.com/TheOnlyHasni)
+**For collaboration or general inquiries:**
+
+- Brief description of your request
+- Relevant background or context
+
+## Connect With Us
+
+Follow our latest updates and development work:
+
+**Twitter/X:** [@I_am_Hasnii](https://x.com/@I_am_Hasnii)  
+**GitHub:** [TheOnlyHasni](https://github.com/TheOnlyHasni)
 
 ---
 
-_Tech Index is based in Malakand, Pakistan. We appreciate your patience and support!_
+**Location:** Malakand, Pakistan  
+**Response time:** Within 48 hours for technical inquiries

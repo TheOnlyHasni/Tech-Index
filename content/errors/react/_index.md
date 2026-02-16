@@ -1,4 +1,5 @@
 ---
 title: "React Errors"
-description: "Fixes for common React.js errors — module resolution failures, hook violations, build issues, and more."
+group: "Development Tools"
+description: "Troubleshoot React, Next.js, and Webpack build and runtime errors."
 ---

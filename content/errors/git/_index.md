@@ -1,4 +1,5 @@
 ---
 title: "Git Errors"
-description: "Solutions for common Git errors — authentication failures, merge conflicts, repository issues, and more."
+group: "Development Tools"
+description: "Fix common Git errors like repository conflicts, authentication failures, and data loss."
 ---

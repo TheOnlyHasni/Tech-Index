@@ -1,4 +1,5 @@
 ---
 title: "Python Errors"
-description: "Fixes for common Python errors — pip install failures, import errors, virtual environment issues, and more."
+group: "Development Tools"
+description: "Fix Python syntax errors, pip installation issues, and environment conflicts."
 ---

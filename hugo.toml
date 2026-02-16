@@ -108,8 +108,8 @@ keys = ["title", "permalink", "summary", "content"]
 
 # Home-Info Mode
 [params.homeInfoParams]
-Title = "Welcome to Tech Index"
-Content = "Showing you how to get the most out of technology and solving problems you might face using it. You'll find tutorials and SaaS guides designed to help you learn modern software development and digital tools."
+Title = "Tech Index"
+Content = "**Practical tutorials and error solutions for developers and tech users.**\n\nWhen technology breaks or confuses you, we have the fix. Browse step-by-step guides, documented error solutions, and technical insights that actually work.\n\n**What you'll find here:**\n- Tested tutorials for web development, deployment, and system optimization\n- Documented error messages with verified solutions\n- Technical guides for modern tools and frameworks\n- Analysis of emerging tech trends and tools\n\nAll content is tested across multiple platforms before publication."
 
 
 # Social Proof

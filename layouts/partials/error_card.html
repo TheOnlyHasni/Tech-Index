@@ -1,0 +1,24 @@
+<a href="{{ .Permalink }}" class="error-card">
+  <div class="error-card-header">
+    {{- with .Params.fix_difficulty }}
+    <span class="fix-badge fix-{{ . }}">
+      {{- if eq . "quick" }}⚡ Quick Fix{{- end }}
+      {{- if eq . "medium" }}🔧 Medium Fix{{- end }}
+      {{- if eq . "complex" }}⏱️ Complex Fix{{- end }}
+    </span>
+    {{- end }}
+  </div>
+  <h3 class="error-card-title">{{ .Title }}</h3>
+  {{- with .Params.error_code }}
+  <code class="error-card-code">{{ . }}</code>
+  {{- end }}
+  <p class="error-card-summary">{{ .Description | truncate 120 }}</p>
+  <div class="error-card-meta">
+    {{- with .Params.software }}
+    <span class="error-meta-tag">{{ . }}</span>
+    {{- end }}
+    {{- range first 3 .Params.platforms }}
+    <span class="platform-badge">{{ . }}</span>
+    {{- end }}
+  </div>
+</a>

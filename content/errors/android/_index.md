@@ -1,4 +1,5 @@
 ---
 title: "Android Errors"
-description: "Solutions for common Android errors — app crashes, Google Play issues, storage problems, and more."
+group: "Mobile Platforms"
+description: "Troubleshoot Android app crashes, system loops, and connectivity issues."
 ---

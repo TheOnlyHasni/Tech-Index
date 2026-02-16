@@ -22,62 +22,84 @@
 </div>
 {{- end }}
 
-{{/* Show subcategory cards if this section has child sections */}}
-{{- $sections := .Sections }}
-{{- if gt (len $sections) 0 }}
-<div class="error-categories-grid">
-  {{- range $sections }}
-  <a href="{{ .Permalink }}" class="error-category-card">
-    <div class="error-category-info">
-      <span class="error-category-name">{{ .Title }}</span>
-      <span class="error-category-count">{{ len .RegularPagesRecursive }} {{ if eq (len .RegularPagesRecursive) 1 }}solution{{ else }}solutions{{ end }}</span>
-      {{- if .Description }}
-      <span class="error-category-desc">{{ .Description }}</span>
-      {{- end }}
-    </div>
-    <span class="error-category-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-    </span>
-  </a>
-  {{- end }}
-</div>
-{{- end }}
+{{/* Setup Pagination for all errors in this section/category */}}
+{{- $pages := .RegularPagesRecursive }}
+{{- $paginator := .Paginate $pages }}
 
-{{/* Show error pages as cards */}}
-{{- $pages := .RegularPages }}
-{{- if gt (len $pages) 0 }}
-<div class="error-cards-grid">
-  {{- range $pages }}
-  <a href="{{ .Permalink }}" class="error-card">
-    <div class="error-card-header">
-      {{- with .Params.fix_difficulty }}
-      <span class="fix-badge fix-{{ . }}">
-        {{- if eq . "quick" }}⚡ Quick Fix{{- end }}
-        {{- if eq . "medium" }}🔧 Medium Fix{{- end }}
-        {{- if eq . "complex" }}⏱️ Complex Fix{{- end }}
-      </span>
-      {{- end }}
+{{/* Main Error Repository Root Index Logic - Only on Page 1 */}}
+{{- if and (eq .Section "errors") .Parent.IsHome (eq $paginator.PageNumber 1) }}
+  
+  {{/* Browse by Category Grouping */}}
+  {{- $categories := .Sections }}
+  {{- if gt (len $categories) 0 }}
+  <section class="error-index-section">
+    <h2 class="error-section-title">Browse by Category</h2>
+    {{- range ($categories.GroupByParam "group") }}
+    <div class="error-category-group">
+      <h3 class="error-group-label">{{ .Key | default "Other Tools" }}</h3>
+      <div class="error-categories-grid">
+        {{- range .Pages }}
+        <a href="{{ .Permalink }}" class="error-category-card">
+          <div class="error-category-info">
+            <span class="error-category-name">{{ .Title }}</span>
+            <span class="error-category-count">{{ len .RegularPagesRecursive }} {{ if eq (len .RegularPagesRecursive) 1 }}solution{{ else }}solutions{{ end }}</span>
+          </div>
+          <span class="error-category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+        {{- end }}
+      </div>
     </div>
-    <h3 class="error-card-title">{{ .Title }}</h3>
-    {{- with .Params.error_code }}
-    <code class="error-card-code">{{ . }}</code>
     {{- end }}
-    <p class="error-card-summary">{{ .Description | truncate 120 }}</p>
-    <div class="error-card-meta">
-      {{- with .Params.software }}
-      <span class="error-meta-tag">{{ . }}</span>
-      {{- end }}
-      {{- range first 3 .Params.platforms }}
-      <span class="platform-badge">{{ . }}</span>
+  </section>
+  {{- end }}
+
+  {{/* Recently Added */}}
+  {{- $recent := first 4 (sort .RegularPagesRecursive "Date" "desc") }}
+  {{- if gt (len $recent) 0 }}
+  <section class="error-index-section">
+    <h2 class="error-section-title">Recently Added</h2>
+    <div class="error-cards-grid">
+      {{- range $recent }}
+      {{- partial "error_card.html" . }}
       {{- end }}
     </div>
-  </a>
+  </section>
   {{- end }}
+
+  {{/* Most Searched (based on verified_count) */}}
+  {{- $popular := first 4 (sort .RegularPagesRecursive "Params.verified_count" "desc") }}
+  {{- if gt (len $popular) 0 }}
+  <section class="error-index-section">
+    <h2 class="error-section-title">Most Searched</h2>
+    <div class="error-cards-grid">
+      {{- range $popular }}
+      {{- partial "error_card.html" . }}
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  <div class="error-index-section">
+    <h2 class="error-section-title">All Solutions</h2>
+  </div>
+{{- end }}
+
+{{/* The Main listing grid (All errors or Category errors) */}}
+{{- if gt (len $paginator.Pages) 0 }}
+<div class="error-cards-grid">
+  {{- range $paginator.Pages }}
+  {{- partial "error_card.html" . }}
+  {{- end }}
+</div>
+{{- else if not (and .Parent.IsHome (eq $paginator.PageNumber 1)) }}
+<div class="post-content">
+  <p>No solutions found in this section yet.</p>
 </div>
 {{- end }}
 
-{{/* Pagination */}}
-{{- $paginator := .Paginate (union .RegularPages .Sections) }}
+{{/* Pagination Footer */}}
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
   <nav class="pagination">
@@ -95,4 +117,11 @@
 </footer>
 {{- end }}
 
+{{- if .Params.footer_content }}
+<div class="post-content footer-content" style="margin-top: 25px; border-top: 1px solid var(--border); padding-top: 20px;">
+  {{ .Params.footer_content | markdownify }}
+</div>
+{{- end }}
+
 {{- end }}{{- /* end main */ -}}
+

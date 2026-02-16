@@ -3,44 +3,86 @@ title: "About Tech Index"
 layout: "page"
 hidemeta: true
 searchHidden: true
-description: "Meet Hassan Jan, the founder of Tech Index, and learn about our rigorous tech tutorial verification process."
+description: "Tech Index is a technical resource founded in 2025, providing tested tutorials and documented error solutions for developers and tech professionals."
 ---
 
-Welcome to **Tech Index**. My name is **Hassan Jan**; I am a Computer Science student at **NUST Islamabad** and the founder of this project.
+## Our Mission
 
-### The Story Behind the "Index"
+We bridge the gap between complex technology and practical implementation. Every tutorial is tested across multiple platforms. Every error solution is verified before publication.
 
-For years, I’ve been the "tech guy" for my friends, family, and neighbors. Whether it was calibrating a laptop screen, fixing a PC bottleneck, or explaining how to use a new app, I saw a recurring pattern: people weren't stuck because the technology was too hard, but because it wasn't explained in a way that made sense for them.
+Too many technical guides skip critical details, rely on outdated information, or provide theoretical advice that doesn't work in practice. We fix that.
 
-Even with the dawn of AI, many are intimidated by the sheer number of new tools and apps coming out each week. I created **Tech Index** to curate, simplify, and index the most useful parts of modern technology—turning confusion into productivity.
+## What We Cover
 
-### Expertise & Testing Process
+**Web Development**  
+Tutorials for Next.js, React, Node.js, Hugo, and modern deployment platforms. From local setup to production deployment.
 
-I am a self-taught Frontend Developer and a student of the MERN stack with one year of hands-on experience in Web Development. I don't just write about tech; I build with it. My daily workflow involves **Hugo, GoTemplate, React, and Node.js**, and I am a power user of modern AI models like **Gemini, Claude, and DeepSeek**.
+**Error Documentation**  
+The "I Fixed It" repository catalogs common development errors with tested solutions. Each entry includes the exact error message, causes, and ranked solutions by effectiveness.
 
-To ensure that every tutorial on this site actually works, we follow a strict **Verification Protocol**:
+**System Optimization**  
+Guides for Windows, macOS, Linux, Android, and iOS. Network troubleshooting, performance optimization, and software configuration.
 
-- **Multi-Platform Testing:** Every guide is individually tested on my Windows Laptop, Linux PC, and Android devices. I also utilize macOS and iOS environments for cross-platform accuracy to ensure our solutions work for everyone.
-- **Expert Review:** I am not flying solo. While I handle the research and coding, our more technical articles are reviewed for accuracy by a small circle of friends and—most importantly—my **mentors and teachers**.
-- **AI-Assisted, Human-Verified:** While AI is a powerful tool for research and drafting, every single word is reviewed, edited, and verified by me or my team to ensure technical accuracy and quality.
+**Technical Analysis**  
+Industry insights on development tools, platform changes, and emerging technologies that affect daily workflows.
 
-### Why a ".shop" Domain?
+## Quality Standards
 
-You might wonder why a tech blog uses a `.shop` extension. The answer is simple: I am a student building this project as economically as possible. I took the most affordable path to get this information online because, at the end of the day, it is the **value of the content** that matters more than the letters at the end of the URL.
+**Multi-platform testing**  
+Every tutorial is verified across Windows, Linux, macOS, Android, and iOS where applicable. We document which platforms each solution works on.
 
-### Mission Statement
+**Technical review**  
+Content is reviewed by experienced developers before publication. Complex tutorials receive additional verification from specialists in the relevant technology stack.
 
-Tech Index is built for:
+**Continuous updates**  
+As software changes and new versions release, we update tutorials to maintain accuracy. Each guide shows its last verification date.
 
-- **New Developers** who need to understand the "why" behind modern code.
-- **The Modern Audience** seeking to automate their lives and save time.
-- **Tech Enthusiasts** looking for hidden apps and utilities that the rest of the world has not yet noticed.
+## Our Approach
 
-Even if this site only helps ten people solve a problem they were stuck on, I consider it a success.
+**We focus on:**
+
+- Step-by-step instructions with complete code examples
+- Exact error messages and specific solutions
+- Troubleshooting sections for common issues
+- Before-and-after examples where relevant
+
+**We avoid:**
+
+- Generic advice without specific commands
+- Outdated tutorials that no longer work
+- Theoretical explanations without practical application
+- Incomplete solutions that skip critical steps
+
+## Technical Expertise
+
+Our content covers technologies including:
+
+**Frontend:** React, Next.js, Hugo, Tailwind CSS, responsive design  
+**Backend:** Node.js, Express, MongoDB, API development  
+**Deployment:** Vercel, Netlify, GitHub Pages, CI/CD workflows  
+**Tools:** Git, VS Code, terminal workflows, development environments  
+**Systems:** Cross-platform configuration and troubleshooting
+
+We actively develop with these technologies, ensuring tutorials reflect real-world usage and current best practices.
+
+## Why Tech Index Exists
+
+Developers and users encounter the same frustrating patterns:
+
+Documentation assumes too much prior knowledge. Tutorials skip setup steps. Forum answers are scattered across dozens of threads. Solutions that worked in 2022 fail in 2026.
+
+Tech Index consolidates tested solutions into clear, comprehensive guides. When you follow our tutorials, they work because we've already done the troubleshooting.
+
+## Contact
+
+**Email:** support@value1.shop  
+**Location:** Malakand, Pakistan
+
+For technical inquiries, tutorial requests, or collaboration opportunities, reach out using the contact information above.
+
+**Connect:**  
+[Twitter/X](https://x.com/@I_am_Hasnii) | [GitHub](https://github.com/TheOnlyHasni)
 
 ---
 
-**Contact Information:**
-P.O.Box 23060 GPO Malakand, Pakistan.  
-**Email:** [contact@value1.shop](mailto:contact@value1.shop)  
-_Want to collaborate? Visit our [Contact Page](/contact/)._ {{< rawhtml >}} <a href="{{< ref "contact.md" >}}" class="no-underline">🔗</a>{{< /rawhtml >}}
+_Founded 2025 | Based in Pakistan | Serving developers worldwide_

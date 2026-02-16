@@ -1,4 +1,5 @@
 ---
 title: "Chrome Errors"
-description: "Solutions for common Google Chrome errors — connection failures, DNS issues, cache problems, and more."
+group: "Browsers and Web"
+description: "Fix Google Chrome connection errors, extension crashes, and rendering issues."
 ---

@@ -5,25 +5,82 @@ hidemeta: true
 searchHidden: true
 ---
 
-Last updated: December 23, 2025
+**Last updated:** February 15, 2026
 
-The use of this website assumes your acceptance of these terms and conditions. You should NOT use Tech Index if you do NOT agree to abide by all that is stated within these terms and conditions on this page.
+By using Tech Index (`{{< baseurl >}}`), you agree to these terms. Read them carefully.
 
-### License
+## Acceptable Use
 
-If not otherwise indicated, the intellectual property rights to the contents of the Tech Index lie with the Tech Index and/or with the licensors of the Tech Index. All rights to the said property rights are hereby reserved. But you can access the same from the Tech Index and use the same solely for your purpose.
+You may:
 
-You shall not:
+- Access and use our tutorials for personal or professional learning
+- Share links to our content
+- Reference our content with proper attribution
 
-- Republish content from Tech Index
-- Sell, rent, or sublicense material on Tech Index
-- Copy, duplicate, or reproduce content from Tech Index
-- Redistribution of content from Tech Index
+You may not:
 
-### User Comments
+- Copy and republish our content elsewhere without permission
+- Use automated tools to scrape our entire site
+- Attempt to circumvent any security measures
+- Use our content for illegal purposes
 
-There are parts of this website where users are accorded an opportunity to make posts and exchange opinions and information in various sectors of this website. Tech Index does not filter, edit, publish, or review any of these Comments prior to them being on the website. These Comments also do not represent the opinions of Tech Index, its agents, and/or affiliates.
+## Content Accuracy
 
-#### Content Responsibility
+We test all tutorials before publication and update them regularly. However:
 
-We shall not be liable to you or any third-party user for any content that appears on your Website. You undertake to defend and hold us harmless from all claims that arise from your Website. No direct link shall appear on any Website that can be classified under libelous, obscene, and criminal acts or that violates any third-party right.
+**No guarantees:** While we verify solutions across multiple systems, your specific configuration may differ. Results may vary based on your environment.
+
+**Use at your own risk:** Always backup your data before making system changes or running commands from any tutorial site, including ours.
+
+**Not professional advice:** Our content is educational. For critical systems or business environments, consult qualified professionals.
+
+## Intellectual Property
+
+All content on Tech Index is owned by us or our licensors. This includes:
+
+- Written tutorials and guides
+- Code examples and snippets
+- Original diagrams and images
+- Error documentation
+
+You may use our code examples in your projects. For other content, contact us for permission.
+
+## User Contributions
+
+If we add comment sections or user submissions in the future:
+
+**Your content:** You retain ownership of content you submit, but grant us the right to display it on our site.
+
+**Responsibility:** You're responsible for the content you post. No spam, abuse, or illegal content.
+
+**Moderation:** We reserve the right to remove any content that violates these terms.
+
+## External Links
+
+Our site contains links to external resources and documentation. We don't control those sites and aren't responsible for their content or privacy practices.
+
+## Liability Limitations
+
+To the maximum extent permitted by law:
+
+We're not liable for damages from using our tutorials, including:
+
+- System errors or data loss from following our guides
+- Downtime or service interruptions
+- Inaccuracies in content despite our testing efforts
+
+Our total liability won't exceed the amount you paid to use our site (currently zero, as it's free).
+
+## Changes to Terms
+
+We may update these terms as our site evolves. Continued use after changes indicates acceptance of new terms.
+
+## Termination
+
+We reserve the right to restrict access to anyone who violates these terms.
+
+## Contact
+
+Questions about these terms? Email us at support@value1.shop
+
+---
