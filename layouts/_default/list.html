@@ -73,7 +73,7 @@
   {{- $img := (resources.Get $cover.image) | default (.Resources.GetMatch $cover.image) }}
   {{- if $img }}
   {{- /* Optimize thumbnail: 800x450 for grid, lower quality for speed */}}
-  {{- $thumb := $img.Fill "800x450 q75 webp" }}
+  {{- $thumb := $img.Fill (printf "%dx%d q%d webp" (site.Params.imaging.thumb_width | default 800) (site.Params.imaging.thumb_height | default 450) (site.Params.imaging.quality_thumb | default 75)) }}
   {{- $cover_image = $thumb.Permalink }}
   {{- end }}
   {{- end }}
@@ -99,7 +99,7 @@
       </header>
       {{- if (ne (.Param "hideSummary") true) }}
       <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+        <p>{{ .Description | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
       </div>
       {{- end }}
       {{- if not (.Param "hideMeta") }}
@@ -134,12 +134,6 @@
     {{- end }}
   </nav>
 </footer>
-{{- end }}
-
-{{- if .Params.footer_content }}
-<div class="post-content footer-content" style="margin-top: 25px; border-top: 1px solid var(--border); padding-top: 20px;">
-  {{ .Params.footer_content | markdownify }}
-</div>
 {{- end }}
 
 {{- end }}{{/* end profileMode */}}

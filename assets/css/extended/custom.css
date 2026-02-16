@@ -615,27 +615,25 @@ body {
 }
 
 .entry-cover img {
-  max-height: 400px;
-  /* Adjust this value to increase/decrease size */
+  max-height: 500px;
   width: auto;
   max-width: 100%;
   margin: 0 auto;
   object-fit: contain;
-  /* Prevents cropping */
-  filter: drop-shadow(8px 8px 8px rgb(88, 88, 88)) !important;
   border-radius: 16px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Utility Class for Centered Images with 400px Height */
 .center-img-400 {
   display: block !important;
   border-radius: 16px !important;
-  margin: 1em auto !important;
-  height: 500px !important;
+  margin: 1.5em auto !important;
+  max-height: 400px !important;
   width: auto !important;
   object-fit: contain !important;
   max-width: 100%;
-  filter: drop-shadow(0 10px 8px rgb(88, 88, 88)) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Code Block Copy Button Styling */

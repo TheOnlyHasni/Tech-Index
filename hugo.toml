@@ -83,19 +83,33 @@ name = "Search"
 url = "/search/"
 weight = 50
 
-[params]
-description = "High-utility tech tutorials and SaaS guides designed to help you master modern software development and digital tools."
-author = "Tech Index"
-defaultTheme = "auto"
-env = "production"
-mainSections = ["posts", "tutorials", "errors"]
+[imaging]
+  quality = 90
+  resampleFilter = "lanczos"
+  anchor = "smart"
+  hint = "picture"
 
-# AdSense/SEO Features
-ShowReadingTime = true
-ShowShareButtons = true
-ShowCodeCopyButtons = true
-ShowBreadCrumbs = true
-ShowPostNavLinks = true
+[params]
+  description = "High-utility tech tutorials and SaaS guides designed to help you master modern software development and digital tools."
+  author = "Tech Index"
+  defaultTheme = "auto"
+  mainSections = ["posts", "tutorials", "errors"]
+
+  # AdSense/SEO Features
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+
+  # Global Image Quality Controls
+  [params.imaging]
+    quality = 88           # High quality but smaller files than 90
+    quality_thumb = 75     # Faster loading for grids
+    thumb_width = 720      # Optimized for mobile/desktop grid
+    thumb_height = 405     # 16:9 ratio
+    max_content_width = 1600 # Sufficient for Retina in 1200px container (1.3x)
+
 
 [params.fuseOpts]
 isCaseSensitive = false

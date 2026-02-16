@@ -11,9 +11,9 @@
   {{- /* Optimize if image is too large or not webp */}}
   {{- if or (gt $img.Width 1200) (ne $img.MediaType.SubType "webp") }}
     {{- if gt $img.Width 1200 }}
-      {{- $processed = $img.Resize "1200x webp q85" }}
+      {{- $processed = $img.Resize (printf "%dx webp q%d" (site.Params.imaging.max_content_width | default 1200) (site.Params.imaging.quality | default 85)) }}
     {{- else }}
-      {{- $processed = $img.Resize (printf "%dx%d webp q85" $img.Width $img.Height) }}
+      {{- $processed = $img.Resize (printf "%dx%d webp q%d" $img.Width $img.Height (site.Params.imaging.quality | default 85)) }}
     {{- end }}
   {{- end }}
   <img src="{{ $processed.Permalink }}" 

@@ -15,7 +15,7 @@
     {{- /* We are not using the .Param.cover.relative to decide the location of image */}}
     {{- /* If we have the image in pageBundle or globalResources we can process the image */}}
 
-    {{- $sizes := (slice "360" "480" "720" "1080" "1500" "2000" "2500") }}
+    {{- $sizes := (slice "480" "720" "1024" "1600") }}
     {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
     {{- if hugo.IsExtended -}}
     {{- $processableFormats = $processableFormats | append "webp" -}}
@@ -33,13 +33,14 @@
         {{- if $cover -}}
         {{/* i.e it is present in page bundle */}}
         {{- if (and (in $processableFormats $cover.MediaType.SubType) ($responsiveImages) (eq $prod true)) }}
+        {{- $quality := (site.Params.imaging.quality | default 85) }}
         <img loading="{{$loading}}" srcset='{{- range $size := $sizes -}}
                             {{- if (ge $cover.Width $size) }}
-                                {{- printf "%s %s" (($cover.Resize (printf "%sx webp q85" $size)).Permalink) (printf "%sw," $size) }}
+                                {{- printf "%s %s" (($cover.Resize (printf "%sx webp q%d" $size $quality)).Permalink) (printf "%sw," $size) }}
                             {{- end }}
                         {{- end }}
-                        {{- printf "%s %dw" (($cover.Resize (printf "%dx webp q85" $cover.Width)).Permalink) ($cover.Width) }}' 
-            src="{{ ($cover.Resize (printf "%dx webp q85" $cover.Width)).Permalink }}"
+                        {{- printf "%s %dw" (($cover.Resize (printf "%dx webp q%d" $cover.Width $quality)).Permalink) ($cover.Width) }}' 
+            src="{{ ($cover.Resize (printf "%dx webp q%d" $cover.Width $quality)).Permalink }}"
             sizes="(min-width: 768px) 1200px, 100vw" width="{{ $cover.Width }}" height="{{ $cover.Height }}"
             alt="{{ $alt }}">
         {{- else }}{{/* Unprocessable image or responsive images disabled */}}

@@ -1,14 +1,10 @@
 ---
-title: "Contact Us"
+title: "Contact Tech Index"
 layout: "page"
 hidemeta: true
 searchHidden: true
 description: "Need help with a tutorial or found an error? We're here to help."
 ---
-
-# Contact Tech Index
-
-**Need help with a tutorial or found an error? We're here to help.**
 
 For technical inquiries, tutorial requests, or to report issues, contact our team using the information below.
 
