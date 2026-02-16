@@ -8,6 +8,15 @@ body {
   background-color: var(--theme);
 }
 
+/* Suppress transitions on initial load to prevent background flash */
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 /* Root Variables for High Contrast & Aesthetics */
 :root {
   --theme: #fdfdfd;
@@ -23,7 +32,8 @@ body {
   --nav-active: #000;
 }
 
-.dark {
+.dark,
+:root[data-theme="dark"] {
   --theme: #121212;
   --header-bg: rgba(29, 29, 30, 0.8);
   --header-border: rgba(51, 51, 51, 0.5);
@@ -66,10 +76,13 @@ body {
   display: flex;
   align-items: center;
 }
-
+.nav a {
+    padding: 6px 8px;
+    margin: 6px auto 6px auto ;
+  }
 @media (max-width: 768px) {
   .nav a {
-    padding: 8px 12px;
+    padding: 4px 6px;
   }
 }
 
@@ -1264,40 +1277,39 @@ body {
 
 /* Error Index Dynamic Sections */
 .error-index-section {
-    margin-top: 50px;
-    padding-top: 40px;
-    border-top: 1px solid var(--border);
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
 }
 
 .error-index-section:first-of-type {
-    border-top: none;
-    margin-top: 0;
-    padding-top: 0;
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .error-section-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 25px;
-    color: var(--primary);
-    letter-spacing: -0.02em;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--primary);
+  letter-spacing: -0.02em;
 }
 
 .error-category-group {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .error-group-label {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: var(--secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    opacity: 0.7;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
 }
 
 .error-category-group:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-

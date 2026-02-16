@@ -14,8 +14,6 @@ reviewed_by: ""
 reviewer_link: ""
 ---
 
-# 10 Essential Notion Templates For Project Management [2026]
-
 > **TL;DR**
 > Need to manage projects in Notion? Here are the 10 essential templates you need to know:
 >

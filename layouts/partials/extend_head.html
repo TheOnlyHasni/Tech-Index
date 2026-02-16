@@ -1,33 +1,64 @@
+<script>
+  // Early theme initialization to prevent Flash of Unstyled Content (FOUC)
+  (function () {
+    const theme =
+      localStorage.getItem("pref-theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light");
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+    // Add preload class to body to suppress transitions during load
+    document.documentElement.classList.add("preload");
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        document.documentElement.classList.remove("preload");
+      }, 10);
+    });
+  })();
+</script>
+
 {{- if hugo.IsProduction -}}
 <!-- Ezoic Privacy script  -->
-<script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
-<script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+<script
+  data-cfasync="false"
+  src="https://cmp.gatekeeperconsent.com/min.js"
+></script>
+<script
+  data-cfasync="false"
+  src="https://the.gatekeeperconsent.com/cmp.min.js"
+></script>
 
 <!-- Ezoic Header Script  -->
 <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
 <script>
-    window.ezstandalone = window.ezstandalone || {};
-    ezstandalone.cmd = ezstandalone.cmd || [];
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
 </script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVDR3084EX"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-DVDR3084EX"
+></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  gtag('config', 'G-DVDR3084EX');
+  gtag("config", "G-DVDR3084EX");
 </script>
 
 <!-- Google AdSense Code -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3244893243403717"
-     crossorigin="anonymous"></script>
-{{- end -}}
-
-
-{{- if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
-  {{- if or (eq .Data.Plural "tags") (eq .Data.Singular "tag") (eq .Type "tags") -}}
-<meta name="robots" content="noindex, follow">
-  {{- end -}}
-{{- end -}}
+<script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3244893243403717"
+  crossorigin="anonymous"
+></script>
+{{- end -}} {{- if or (eq .Kind "taxonomy") (eq .Kind "term") -}} {{- if or (eq
+.Data.Plural "tags") (eq .Data.Singular "tag") (eq .Type "tags") -}}
+<meta name="robots" content="noindex, follow" />
+{{- end -}} {{- end -}}
