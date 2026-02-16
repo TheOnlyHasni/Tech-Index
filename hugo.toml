@@ -101,6 +101,8 @@ weight = 50
   ShowCodeCopyButtons = true
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
+  ShowToc = true
+  TocOpen = true
 
   # Global Image Quality Controls
   [params.imaging]

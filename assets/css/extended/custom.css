@@ -1313,3 +1313,299 @@ body {
 .error-category-group:last-child {
   margin-bottom: 0;
 }
+
+/* Sticky Sidebar ToC Layout (Left Side) */
+@media (min-width: 845px) {
+  .post-single {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Allow sidebar column to expand on resize */
+    gap: 40px;
+    align-items: start;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Prevent headings from being hidden by sticky header */
+  h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+    scroll-margin-top: 100px;
+  }
+
+  /* Header and Cover span FULL width at the top */
+  .post-header,
+  .entry-cover {
+    grid-column: 1 / -1 !important;
+    margin-bottom: 30px;
+    max-width: 800px;
+    justify-self: center;
+    width: 100%;
+    grid-row: auto;
+  }
+
+  /* Article Content and Footer in Column 2, starting same row as sidebar */
+  .post-content,
+  .post-footer,
+  .error-verification-box,
+  .error-meta-bar,
+  .related-errors,
+  .post-description {
+    grid-column: 2;
+    grid-row: auto;
+  }
+  
+  .post-content {
+    grid-row: 3; /* Anchor next to Sidebar */
+  }
+
+  .toc {
+    grid-column: 1; /* Sidebar on Left */
+    grid-row: 3 / 20; /* Keep it on the left spanning multiple content rows */
+    position: sticky;
+    top: 80px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    margin: 0 !important;
+    padding: 18px !important;
+    padding-right: 0px !important;
+    border-radius: 12px !important;
+    border: 1px solid var(--header-border) !important;
+    box-shadow: var(--entry-shadow) !important;
+    z-index: 10;
+    font-size: 0.85rem !important; /* Smaller, more readable sidebar font */
+    width: 280px; /* Default width */
+    min-width: 180px;
+    max-width: 500px;
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow: visible !important; /* Allow resizer to stay at the absolute edge */
+  }
+  
+  /* Make the inner part of TOC scrollable instead of the container */
+  .toc details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .toc .inner {
+    max-height: calc(100vh - 180px);
+    overflow-y: auto !important;
+  }
+
+.toc .inner{
+  padding-right: 0px !important;
+  padding-left: 2px !important;
+  border-right: 0px !important;
+  margin-right: 0px !important;
+}
+
+  /* Browser Resizer Hiding */
+  .toc::-webkit-resizer,
+  .toc *::-webkit-resizer,
+  ::-webkit-resizer {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    -webkit-appearance: none !important;
+  }
+
+  .resizer {
+    position: absolute;
+    top: 0;
+    right: -2px; /* Slight overlap for better hit area */
+    width: 8px;
+    height: 100%;
+    cursor: col-resize;
+    background: transparent;
+    z-index: 100;
+    transition: background 0.2s;
+  }
+
+  .resizer:hover, .resizer.resizing {
+    background: rgba(var(--primary), 0.2) !important;
+    border-right: 2px solid var(--nav-active);
+  }
+  
+  body.is-resizing {
+    cursor: col-resize !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+  }
+
+  
+  .toc li a.active {
+    color: var(--nav-active) !important;
+    font-weight: 700;
+    border-left: 2px solid var(--nav-active);
+    padding-left: 8px;
+    transition: all 0.2s ease;
+    background: rgba(var(--primary), 0.05);
+    border-radius: 4px;
+  }
+  
+  .toc li a {
+    border-left: 2px solid transparent;
+    padding: 2px 8px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  /* Backgrounds for Glass Effect - Using transparent hex/rgba correctly */
+  :root[data-theme='dark'] .toc {
+    background-color: rgba(29, 30, 32, 0.8) !important;
+    backdrop-filter: blur(12px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+  }
+  
+  :root[data-theme='light'] .toc {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(12px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+  }
+
+  
+  /* If ToC is missing, collapse the grid */
+  .post-single:not(:has(.toc)) {
+    display: block;
+    max-width: 800px;
+  }
+
+  .toc details summary {
+    cursor: pointer !important;
+    list-style: none;
+    font-weight: 600;
+    padding: 5px 0;
+    user-select: none;
+  }
+  
+  .toc details {
+    border: none !important;
+    margin: 0 !important;
+  }
+
+  .toc .inner {
+    padding: 10px 0 0 0 !important;
+  }
+  
+  .toc ul {
+    margin-top: 5px !important;
+    padding-left: 19px !important;
+  }
+
+  .toc li {
+    margin-bottom: 8px !important;
+  }
+  
+  .toc li a {
+    color: var(--nav-link);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .toc li a:hover {
+    color: var(--nav-active);
+  }
+}
+
+/* Force remove zoom cursor from all post content and images */
+.post-content img, 
+.post-content figure, 
+.post-content a > img,
+img[loading="lazy"],
+.entry-cover img {
+  cursor: default !important;
+}
+
+/* Ensure interactive elements still have correct cursors */
+a, button, summary, [role="button"], .resizer, .toc-toggle {
+  cursor: pointer !important;
+}
+@media (max-width: 844px) {
+  .toc {
+    display: block !important;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background: var(--header-bg) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    z-index: 2000;
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    overflow-y: auto !important; /* Fixed: Allow scrolling on mobile */
+    pointer-events: all !important;
+  }
+
+
+  .toc.open {
+    right: 0;
+  }
+
+  .toc-toggle {
+    display: flex !important; /* Force flex for alignment */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toc-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1999;
+  }
+
+  .toc-overlay.active {
+    display: block;
+  }
+}
+
+/* Hamburger Button Settings */
+.toc-toggle {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px; /* Kept on right for thumb accessibility */
+  width: 50px;
+  height: 50px;
+  background: var(--nav-active);
+  color: var(--theme);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 2001;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.toc-toggle:active {
+  transform: scale(0.9);
+}
+
+.toc-toggle svg {
+  width: 24px;
+  height: 24px;
+  margin: 13px;
+}
+
+/* Scrollbar for ToC */
+.toc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background: var(--header-border);
+  border-radius: 10px;
+}
+

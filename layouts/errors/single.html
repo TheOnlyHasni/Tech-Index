@@ -54,8 +54,12 @@
     {{- end }}
   </header>
 
-  {{- if (.Param "ShowToc") }} {{- partial "toc.html" . }} {{- end }} {{- if
-  .Content }}
+  {{- if (.Param "ShowToc") }}
+    {{- partial "toc.html" . }}
+    {{- partial "sidebar-toggle.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }} {{- partial
     "anchored_headings.html" .Content -}} {{- else }}{{ .Content }}{{ end }}

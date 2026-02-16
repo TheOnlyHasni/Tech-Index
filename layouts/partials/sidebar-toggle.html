@@ -1,0 +1,153 @@
+{{- if (.Param "ShowToc") -}}
+<!-- ToC Hamburger Toggle (Mobile Only) -->
+<button class="toc-toggle" id="toc-toggle" aria-label="Toggle Table of Contents">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+</button>
+
+<div class="toc-overlay" id="toc-overlay"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toc = document.querySelector('.toc');
+        const inner = toc ? toc.querySelector('.inner') : null;
+        if (!toc || !inner) return;
+
+        // --- 1. Custom Horizontal Resizing ---
+        const resizer = document.createElement('div');
+        resizer.className = 'resizer';
+        toc.appendChild(resizer);
+
+        let isResizing = false;
+
+        resizer.addEventListener('mousedown', function(e) {
+            isResizing = true;
+            resizer.classList.add('resizing');
+            document.body.classList.add('is-resizing');
+            e.preventDefault();
+        });
+
+        window.addEventListener('mousemove', function(e) {
+            if (!isResizing) return;
+            const width = e.clientX - toc.getBoundingClientRect().left;
+            if (width > 200 && width < 600) {
+                toc.style.width = width + 'px';
+            }
+        });
+
+        window.addEventListener('mouseup', function() {
+            if (!isResizing) return;
+            isResizing = false;
+            resizer.classList.remove('resizing');
+            document.body.classList.remove('is-resizing');
+        });
+
+        // --- 2. Advanced Scroll-Spy Logic (Hybrid Approach) ---
+        const links = Array.from(toc.querySelectorAll('a'));
+        const sections = links.map(link => {
+            // Robust ID extraction
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                const id = decodeURIComponent(href.substring(1));
+                const section = document.getElementById(id);
+                if (section) return { link, section };
+            }
+            return null;
+        }).filter(s => s !== null);
+
+        let activeLink = null;
+
+        function updateActiveLink(newActiveLink) {
+            if (activeLink !== newActiveLink) {
+                if (activeLink) activeLink.classList.remove('active');
+                if (newActiveLink) {
+                    newActiveLink.classList.add('active');
+                    
+                    // Auto-scroll the inner list
+                    const innerRect = inner.getBoundingClientRect();
+                    const linkRect = newActiveLink.getBoundingClientRect();
+                    
+                    // Only scroll if the link is out of view
+                    if (linkRect.top < innerRect.top || linkRect.bottom > innerRect.bottom) {
+                        newActiveLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+                activeLink = newActiveLink;
+            }
+        }
+
+        // Use IntersectionObserver for performance, fallback to scroll event
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                // Determine which section is currently most visible
+                // We use a simplified logic: if a section intersects, checks if it's hitting the top.
+                // However, for TOC, "visible" often means "top of screen".
+                // A better approach often used is simply finding the top-most visible one via scroll check in requestAnimationFrame
+                checkScrollPosition();
+            }, {
+                rootMargin: "-10% 0px -80% 0px", // Focus area near the top
+                threshold: 0
+            });
+
+            sections.forEach(item => observer.observe(item.section));
+        }
+
+        function checkScrollPosition() {
+            // 100px offset for sticky header
+            const triggerPoint = window.innerHeight * 0.2; 
+            
+            let current = null;
+            
+            for (let i = 0; i < sections.length; i++) {
+                const rect = sections[i].section.getBoundingClientRect();
+                
+                // If the top of the section is above the trigger point (near top of screen)
+                // AND the bottom is still in view (or below), it's a candidate.
+                // But simplified: The last section whose top crossed the trigger point is the active one.
+                if (rect.top < triggerPoint) {
+                    current = sections[i].link;
+                } else {
+                    // Check if we haven't found a current one yet (meaning we are at the very top)
+                    // If rect.top > triggerPoint, we stop, because subsequent sections are further down.
+                    break;
+                }
+            }
+            
+            updateActiveLink(current);
+        }
+
+        window.addEventListener('scroll', () => {
+             // Throttling via rAF
+             requestAnimationFrame(checkScrollPosition);
+        }, { passive: true });
+        
+        // Initial Check
+        checkScrollPosition();
+
+        // --- 3. Mobile Hamburger Logic ---
+        const toggle = document.getElementById('toc-toggle');
+        const overlay = document.getElementById('toc-overlay');
+        const html = document.documentElement;
+
+        if (toggle && overlay) {
+            function toggleToc() {
+                toc.classList.toggle('open');
+                overlay.classList.toggle('active');
+                html.style.overflow = toc.classList.contains('open') ? 'hidden' : '';
+            }
+
+            toggle.addEventListener('click', toggleToc);
+            overlay.addEventListener('click', toggleToc);
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 845) toggleToc();
+                });
+            });
+        }
+    });
+</script>
+{{- end -}}
