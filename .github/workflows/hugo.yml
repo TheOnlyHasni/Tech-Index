@@ -51,10 +51,11 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
+          GOMAXPROCS: 1
         run: |
           hugo \
             --minify \
-            --maxWorkers 2 \
+            --gc \
             --baseURL "https://value1.shop/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
