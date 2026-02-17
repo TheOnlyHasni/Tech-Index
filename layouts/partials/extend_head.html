@@ -1,5 +1,6 @@
-<script>
+<script data-cfasync="false">
   // Standardized theme initialization to prevent Flash of Unstyled Content (FOUC)
+  // Bypassing Cloudflare Rocket Loader with data-cfasync="false" is critical for head execution.
   (function () {
     const savedTheme = localStorage.getItem("pref-theme") || "system";
     const html = document.documentElement;
@@ -24,12 +25,15 @@
 
     // Add preload class to suppress transitions during initial paint
     html.classList.add("preload");
-    window.addEventListener("DOMContentLoaded", function () {
-      // Small timeout ensures the browser has rendered the initial state before enabling transitions
-      setTimeout(function () {
-        html.classList.remove("preload");
-      }, 50);
-    });
+    
+    // Removal of preload class
+    if (document.readyState === 'loading') {
+      window.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () { html.classList.remove("preload"); }, 80);
+      });
+    } else {
+      setTimeout(function () { html.classList.remove("preload"); }, 80);
+    }
   })();
 </script>
 

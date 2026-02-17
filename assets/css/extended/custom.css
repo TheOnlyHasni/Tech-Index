@@ -6,7 +6,8 @@ html {
               color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Suppress all transitions on initial load to prevent background flash (FOUC) */
+/* Suppress transitions on initial load to prevent background flash (FOUC) */
+/* We only target transitions; disabling animations can hide content relying on entrance effects */
 .preload,
 .preload * {
   -webkit-transition: none !important;
@@ -14,7 +15,6 @@ html {
   -ms-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
-  animation: none !important;
 }
 
 /* Root Variables for High Contrast & Aesthetics */
