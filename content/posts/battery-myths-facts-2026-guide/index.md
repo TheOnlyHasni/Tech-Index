@@ -1,6 +1,7 @@
 ---
 title: "Battery Myths And Facts 2026: The Truth About Phone & Laptop Battery Care"
-date: "2026-02-16"
+date: "2025-12-14"
+lastmod: "2026-02-16"
 draft: false
 description: "12 battery myths debunked: overnight charging is safe, closing apps wastes energy, and the 20-80% rule actually works. Science-backed facts about modern battery care in 2026"
 tags:

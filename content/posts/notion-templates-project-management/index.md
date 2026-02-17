@@ -1,6 +1,7 @@
 ---
 title: "10 Essential Notion Templates For Project Management [2026]"
-date: "2026-02-16"
+date: "2026-01-02"
+lastmod: "2026-02-16"
 draft: false
 description: "Stop wasting time building from scratch. These 10 essential Notion templates give you proven project management systems ready to customize and deploy today."
 tags: ["Notion", "Project Management", "Productivity", "Templates"]

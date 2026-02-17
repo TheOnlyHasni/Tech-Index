@@ -1,6 +1,7 @@
 ---
 title: "How To Deploy Next.js With Environment Variables To Vercel"
 date: "2026-02-16"
+lastmod: ""
 draft: false
 description: "Deploy Next.js to Vercel with properly configured environment variables. Secure your API keys and manage multiple environments with confidence. Complete guide."
 tags:

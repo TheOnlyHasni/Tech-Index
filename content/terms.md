@@ -3,6 +3,9 @@ title: "Terms of Service"
 layout: "page"
 hidemeta: true
 searchHidden: true
+date: "2025-12-02"
+lastmod: "2026-02-15"
+showToc: false
 ---
 
 **Last updated:** February 15, 2026

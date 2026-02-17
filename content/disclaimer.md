@@ -2,6 +2,9 @@
 title: "Disclaimer"
 layout: "page"
 hidemeta: true
+date: "2025-12-02"
+lastmod: "2026-02-15"
+showToc: false
 searchHidden: true
 ---
 

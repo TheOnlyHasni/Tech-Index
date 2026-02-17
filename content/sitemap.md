@@ -7,6 +7,7 @@ ShowReadingTime: false
 # Exclude from XML sitemap to avoid redundancy
 sitemap:
   priority: 0.1
+showToc: false
 ---
 
 {{< html-sitemap >}}

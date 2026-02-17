@@ -77,9 +77,9 @@ body {
   align-items: center;
 }
 .nav a {
-    padding: 6px 8px;
-    margin: 6px auto 6px auto ;
-  }
+  padding: 6px 8px;
+  margin: 6px auto 6px auto;
+}
 @media (max-width: 768px) {
   .nav a {
     padding: 4px 6px;
@@ -1102,7 +1102,7 @@ body {
 
 .fix-quick {
   background: rgba(34, 197, 94, 0.12);
-  color: #16a34a;
+  color: #0b682d;
   border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
@@ -1140,7 +1140,7 @@ body {
 .platform-badge {
   display: inline-block;
   padding: 2px 10px;
-  background: rgba(99, 102, 241, 0.08);
+  background: rgba(86, 88, 207, 0.08);
   border: 1px solid rgba(99, 102, 241, 0.15);
   border-radius: 12px;
   font-size: 11px;
@@ -1182,19 +1182,38 @@ body {
   flex-wrap: wrap;
 }
 
-.error-meta-item code {
-  padding: 2px 8px;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  border-radius: 6px;
-  color: #6366f1;
-  font-size: 13px;
+code {
+  /* Font & Typography */
+  font-family:
+    "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  font-weight: 360;
+  white-space: pre-wrap;
+  -webkit-font-smoothing: antialiased;
+
+  /* Background: hsl(var(--text-200) / .05) */
+  /* text-200 is 50 9% 73.7% */
+  background-color: #d4d4d4ad;
+
+  /* Border: 0.5px hsl(var(--border-300) / .15) */
+  /* border-300 is 51 16.5% 84.5% */
+  border: 0.5px solid hsla(0, 0%, 0%, 0.562);
+  border-radius: 0.4rem;
+
+  /* Text Color: hsl(var(--danger-000)) */
+  /* danger-000 is 0 98.4% 75.1% */
+  color: hsl(0, 0%, 0%);
+
+  /* Spacing */
+  padding: 1px 0.25rem;
+  box-sizing: border-box;
 }
 
-.dark .error-meta-item code {
-  background: rgba(129, 140, 248, 0.1);
-  border-color: rgba(129, 140, 248, 0.2);
-  color: #a5b4fc;
+.dark code {
+  background-color: hsla(50, 9%, 73.7%, 0.05);
+  border: 0.5px solid hsla(51, 16.5%, 84.5%, 0.15);
+  color: hsl(0, 98.4%, 75.1%);
 }
 
 /* Verification Box */
@@ -1327,7 +1346,12 @@ body {
   }
 
   /* Prevent headings from being hidden by sticky header */
-  h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+  h1[id],
+  h2[id],
+  h3[id],
+  h4[id],
+  h5[id],
+  h6[id] {
     scroll-margin-top: 100px;
   }
 
@@ -1352,7 +1376,7 @@ body {
     grid-column: 2;
     grid-row: auto;
   }
-  
+
   .post-content {
     grid-row: 3; /* Anchor next to Sidebar */
   }
@@ -1360,8 +1384,6 @@ body {
   .toc {
     grid-column: 1; /* Sidebar on Left */
     grid-row: 3 / 20; /* Keep it on the left spanning multiple content rows */
-    position: sticky;
-    top: 80px;
     max-height: calc(100vh - 100px);
     overflow-y: auto;
     margin: 0 !important;
@@ -1376,12 +1398,16 @@ body {
     min-width: 180px;
     max-width: 500px;
     position: sticky;
-    top: 80px;
+    top: 100px;
     display: flex;
     flex-direction: column;
     overflow: visible !important; /* Allow resizer to stay at the absolute edge */
   }
-  
+  @media (max-width: 1015px) {
+    .toc {
+      top: 185px;
+    }
+  }
   /* Make the inner part of TOC scrollable instead of the container */
   .toc details {
     display: flex;
@@ -1389,18 +1415,18 @@ body {
     height: 100%;
     overflow: hidden;
   }
-  
+
   .toc .inner {
     max-height: calc(100vh - 180px);
     overflow-y: auto !important;
   }
 
-.toc .inner{
-  padding-right: 0px !important;
-  padding-left: 2px !important;
-  border-right: 0px !important;
-  margin-right: 0px !important;
-}
+  .toc .inner {
+    padding-right: 0px !important;
+    padding-left: 2px !important;
+    border-right: 0px !important;
+    margin-right: 0px !important;
+  }
 
   /* Browser Resizer Hiding */
   .toc::-webkit-resizer,
@@ -1424,18 +1450,18 @@ body {
     transition: background 0.2s;
   }
 
-  .resizer:hover, .resizer.resizing {
+  .resizer:hover,
+  .resizer.resizing {
     background: rgba(var(--primary), 0.2) !important;
     border-right: 2px solid var(--nav-active);
   }
-  
+
   body.is-resizing {
     cursor: col-resize !important;
     user-select: none !important;
     -webkit-user-select: none !important;
   }
 
-  
   .toc li a.active {
     color: var(--nav-active) !important;
     font-weight: 700;
@@ -1445,7 +1471,7 @@ body {
     background: rgba(var(--primary), 0.05);
     border-radius: 4px;
   }
-  
+
   .toc li a {
     border-left: 2px solid transparent;
     padding: 2px 8px;
@@ -1454,44 +1480,45 @@ body {
     box-sizing: border-box;
   }
 
-
   /* Backgrounds for Glass Effect - Using transparent hex/rgba correctly */
-  :root[data-theme='dark'] .toc {
+  :root[data-theme="dark"] .toc {
     background-color: rgba(29, 30, 32, 0.8) !important;
     backdrop-filter: blur(12px) saturate(180%) !important;
     -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
   }
-  
-  :root[data-theme='light'] .toc {
+
+  :root[data-theme="light"] .toc {
     background-color: rgba(255, 255, 255, 0.8) !important;
     backdrop-filter: blur(12px) saturate(180%) !important;
     -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
   }
 
-  
   /* If ToC is missing, collapse the grid */
   .post-single:not(:has(.toc)) {
     display: block;
     max-width: 800px;
   }
 
-  .toc details summary {
+  .toc details summary::marker {
     cursor: pointer !important;
     list-style: none;
     font-weight: 600;
     padding: 5px 0;
     user-select: none;
   }
-  
+  summary::marker {
+    cursor: pointer !important;
+  }
+
   .toc details {
     border: none !important;
     margin: 0 !important;
   }
 
   .toc .inner {
-    padding: 10px 0 0 0 !important;
+    padding: 10px 8px 0 0px !important;
   }
-  
+
   .toc ul {
     margin-top: 5px !important;
     padding-left: 19px !important;
@@ -1500,7 +1527,7 @@ body {
   .toc li {
     margin-bottom: 8px !important;
   }
-  
+
   .toc li a {
     color: var(--nav-link);
     text-decoration: none;
@@ -1513,8 +1540,8 @@ body {
 }
 
 /* Force remove zoom cursor from all post content and images */
-.post-content img, 
-.post-content figure, 
+.post-content img,
+.post-content figure,
 .post-content a > img,
 img[loading="lazy"],
 .entry-cover img {
@@ -1522,8 +1549,11 @@ img[loading="lazy"],
 }
 
 /* Ensure interactive elements still have correct cursors */
-a, button, summary, [role="button"], .resizer, .toc-toggle {
-  cursor: pointer !important;
+button,
+[role="button"],
+.resizer,
+.toc-toggle {
+  cursor: col-resize;
 }
 @media (max-width: 844px) {
   .toc {
@@ -1539,11 +1569,10 @@ a, button, summary, [role="button"], .resizer, .toc-toggle {
     z-index: 2000;
     padding: 80px 20px 20px;
     transition: right 0.3s ease;
-    box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
     overflow-y: auto !important; /* Fixed: Allow scrolling on mobile */
     pointer-events: all !important;
   }
-
 
   .toc.open {
     right: 0;
@@ -1562,7 +1591,7 @@ a, button, summary, [role="button"], .resizer, .toc-toggle {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1999;
   }
 
@@ -1585,7 +1614,7 @@ a, button, summary, [role="button"], .resizer, .toc-toggle {
   border: none;
   cursor: pointer;
   z-index: 2001;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
 }
 
@@ -1609,3 +1638,104 @@ a, button, summary, [role="button"], .resizer, .toc-toggle {
   border-radius: 10px;
 }
 
+/* --- Phase 15: Premium Code Block Aesthetics --- */
+
+/* Container styling */
+.highlight {
+  position: relative;
+  background: rgba(var(--switcher-bg), 0.5) !important;
+  border: 0.5px solid var(--header-border);
+  border-radius: 0.6rem;
+  margin: 1.5rem 0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.dark .highlight {
+  /* Matching the image's very dark background */
+  background: #1e1e1e !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.highlight:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Code area */
+.highlight pre {
+  margin: 0 !important;
+  padding: 1rem 1.25rem 1.25rem !important;
+  background: transparent !important;
+  overflow-x: auto;
+}
+
+.highlight code {
+  font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace !important;
+  font-size: 0.875rem !important;
+  line-height: 1.6 !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #eaecf0; /* Light grey text */
+  font-weight: 400;
+}
+
+/* Language Label (Header) */
+.code-lang-label {
+  position: absolute;
+  top: 0.75rem;
+  left: 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  color: #818898; /* Muted grey label */
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Adjust pre padding when label is present */
+.highlight:has(.code-lang-label) pre {
+  padding-top: 3.25rem !important;
+}
+.post-content pre code {
+  background: transparent !important;
+}
+/* Copy Button Styling */
+.copy-code-button {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.75rem;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: transparent;
+  color: #818898;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.highlight:hover .copy-code-button {
+  opacity: 1;
+}
+
+.copy-code-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.copy-code-button.copied {
+  color: #5eeded;
+}
+
+/* Syntax Highlighting Tweaks (Matching the image palette) */
+.dark .chroma .k, .dark .chroma .nt { color: #cc7bf4 !important; } /* Keys/Tags: Purple */
+.dark .chroma .s, .dark .chroma .mi, .dark .chroma .m { color: #5eeded !important; } /* Values/Numbers: Cyan */
+.dark .chroma .c, .dark .chroma .c1 { color: #818898 !important; font-style: italic; } /* Comments: Grey */
+.dark .chroma .p { color: #eaecf0 !important; } /* Punctuation: Light Grey */
+.dark .chroma .nx { color: #eaecf0 !important; } /* Name: Light Grey */

@@ -3,6 +3,9 @@ title: "Contact Tech Index"
 layout: "page"
 hidemeta: true
 searchHidden: true
+showToc: false
+date: "2025-12-02"
+lastmod: "2026-02-15"
 description: "Need help with a tutorial or found an error? We're here to help."
 ---
 

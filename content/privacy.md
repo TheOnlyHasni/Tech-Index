@@ -1,8 +1,11 @@
 ---
 title: "Privacy Policy"
 layout: "page"
+date: "2025-12-02"
+lastmod: "2026-02-15"
 hidemeta: true
 searchHidden: true
+showToc: false
 ---
 
 **Last updated:** February 15, 2026

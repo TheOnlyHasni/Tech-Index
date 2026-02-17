@@ -1,6 +1,7 @@
 ---
 title: Why Software Subscriptions Are Everywhere (The Real Reason)
-date: 2026-02-16
+date: 2026-01-03
+lastmod: 2026-02-17
 draft: false
 description: Subscriptions replaced perpetual licenses because recurring revenue is more valuable to investors. Here's why the shift is permanent and what it means for you.
 tags:
