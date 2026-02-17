@@ -1,6 +1,12 @@
 {{- define "main" }}
 
-<article class="post-single">
+{{- /* Smart ToC Visibility Logic */}}
+{{- $showToc := .Param "ShowToc" }}
+{{- if and $showToc (eq .Type "page") (not (isset .Params "showtoc")) }}
+  {{- $showToc = false }}
+{{- end }}
+
+<article class="post-single{{ if $showToc }} has-toc{{ end }}">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title entry-hint-parent">
@@ -26,16 +32,19 @@
     {{- end }}
   </header>
 
-  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param
-  "cover.hidden") | default false }} {{- partial "cover.html" (dict "cxt" .
-  "IsSingle" true "isHidden" $isHidden) }} {{- $showToc := .Param "ShowToc" }}
-  {{- if and (eq $showToc true) (eq .Type "page") (not (isset .Params
-  "showtoc")) }} {{- $showToc = false }} {{- end }} {{- if $showToc }} {{-
-  partial "toc.html" . }} {{- partial "sidebar-toggle.html" . }} {{- end }} {{-
-  if .Content }}
+  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+
+  {{- if $showToc }}
+    {{- partial "toc.html" . }}
+    {{- partial "sidebar-toggle.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
   <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }} {{- partial
-    "anchored_headings.html" .Content -}} {{- else }}{{ .Content }}{{ end }}
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
   </div>
   {{- end }}
 

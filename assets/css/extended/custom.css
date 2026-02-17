@@ -1493,10 +1493,18 @@ code {
     -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
   }
 
-  /* If ToC is missing, collapse the grid */
-  .post-single:not(:has(.toc)) {
-    display: block;
+  /* Robust layout for pages without ToC - Avoiding :has() for production compatibility */
+  .post-single:not(.has-toc) {
+    display: block !important;
     max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .post-single:not(.has-toc) .post-content,
+  .post-single:not(.has-toc) .post-footer,
+  .post-single:not(.has-toc) .post-description {
+    grid-column: auto !important;
+    width: 100%;
   }
 
   .toc details summary::marker {

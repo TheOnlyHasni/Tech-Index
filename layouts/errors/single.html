@@ -1,6 +1,12 @@
 {{- define "main" }}
 
-<article class="post-single error-page">
+{{- /* Smart ToC Visibility Logic */}}
+{{- $showToc := .Param "ShowToc" }}
+{{- if and $showToc (eq .Type "page") (not (isset .Params "showtoc")) }}
+  {{- $showToc = false }}
+{{- end }}
+
+<article class="post-single error-page{{ if $showToc }} has-toc{{ end }}">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
 
@@ -54,15 +60,19 @@
     {{- end }}
   </header>
 
-  {{- $showToc := .Param "ShowToc" }} {{- if and (eq $showToc true) (eq .Type
-  "page") (not (isset .Params "showtoc")) }} {{- $showToc = false }} {{- end }}
-  {{- if $showToc }} {{- partial "toc.html" . }} {{- partial
-  "sidebar-toggle.html" . }} {{- end }} {{- if .Content }}
+  {{- if $showToc }}
+    {{- partial "toc.html" . }}
+    {{- partial "sidebar-toggle.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
   <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }} {{- partial
-    "anchored_headings.html" .Content -}} {{- else }}{{ .Content }}{{ end }}
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
   </div>
-  {{- end }} {{/* Verification / Community Info */}} {{- if or
+  {{- end }}
+ {{/* Verification / Community Info */}} {{- if or
   .Params.verified_count .Params.success_rate }}
   <div class="error-verification-box">
     {{- with .Params.verified_count }}
