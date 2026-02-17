@@ -1,20 +1,20 @@
 /* Custom CSS for Tech Mastery Hub */
 
-/* Smooth Transitions for Theme Switching */
-body {
-  transition:
-    background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--theme);
+/* Standardized transitions for theme switching applied to the root */
+html {
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Suppress transitions on initial load to prevent background flash */
+/* Suppress all transitions on initial load to prevent background flash (FOUC) */
+.preload,
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
+  animation: none !important;
 }
 
 /* Root Variables for High Contrast & Aesthetics */

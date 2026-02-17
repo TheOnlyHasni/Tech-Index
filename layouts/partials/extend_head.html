@@ -1,20 +1,34 @@
 <script>
-  // Early theme initialization to prevent Flash of Unstyled Content (FOUC)
+  // Standardized theme initialization to prevent Flash of Unstyled Content (FOUC)
   (function () {
-    const theme =
-      localStorage.getItem("pref-theme") ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light");
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    }
-    // Add preload class to body to suppress transitions during load
-    document.documentElement.classList.add("preload");
-    window.addEventListener("load", function () {
+    const savedTheme = localStorage.getItem("pref-theme") || "system";
+    const html = document.documentElement;
+
+    const applyInitialTheme = (theme) => {
+      let isDark = theme === "dark";
+      if (theme === "system") {
+        isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+
+      if (isDark) {
+        html.classList.add("dark");
+        html.setAttribute("data-theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        html.setAttribute("data-theme", "light");
+      }
+    };
+
+    // Apply immediately to prevent flash
+    applyInitialTheme(savedTheme);
+
+    // Add preload class to suppress transitions during initial paint
+    html.classList.add("preload");
+    window.addEventListener("DOMContentLoaded", function () {
+      // Small timeout ensures the browser has rendered the initial state before enabling transitions
       setTimeout(function () {
-        document.documentElement.classList.remove("preload");
-      }, 10);
+        html.classList.remove("preload");
+      }, 50);
     });
   })();
 </script>

@@ -38,24 +38,22 @@
         const body = document.body;
 
         const applyTheme = (theme) => {
-            if (theme === 'dark') {
-                body.classList.add('dark');
+            const isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            
+            if (isDark) {
+                html.classList.add('dark');
                 html.dataset.theme = 'dark';
-                localStorage.setItem('pref-theme', 'dark');
-            } else if (theme === 'light') {
-                body.classList.remove('dark');
-                html.dataset.theme = 'light';
-                localStorage.setItem('pref-theme', 'light');
             } else {
-                localStorage.removeItem('pref-theme');
-                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    body.classList.add('dark');
-                    html.dataset.theme = 'dark';
-                } else {
-                    body.classList.remove('dark');
-                    html.dataset.theme = 'light';
-                }
+                html.classList.remove('dark');
+                html.dataset.theme = 'light';
             }
+
+            if (theme === 'system') {
+                localStorage.removeItem('pref-theme');
+            } else {
+                localStorage.setItem('pref-theme', theme);
+            }
+            
             updateActiveButton(theme);
         };
 
@@ -70,18 +68,18 @@
         darkBtn.addEventListener('click', () => applyTheme('dark'));
         systemBtn.addEventListener('click', () => applyTheme('system'));
 
-        // Initialize
+        // Initialize button state
         const savedTheme = localStorage.getItem('pref-theme') || 'system';
-        applyTheme(savedTheme);
+        updateActiveButton(savedTheme);
 
         // Listen for system changes
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
             if (!localStorage.getItem('pref-theme')) {
                 if (e.matches) {
-                    body.classList.add('dark');
+                    html.classList.add('dark');
                     html.dataset.theme = 'dark';
                 } else {
-                    body.classList.remove('dark');
+                    html.classList.remove('dark');
                     html.dataset.theme = 'light';
                 }
             }
