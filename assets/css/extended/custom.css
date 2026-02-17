@@ -30,6 +30,8 @@ html {
   --entry-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   --nav-link: #444;
   --nav-active: #000;
+  --code-bg: #e8e8e8;
+  --secondary: #1f1f1f;
 }
 
 .dark,
@@ -45,6 +47,7 @@ html {
   --entry-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   --nav-link: #ababab;
   --nav-active: #fff;
+  --code-bg: #1b1c1e;
 }
 
 /* Header & Glassmorphism */
@@ -57,6 +60,26 @@ html {
   top: 0;
   z-index: 1000;
   transition: all 0.4s ease;
+}
+
+.nav {
+  display: flex !important;
+  align-items: center !important;
+  padding: 12px 0 !important;
+  min-height: auto !important;
+}
+
+.logo {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+}
+
+.logo a {
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  margin-right: 15px !important;
 }
 
 /* No Underline Utility Class */
@@ -72,17 +95,18 @@ html {
   color: var(--nav-link);
   transition: color 0.3s ease;
   position: relative;
-  padding: 12px 16px;
   display: flex;
   align-items: center;
+  padding: 6px 14px !important; /* Increased horizontal gap */
+  margin: 0 !important;
+  font-size: 15px;
+  font-weight: 500;
 }
-.nav a {
-  padding: 6px 8px;
-  margin: 6px auto 6px auto;
-}
+
 @media (max-width: 768px) {
   .nav a {
-    padding: 4px 6px;
+    padding: 6px 10px !important;
+    font-size: 14px;
   }
 }
 
@@ -717,12 +741,12 @@ html {
   position: absolute;
   top: 10px;
   left: 12px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.027);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.144);
   padding: 4px 8px;
   font-size: 11px;
   font-weight: 700;
@@ -1398,15 +1422,16 @@ code {
     min-width: 180px;
     max-width: 500px;
     position: sticky;
-    top: 100px;
+    top: 140px;
     display: flex;
     flex-direction: column;
     overflow: visible !important; /* Allow resizer to stay at the absolute edge */
   }
-  @media (max-width: 1015px) {
-    .toc {
-      top: 185px;
-    }
+
+  .highlight div {
+    background-color: #141516 !important;
+  }
+
   }
   /* Make the inner part of TOC scrollable instead of the container */
   .toc details {
@@ -1545,7 +1570,6 @@ code {
   .toc li a:hover {
     color: var(--nav-active);
   }
-}
 
 /* Force remove zoom cursor from all post content and images */
 .post-content img,
