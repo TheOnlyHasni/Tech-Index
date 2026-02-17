@@ -6,6 +6,12 @@
   {{- $showToc = false }}
 {{- end }}
 
+{{- /* Smart Share Visibility Logic */}}
+{{- $showShare := .Param "ShowShareButtons" }}
+{{- if and $showShare (eq .Type "page") (not (isset .Params "showshare")) }}
+  {{- $showShare = false }}
+{{- end }}
+
 <article class="post-single{{ if $showToc }} has-toc{{ end }}">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -56,8 +62,8 @@
       {{- end }}
     </ul>
     {{- if (.Param "ShowPostNavLinks") }} {{- partial "post_nav_links.html" . }}
-    {{- end }} {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare
-    true)) }} {{- partial "share_icons.html" . -}} {{- end }}
+    {{- end }} {{- if (and $showShare (ne .Params.disableShare true)) }} {{-
+    partial "share_icons.html" . -}} {{- end }}
   </footer>
 
   {{- if (.Param "comments") }} {{- partial "comments.html" . }} {{- end }}

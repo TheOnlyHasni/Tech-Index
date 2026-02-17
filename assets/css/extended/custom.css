@@ -554,7 +554,16 @@ html {
   opacity: 1;
 }
 
-/* Article Body Typography */
+/* Article Body Typography & Scroll Offset */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  scroll-margin-top: 100px; /* Offset for sticky header (60px) + breathing room */
+}
+
 .post-content {
   font-size: 18px;
   line-height: 1.8;
