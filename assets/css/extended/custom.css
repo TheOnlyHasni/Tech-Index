@@ -1472,34 +1472,45 @@ html {
   }
 
   /* Header and Cover span FULL width at the top */
-  .post-header,
+  .post-header {
+    grid-column: 1 / -1 !important;
+    grid-row: 1;
+    margin-bottom: 20px;
+    max-width: 800px;
+    justify-self: center;
+    width: 100%;
+  }
+
   .entry-cover {
     grid-column: 1 / -1 !important;
+    grid-row: 2;
     margin-bottom: 30px;
     max-width: 800px;
     justify-self: center;
     width: 100%;
-    grid-row: auto;
   }
 
-  /* Article Content and Footer in Column 2, starting same row as sidebar */
+  /* Main Column (Content, Footer, Meta, etc.) */
+  .post-column {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* Prevent overflow */
+  }
+
   .post-content,
   .post-footer,
   .error-verification-box,
   .error-meta-bar,
   .related-errors,
   .post-description {
-    grid-column: 2;
-    grid-row: auto;
-  }
-
-  .post-content {
-    grid-row: 3; /* Anchor next to Sidebar */
+    width: 100%;
   }
 
   .toc {
     grid-column: 1; /* Sidebar on Left */
-    grid-row: 3 / 20; /* Keep it on the left spanning multiple content rows */
+    grid-row: 3; /* Synced with post-column */
     max-height: calc(100vh - 100px);
     overflow-y: auto;
     margin: 0 !important;

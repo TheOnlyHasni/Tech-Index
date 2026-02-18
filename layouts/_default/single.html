@@ -46,6 +46,7 @@
     {{- partial "sidebar-toggle.html" . }}
   {{- end }}
 
+  <div class="post-column">
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
@@ -65,6 +66,7 @@
     {{- end }} {{- if (and $showShare (ne .Params.disableShare true)) }} {{-
     partial "share_icons.html" . -}} {{- end }}
   </footer>
+  </div>
 
   {{- if (.Param "comments") }} {{- partial "comments.html" . }} {{- end }}
 </article>
