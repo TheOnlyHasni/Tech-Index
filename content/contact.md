@@ -9,7 +9,7 @@ lastmod: "2026-02-15"
 description: "Need help with a tutorial or found an error? We're here to help."
 ---
 
-For technical inquiries, tutorial requests, or to report issues, contact our team using the information below.
+Have a question about a tutorial, found something that's not working, or want to suggest a topic? Reach out directly.
 
 ## Get in Touch
 
@@ -17,30 +17,19 @@ For technical inquiries, tutorial requests, or to report issues, contact our tea
 
 We review all messages and respond to technical inquiries within 48 hours.
 
-## What to Include in Your Message
+## What to Include
 
-To help us assist you quickly, please provide:
+The more context you give, the faster we can actually help.
 
-**For tutorial issues:**
+For tutorial issues, it helps to include the tutorial title or URL, your operating system, any error messages you're seeing, and a quick description of what you expected to happen versus what actually did.
 
-- Tutorial title or URL
-- Your operating system (Windows, macOS, Linux, etc.)
-- Error messages or screenshots
-- What you expected vs what happened
+For collaboration or general questions, just give us a brief description of what you have in mind and any relevant context.
 
-**For collaboration or general inquiries:**
-
-- Brief description of your request
-- Relevant background or context
-
-## Connect With Us
-
-Follow our latest updates and development work:
+## Connect
 
 **Twitter/X:** [@I_am_Hasnii](https://x.com/@I_am_Hasnii)  
 **GitHub:** [TheOnlyHasni](https://github.com/TheOnlyHasni)
 
 ---
 
-**Location:** Malakand, Pakistan  
-**Response time:** Within 48 hours for technical inquiries
+**Location:** Malakand, Pakistan

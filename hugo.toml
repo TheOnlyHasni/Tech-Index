@@ -122,12 +122,6 @@ threshold = 0.4
 minMatchCharLength = 0
 keys = ["title", "permalink", "summary", "content"]
 
-# Home-Info Mode
-[params.homeInfoParams]
-Title = "Tech Index"
-Content = "**Practical tutorials and error solutions for developers and tech users.**\n\nWhen technology breaks or confuses you, we have the fix. Browse step-by-step guides, documented error solutions, and technical insights that actually work.\n\n**What you'll find here:**\n- Tested tutorials for web development, deployment, and system optimization\n- Documented error messages with verified solutions\n- Technical guides for modern tools and frameworks\n- Analysis of emerging tech trends and tools\n\nAll content is tested across multiple platforms before publication."
-
-
 # Social Proof
 [[params.socialIcons]]
 name = "x"

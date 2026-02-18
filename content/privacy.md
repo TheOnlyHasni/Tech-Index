@@ -2,77 +2,46 @@
 title: "Privacy Policy"
 layout: "page"
 date: "2025-12-02"
-lastmod: "2026-02-15"
+lastmod: "2026-02-18"
 hidemeta: true
 searchHidden: true
 showToc: false
 ---
 
-**Last updated:** February 15, 2026
+**Last updated:** February 18, 2026
 
-Tech Index (`{{< baseurl >}}`) respects your privacy. This policy explains what information we collect and how we use it.
+Tech Index (`{{< baseurl >}}`) takes your privacy seriously. Here is what we collect, why we collect it, and what we do with it.
 
-## Information We Collect
+## What We Collect
 
-**Automatically collected data**
+When you visit the site, we automatically collect standard analytics data: your IP address, browser type and version, operating system, pages visited, time spent, and the site that referred you. This helps us understand how people use the site and where we can improve.
 
-When you visit our site, we collect standard web analytics:
+We also use cookies, which are small text files stored on your device, to remember your preferences and keep the experience consistent. You can turn cookies off in your browser settings, though some parts of the site may not work as expected without them.
 
-- IP address
-- Browser type and version
-- Operating system
-- Pages visited and time spent
-- Referring website
+## How We Use It
 
-This data helps us understand how visitors use the site and improve our content.
-
-**Cookies**
-
-We use cookies to remember your preferences and improve your experience. Cookies are small text files stored on your device.
-
-You can disable cookies in your browser settings, though some site features may not work properly without them.
-
-## How We Use Your Information
-
-We use collected data to:
-
-- Analyze site traffic and user behavior
-- Improve content and site performance
-- Identify and fix technical issues
-- Understand which tutorials are most helpful
-
-We do not sell, rent, or share your personal information with third parties for marketing purposes.
+We use this data to analyze traffic, improve content, fix technical issues, and understand which tutorials are actually useful. We do not sell, rent, or share your personal information with third parties for marketing purposes.
 
 ## Third-Party Services
 
-**Analytics**
+We use Google Analytics to understand site usage. Their privacy policy is available at [policies.google.com/privacy](https://policies.google.com/privacy).
 
-We may use analytics services to understand site usage. These services have their own privacy policies:
+If we add advertising in the future, we will update this policy to explain how any ad networks handle cookies and data collection.
 
-- Google Analytics: [privacy policy](https://policies.google.com/privacy)
+## Security
 
-**Future Advertising**
-
-If we add advertising in the future, we will update this policy to reflect how ad networks may use cookies and collect data.
-
-## Data Security
-
-We implement reasonable security measures to protect collected data. However, no internet transmission is completely secure. Use our site at your own risk.
+We take reasonable steps to protect the data we collect. That said, no transmission over the internet is completely secure, so use the site at your own risk.
 
 ## Your Rights
 
-You can:
-
-- Request information about data we've collected
-- Ask us to delete your data
-- Opt out of analytics tracking using browser settings
+You can request information about what data we have collected on you, ask us to delete it, or opt out of analytics tracking through your browser settings.
 
 ## Changes to This Policy
 
-We may update this privacy policy as our site evolves. Check this page periodically for changes. Continued use after updates indicates acceptance.
+We will update this page if our practices change. Continuing to use the site after an update means you accept the revised policy.
 
 ## Contact
 
-Questions about this privacy policy? Email us at support@value1.shop
+Questions about this policy? Reach us at support@value1.shop
 
 ---

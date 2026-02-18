@@ -31,11 +31,30 @@
 {{- end }}
 
 {{- if .Content }}
+{{- if .IsHome }}
+<div class="home-intro-container">
+  <article class="home-info home-intro">
+    <header class="entry-header">
+      <h1>{{ .Title }}</h1>
+    </header>
+    <div class="entry-content">
+      {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- partial "anchored_headings.html" .Content -}}
+      {{- else }}{{ .Content }}{{ end }}
+    </div>
+    <footer class="entry-footer">
+      {{- partial "social_icons.html" (dict "align" "") }}
+    </footer>
+  </article>
+  <h2 class="latest-posts-title">Latest Posts</h2>
+</div>
+{{- else }}
 <div class="post-content">
   {{- if not (.Param "disableAnchoredHeadings") }}
   {{- partial "anchored_headings.html" .Content -}}
   {{- else }}{{ .Content }}{{ end }}
 </div>
+{{- end }}
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}
@@ -57,10 +76,8 @@
 
   {{- $class := "post-entry" }}
 
-  {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
-  {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-  {{- $class = "first-entry" }}
-  {{- else if $term }}
+  {{- /* Standardize homepage entries to look the same */}}
+  {{- if $term }}
   {{- $class = "post-entry tag-entry" }}
   {{- end }}
 

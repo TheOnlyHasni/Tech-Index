@@ -3,83 +3,47 @@ title: "Disclaimer"
 layout: "page"
 hidemeta: true
 date: "2025-12-02"
-lastmod: "2026-02-15"
+lastmod: "2026-02-18"
 showToc: false
 searchHidden: true
 ---
 
-**Last updated:** February 15, 2026
+**Last updated:** February 18, 2026
 
-Tech Index provides technical tutorials and error solutions for educational purposes. Read this disclaimer carefully.
+Tech Index publishes technical tutorials and error documentation for educational purposes. Please take a few minutes to read this before relying on anything here.
 
 ## Educational Purpose
 
-Our content is designed to help you learn and troubleshoot technology. All tutorials are tested before publication, but:
+Our tutorials are tested before publication, but a few things are always outside our control.
 
-**Your environment may differ:** Different operating system versions, hardware configurations, and installed software can affect results.
+Your environment may differ from the one we tested on. Operating system versions, hardware configurations, and installed software all affect how things behave. Technology also moves fast, and a software update can change the correct approach after a tutorial is already published.
 
-**Technology changes:** Software updates and new versions may require different approaches than documented at the time of writing.
-
-**Test safely:** Always backup important data before making system changes or running commands from any online source.
+Before making system changes or running commands from any online source, back up anything important. That applies here too.
 
 ## Accuracy and Testing
 
-**What we do:**
+We test tutorials across multiple platforms before publishing, verify solutions against real error scenarios, include version numbers where they matter, and update content when significant software changes make it necessary.
 
-- Test tutorials across multiple platforms before publishing
-- Verify solutions with real error scenarios
-- Update content when major software changes occur
-- Include specific version numbers where applicable
+That said, we cannot guarantee every solution will work identically on every system, that our content is completely free of errors despite our testing, or that the results will match your specific situation without any adjustment. Treat our tutorials as a solid starting point, not a guaranteed outcome.
 
-**What we don't guarantee:**
+## Not Professional Advice
 
-- Solutions will work identically on every system
-- Content is error-free despite our testing efforts
-- Results match your specific use case perfectly
+Our content is not a substitute for professional IT consultation on business systems, qualified support for critical infrastructure, legal advice on software licensing or compliance, or security consultation for sensitive environments. If you are working on production systems or anything critical, bring in a qualified professional.
 
-Think of our tutorials as starting points, not guaranteed solutions. Your specific situation may require adjustments.
+## External Links
 
-## No Professional Advice
-
-**Not a substitute for:**
-
-- Professional IT consultation for business systems
-- Qualified technical support for critical infrastructure
-- Legal advice on software licensing or compliance
-- Security consultation for sensitive systems
-
-For production environments or critical systems, consult qualified professionals.
-
-## External Resources
-
-We link to official documentation, GitHub repositories, and other technical resources. We don't control those external sites and can't guarantee:
-
-- Their continued availability
-- The accuracy of their information
-- Their privacy practices
+We link to official documentation, GitHub repositories, and other technical resources. We do not control those external sites and cannot guarantee their availability, the accuracy of their content, or their privacy practices.
 
 ## Liability
 
-Use our content at your own risk. We're not responsible for:
-
-- System damage from following our tutorials
-- Data loss from configuration changes
-- Time spent troubleshooting
-- Any other damages, direct or indirect
-
-This limitation applies even if we've been notified of the possibility of such damages.
+Use our content at your own risk. We are not responsible for system damage, data loss, time spent troubleshooting, or any other direct or indirect damages resulting from following our tutorials. This applies even if we were made aware of the possibility of such damages.
 
 ## Software and Tools
 
-When we recommend software, tools, or services:
-
-- We have no affiliation unless explicitly stated
-- Recommendations reflect our testing experience
-- You're responsible for reviewing licensing terms
-- Tools may have changed since our review
+When we recommend software, tools, or services, we have no affiliation with them unless we say otherwise. Recommendations reflect our own testing experience. Tools and licensing terms can change after we publish, so always review them yourself before committing to anything.
 
 ## Contact
 
-Questions or concerns about this disclaimer? Email us at support@value1.shop
+Questions about this disclaimer? Reach us at support@value1.shop
 
 ---

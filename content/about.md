@@ -1,7 +1,7 @@
 ---
 title: "About Tech Index"
 date: "2025-12-02"
-lastmod: 2026-02-17
+lastmod: 2026-02-18
 layout: "page"
 hidemeta: true
 searchHidden: true
@@ -9,50 +9,37 @@ showToc: true
 description: "Tech Index is a technical resource founded in 2025, providing tested tutorials and documented error solutions for developers and tech professionals."
 ---
 
-Tech Index is written and maintained by Hassan Jan, a frontend developer based in Malakand, Pakistan, with hands-on experience in web development and the MERN stack.
+Tech Index is written and maintained by Hassan Jan, a frontend developer based in Malakand, Pakistan. I work primarily with web development and the MERN stack, and this site is where I document what I actually use and test.
 
-Every technical article is reviewed by subject-matter specialists before publication to verify accuracy across platforms and environments.
+Before anything goes live, it gets reviewed by someone with hands-on experience in the relevant area. If it's a complex tutorial, it gets additional eyes from a specialist in that stack.
 
 ## What We Cover
 
 **Web Development**  
-Tutorials for Next.js, React, Node.js, Hugo, and modern deployment platforms. From local setup to production deployment.
+Tutorials for Next.js, React, Node.js, Hugo, and modern deployment platforms, covering everything from local setup to production.
 
 **Error Documentation**  
-The Error Repository catalogs common development errors with tested solutions. Each entry includes the exact error message, causes, and ranked solutions by effectiveness.
+The Error Repository is a catalog of common development errors with working solutions. Each entry includes the exact error message, what causes it, and solutions ranked by how well they actually work.
 
 **System Optimization**  
-Guides for Windows, macOS, Linux, Android, and iOS. Network troubleshooting, performance optimization, and software configuration.
+Guides for Windows, macOS, Linux, Android, and iOS. Network troubleshooting, performance tuning, and software configuration.
 
 **Technical Analysis**  
-Insights on development tools, platform changes, and emerging technologies that affect daily workflows.
+Coverage of development tools, platform changes, and technologies that affect day-to-day work.
 
-## Quality Standards
+## How We Approach Quality
 
-**Multi-platform testing**  
-Every tutorial is verified across Windows, Linux, macOS, Android, and iOS where applicable. Each solution documents which platforms it was tested on.
+Every tutorial is tested across the platforms where it applies. Windows, Linux, macOS, Android, iOS, wherever it's relevant. Each solution documents where it was tested so you know what you're working with.
 
-**Technical review**  
-Articles are reviewed by working developers and IT professionals before publication. Complex tutorials receive additional verification from specialists in the relevant stack.
+Articles are reviewed by working developers and IT professionals before publication. Nothing gets published based on theory alone.
 
-**Continuous updates**  
-As software changes and new versions release, tutorials are updated to maintain accuracy. Each guide shows its last verification date.
+Software changes, and tutorials that worked two years ago often do not work today. Each guide shows its last verification date, and things get updated when they need to be.
 
-## My Approach
+## How I Write
 
-**Focused on:**
+Every tutorial includes step-by-step instructions with complete code examples, exact error messages with specific fixes, troubleshooting sections for the issues that come up most, and before-and-after examples where they help.
 
-- Step-by-step instructions with complete code examples
-- Exact error messages and specific solutions
-- Troubleshooting sections for common issues
-- Before-and-after examples where relevant
-
-**Avoiding:**
-
-- Generic advice without specific commands
-- Outdated tutorials that no longer work
-- Theoretical explanations without practical application
-- Incomplete solutions that skip critical steps
+What I try to avoid: generic advice with no real commands, tutorials built on outdated versions, explanations that never get to the point, and solutions that skip the steps that actually matter.
 
 ## Technical Background
 
@@ -62,20 +49,18 @@ As software changes and new versions release, tutorials are updated to maintain 
 **Tools:** Git, VS Code, terminal workflows, development environments  
 **Systems:** Cross-platform configuration and troubleshooting
 
-## Why Tech Index Exists
+## Why This Site Exists
 
-Developers and everyday users run into the same frustrating patterns.
+Most developers hit the same walls. Documentation that assumes you already know what you're trying to learn. Tutorials that skip setup. Answers scattered across dozens of forum threads. Solutions from 2022 that simply do not work anymore.
 
-Documentation assumes too much prior knowledge. Tutorials skip setup steps. Forum answers are scattered across dozens of threads. Solutions that worked in 2022 fail in 2026.
-
-Tech Index consolidates tested solutions into clear, comprehensive guides. When you follow a tutorial here, it works because the troubleshooting has already been done.
+Tech Index exists to consolidate tested solutions into guides that are actually complete. When you follow a tutorial here, the troubleshooting has already been done.
 
 ## Contact
 
 **Email:** support@value1.shop  
 **Location:** Malakand, Pakistan
 
-For technical inquiries, tutorial requests, or collaboration opportunities, reach out using the contact information above.
+For technical questions, tutorial requests, or collaboration, reach out at the email above.
 
 **Connect:**  
 [Twitter/X](https://x.com/@I_am_Hasnii) | [GitHub](https://github.com/TheOnlyHasni)

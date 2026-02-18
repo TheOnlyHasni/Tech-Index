@@ -1,7 +1,7 @@
 ---
 title: "Search"
 layout: "search"
-placeholder: "Search tutorials..."
+placeholder: "Search..."
 hidemeta: true
 showToc: false
 ---
