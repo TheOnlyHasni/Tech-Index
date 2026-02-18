@@ -71,6 +71,10 @@
   </div>
 
   {{- if (.Param "comments") }} {{- partial "comments.html" . }} {{- end }}
+
+  {{- /* Phase 23: Image Lightbox & Zoom Integration */ -}}
+  {{- $lightbox := resources.Get "js/lightbox.js" | minify | fingerprint -}}
+  <script src="{{ $lightbox.Permalink }}" integrity="{{ $lightbox.Data.Integrity }}" crossorigin="anonymous"></script>
 </article>
 
 {{- end }}{{/* end main */}}
