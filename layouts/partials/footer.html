@@ -1,14 +1,50 @@
 <footer class="footer">
-    <img src="{{ "svgs/site-logo-text.svg" | absURL }}" alt="Tech Index Logo" class="footer-logo">
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
-    <span>
-        &middot;
-        <a href="/privacy" rel="noopener">Privacy Policy</a> &middot;
-        <a href="/terms" rel="noopener">Terms of Service</a> &middot;
-        <a href="/disclaimer" rel="noopener">Disclaimer</a> &middot;
-        <a href="/sitemap/" rel="noopener">Sitemap</a> &middot;
-        <a href="/sitemap.xml" rel="noopener">XML</a>
-    </span>
+    <div class="footer-container">
+        <!-- Column 1: Brand & Bio -->
+        <div class="footer-column brand-column">
+            <img src="{{ "svgs/site-logo-text.svg" | absURL }}" alt="Tech Index Logo" class="footer-logo">
+            <p class="footer-bio">
+                Empowering developers and tech enthusiasts with tested tutorials and documented error solutions.
+            </p>
+        </div>
+
+        <!-- Column 2: Explore -->
+        <div class="footer-column">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="{{ "/posts/" | relLangURL }}">Posts</a></li>
+                <li><a href="{{ "/tutorials/" | relLangURL }}">Tutorials</a></li>
+                <li><a href="{{ "/errors/" | relLangURL }}">Error Solutions</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Site -->
+        <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="{{ "/about/" | relLangURL }}">About Us</a></li>
+                <li><a href="{{ "/contact/" | relLangURL }}">Contact</a></li>
+                <li><a href="{{ "/sitemap.xml" | relLangURL }}">Sitemap</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Legal & Social -->
+        <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="{{ "/privacy/" | relLangURL }}">Privacy Policy</a></li>
+                <li><a href="{{ "/terms/" | relLangURL }}">Terms of Service</a></li>
+            </ul>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                {{- partial "social_icons.html" (dict "align" "") -}}
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
+    </div>
     {{- $copyCode := resources.Get "js/copy-code.js" | minify | fingerprint -}}
     <script src="{{ $copyCode.Permalink }}" integrity="{{ $copyCode.Data.Integrity }}" crossorigin="anonymous"></script>
 </footer>
