@@ -103,6 +103,7 @@ weight = 50
   ShowPostNavLinks = true
   ShowToc = true
   TocOpen = true
+  ShowDownloadButtons = true
 
   # Global Image Quality Controls
   [params.imaging]

@@ -1,5 +1,6 @@
 {{- /* Download Section Partial - Provides downloadable versions of the post */ -}}
-{{- if or (eq .Section "posts") (eq .Section "tutorials") }}
+{{- $show := .Param "ShowDownloadButtons" }}
+{{- if and $show (or (eq .Section "posts") (eq .Section "tutorials")) }}
 <div class="download-section">
     <h3 class="download-heading">📥 Download This Article</h3>
     <p class="download-description">Get this article in your preferred format for offline reading:</p>

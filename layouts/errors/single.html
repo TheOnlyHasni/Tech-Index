@@ -79,6 +79,8 @@
     {{- else }}{{ .Content }}{{ end }}
   </div>
   {{- end }}
+
+  {{- partial "download-section.html" . }}
  {{/* Verification / Community Info */}} {{- if or
   .Params.verified_count .Params.success_rate }}
   <div class="error-verification-box">
