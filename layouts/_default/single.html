@@ -72,9 +72,11 @@
 
   {{- if (.Param "comments") }} {{- partial "comments.html" . }} {{- end }}
 
-  {{- /* Phase 23: Image Lightbox & Zoom Integration */ -}}
+  {{- /* Phase 23 & 24: Script Integrations */ -}}
   {{- $lightbox := resources.Get "js/lightbox.js" | minify | fingerprint -}}
+  {{- $toc := resources.Get "js/toc-collapsible.js" | minify | fingerprint -}}
   <script src="{{ $lightbox.Permalink }}" integrity="{{ $lightbox.Data.Integrity }}" crossorigin="anonymous"></script>
+  <script src="{{ $toc.Permalink }}" integrity="{{ $toc.Data.Integrity }}" crossorigin="anonymous"></script>
 </article>
 
 {{- end }}{{/* end main */}}

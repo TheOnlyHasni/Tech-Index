@@ -2,8 +2,9 @@
 
 /* Standardized transitions for theme switching applied to the root */
 html {
-  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Suppress transitions on initial load to prevent background flash (FOUC) */
@@ -50,8 +51,8 @@ html {
   --code-bg: #1b1c1e;
 
   /* Spec Sync & Design Tokens (Scoped primarily for Home Info) */
-  --primary-color: #2196F3;
-  --secondary-color: #FF9800;
+  --primary-color: #2196f3;
+  --secondary-color: #ff9800;
   --text-primary: #333;
   --text-secondary: #666;
   --radius: 8px; /* Sync with PaperMod */
@@ -1321,8 +1322,6 @@ html {
   /* Spacing */
   padding: 3px 4px;
   box-sizing: border-box;
-
-
 }
 
 .dark code {
@@ -1533,153 +1532,152 @@ html {
   .highlight div {
     background-color: #1d1d1e94 !important;
   }
+}
+/* Make the inner part of TOC scrollable instead of the container */
+.toc details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
 
-  }
-  /* Make the inner part of TOC scrollable instead of the container */
-  .toc details {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-  }
+.toc .inner {
+  max-height: calc(100vh - 180px);
+  overflow-y: auto !important;
+}
 
-  .toc .inner {
-    max-height: calc(100vh - 180px);
-    overflow-y: auto !important;
-  }
+.toc .inner {
+  padding-right: 0px !important;
+  padding-left: 2px !important;
+  border-right: 0px !important;
+  margin-right: 0px !important;
+}
 
-  .toc .inner {
-    padding-right: 0px !important;
-    padding-left: 2px !important;
-    border-right: 0px !important;
-    margin-right: 0px !important;
-  }
+/* Browser Resizer Hiding */
+.toc::-webkit-resizer,
+.toc *::-webkit-resizer,
+::-webkit-resizer {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none !important;
+}
 
-  /* Browser Resizer Hiding */
-  .toc::-webkit-resizer,
-  .toc *::-webkit-resizer,
-  ::-webkit-resizer {
-    display: none !important;
-    width: 0 !important;
-    height: 0 !important;
-    -webkit-appearance: none !important;
-  }
+.resizer {
+  position: absolute;
+  top: 0;
+  right: -2px; /* Slight overlap for better hit area */
+  width: 8px;
+  height: 100%;
+  cursor: col-resize;
+  background: transparent;
+  z-index: 100;
+  transition: background 0.2s;
+}
 
-  .resizer {
-    position: absolute;
-    top: 0;
-    right: -2px; /* Slight overlap for better hit area */
-    width: 8px;
-    height: 100%;
-    cursor: col-resize;
-    background: transparent;
-    z-index: 100;
-    transition: background 0.2s;
-  }
+.resizer:hover,
+.resizer.resizing {
+  background: rgba(var(--primary), 0.2) !important;
+  border-right: 2px solid var(--nav-active);
+}
 
-  .resizer:hover,
-  .resizer.resizing {
-    background: rgba(var(--primary), 0.2) !important;
-    border-right: 2px solid var(--nav-active);
-  }
+body.is-resizing {
+  cursor: col-resize !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
 
-  body.is-resizing {
-    cursor: col-resize !important;
-    user-select: none !important;
-    -webkit-user-select: none !important;
-  }
+.toc li a.active {
+  color: var(--nav-active) !important;
+  font-weight: 700;
+  padding-left: 8px;
+  transition: all 0.2s ease;
+  background: rgba(var(--primary), 0.05);
+  border-radius: 4px;
+}
 
-  .toc li a.active {
-    color: var(--nav-active) !important;
-    font-weight: 700;
-    padding-left: 8px;
-    transition: all 0.2s ease;
-    background: rgba(var(--primary), 0.05);
-    border-radius: 4px;
-  }
+.toc li a {
+  border-left: 2px solid transparent;
+  padding: 2px 8px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-  .toc li a {
-    border-left: 2px solid transparent;
-    padding: 2px 8px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-  }
+/* Backgrounds for Glass Effect - Using transparent hex/rgba correctly */
+:root[data-theme="dark"] .toc {
+  background-color: rgba(29, 30, 32, 0.8) !important;
+  backdrop-filter: blur(12px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+}
 
-  /* Backgrounds for Glass Effect - Using transparent hex/rgba correctly */
-  :root[data-theme="dark"] .toc {
-    background-color: rgba(29, 30, 32, 0.8) !important;
-    backdrop-filter: blur(12px) saturate(180%) !important;
-    -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
-  }
+:root[data-theme="light"] .toc {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+}
 
-  :root[data-theme="light"] .toc {
-    background-color: rgba(255, 255, 255, 0.8) !important;
-    backdrop-filter: blur(12px) saturate(180%) !important;
-    -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
-  }
+/* Robust layout for pages without ToC - Avoiding :has() for production compatibility */
+.post-single:not(.has-toc) {
+  display: block !important;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  /* Robust layout for pages without ToC - Avoiding :has() for production compatibility */
-  .post-single:not(.has-toc) {
-    display: block !important;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.post-single:not(.has-toc) .post-content,
+.post-single:not(.has-toc) .post-footer,
+.post-single:not(.has-toc) .post-description {
+  grid-column: auto !important;
+  width: 100%;
+}
 
-  .post-single:not(.has-toc) .post-content,
-  .post-single:not(.has-toc) .post-footer,
-  .post-single:not(.has-toc) .post-description {
-    grid-column: auto !important;
-    width: 100%;
-  }
-
-  .toc details summary::marker {
-    cursor: pointer !important;
-    list-style: none;
-    font-weight: 600;
-    padding: 5px 0;
-    user-select: none;
-  }
-  summary::marker {
-    cursor: pointer !important;
-  }
+.toc details summary::marker {
+  cursor: pointer !important;
+  list-style: none;
+  font-weight: 600;
+  padding: 5px 0;
+  user-select: none;
+}
+summary::marker {
+  cursor: pointer !important;
+}
 
 .toc details summary {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .toc details[open] summary {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-  .toc details {
-    border: none !important;
-    margin: 0 !important;
-  }
+.toc details {
+  border: none !important;
+  margin: 0 !important;
+}
 
-  .toc .inner {
-    padding: 10px 8px 0 0px !important;
-  }
+.toc .inner {
+  padding: 10px 8px 0 0px !important;
+}
 
-  .toc ul {
-    margin-top: 5px !important;
-    padding-left: 19px !important;
-  }
+.toc ul {
+  margin-top: 5px !important;
+  padding-left: 19px !important;
+}
 
-  .toc li {
-    margin-bottom: 8px !important;
-  }
+.toc li {
+  margin-bottom: 8px !important;
+}
 
-  .toc li a {
-    color: var(--nav-link);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
+.toc li a {
+  color: var(--nav-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
 
-  .toc li a:hover {
-    text-decoration: none;
-    color: var(--nav-active);
-  }
+.toc li a:hover {
+  text-decoration: none;
+  color: var(--nav-active);
+}
 
 /* Force remove zoom cursor from all post content and images */
 .post-content img,
@@ -1813,7 +1811,8 @@ button,
 }
 
 .highlight code {
-  font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace !important;
+  font-family:
+    "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace !important;
   font-size: 0.875rem !important;
   line-height: 1.6 !important;
   background: transparent !important;
@@ -1876,17 +1875,32 @@ button,
 }
 
 /* Syntax Highlighting Tweaks (Matching the image palette) */
-.dark .chroma .k, .dark .chroma .nt { color: #cc7bf4 !important; } /* Keys/Tags: Purple */
-.dark .chroma .s, .dark .chroma .mi, .dark .chroma .m { color: #5eeded !important; } /* Values/Numbers: Cyan */
-.dark .chroma .c, .dark .chroma .c1 { color: #818898 !important; font-style: italic; } /* Comments: Grey */
-.dark .chroma .p { color: #eaecf0 !important; } /* Punctuation: Light Grey */
-.dark .chroma .nx { color: #eaecf0 !important; } /* Name: Light Grey */
+.dark .chroma .k,
+.dark .chroma .nt {
+  color: #cc7bf4 !important;
+} /* Keys/Tags: Purple */
+.dark .chroma .s,
+.dark .chroma .mi,
+.dark .chroma .m {
+  color: #5eeded !important;
+} /* Values/Numbers: Cyan */
+.dark .chroma .c,
+.dark .chroma .c1 {
+  color: #818898 !important;
+  font-style: italic;
+} /* Comments: Grey */
+.dark .chroma .p {
+  color: #eaecf0 !important;
+} /* Punctuation: Light Grey */
+.dark .chroma .nx {
+  color: #eaecf0 !important;
+} /* Name: Light Grey */
 
 /* --- Phase 21: Homepage Refinements --- */
 
 /* Utility: Forceful Nostyle Links */
-.no-underline-force, 
-.no-underline-force a, 
+.no-underline-force,
+.no-underline-force a,
 .no-underline-force li {
   text-decoration: none !important;
   box-shadow: none !important;
@@ -1894,12 +1908,12 @@ button,
 }
 
 /* Homepage specific text margins (Intro section) */
-.home-content h1, 
-.home-content h2, 
-.home-content h3, 
-.home-content h4, 
-.home-content h5, 
-.home-content h6, 
+.home-content h1,
+.home-content h2,
+.home-content h3,
+.home-content h4,
+.home-content h5,
+.home-content h6,
 .home-content p {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -1944,7 +1958,10 @@ footer.footer {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* More flexible grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* More flexible grid */
   gap: 30px; /* Reduced gap */
 }
 
@@ -2001,7 +2018,7 @@ footer.footer {
   font-size: 15px;
 }
 
-.footer-social .social-icons, 
+.footer-social .social-icons,
 .footer-social .social-icons a {
   margin: 0 !important;
   gap: 8px !important;
@@ -2044,12 +2061,12 @@ footer.footer {
     text-align: center;
     gap: 20px;
   }
-  
+
   .brand-column {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  
+
   .footer-social .social-icons {
     justify-content: center;
   }
@@ -2136,4 +2153,72 @@ footer.footer {
 
 .post-content img:not(.no-lightbox):hover {
   opacity: 0.95;
+} /* --- Phase 24: Interactive Collapsible ToC --- */
+
+.toc-toggle-all {
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 12px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.toc-toggle-all:hover {
+  background: var(--border);
+  color: var(--nav-active);
+}
+
+.toc li {
+  position: relative;
+  list-style: none !important;
+}
+
+.toc-toggle-icon {
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--secondary);
+  font-size: 14px;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+  z-index: 5;
+  user-select: none;
+}
+
+.toc-toggle-icon:hover {
+  color: var(--primary);
+}
+
+.has-subsections > a {
+  padding-left: 18px !important;
+}
+
+.sections-collapsed > ul {
+  display: none !important;
+}
+
+.toc ul {
+  transition: all 0.3s ease;
+}
+
+/* Ensure active link stays visible and themed */
+.toc li a.active {
+  background: rgba(var(--primary), 0.05);
+  border-left: 2px solid var(--nav-active);
 }

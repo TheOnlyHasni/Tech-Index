@@ -43,10 +43,6 @@ But outdated advice persists because it sounds technical enough to be credible. 
 
 This article separates fact from fiction using current battery science—not recycled advice from the flip phone era.
 
-[PLACEHOLDER: Diagram of the workflow showing how a BMS regulates power flow]
-
-[Image of lithium-ion battery management system diagram]
-
 ---
 
 ## Part 1: Charging Myths Debunked
@@ -70,8 +66,6 @@ Lithium-ion batteries don't have memory effect. They prefer shallow discharge cy
 When your battery reaches 100%, the charging circuit automatically stops supplying power. Your phone doesn't "keep charging" all night—it switches to trickle charging, which maintains 100% without overloading the cells.
 
 Better yet, iOS 18's Optimized Battery Charging and Android 15's Adaptive Charging learn your schedule and deliberately slow charging overnight. Your phone might charge to 80% quickly, then wait until shortly before your alarm to top up the final 20%. This reduces time spent at high charge states, which extends battery lifespan.
-
-[PLACEHOLDER: Screenshot showing the settings menu for battery optimization]
 
 **The real concern:** Heat generated during overnight charging, especially if your phone is under a pillow or in a case. Charge on a hard, cool surface instead.
 
@@ -236,7 +230,7 @@ Battery replacement makes sense when:
 This isn't a myth—it's proven battery science.
 Lithium-ion batteries experience less stress at partial charge states. High charge states (90-100%) and low charge states (0-10%) accelerate chemical degradation.
 
-[PLACEHOLDER: Explain what it’s for: Visualizing the chemical stress on ions at 100% vs 50% charge]
+{{< img src="image1.png" alt="Visualizing the chemical stress on ions at 100% vs 50% charge" class="center-img-400" >}}
 
 ### Fact #2: Heat Is Your Battery's Biggest Enemy
 
