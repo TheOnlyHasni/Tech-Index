@@ -5,7 +5,7 @@ lastmod: "2026-02-16"
 draft: false
 description: "Stop wasting time building from scratch. These 10 essential Notion templates give you proven project management systems ready to customize and deploy today."
 tags: ["Notion", "Project Management", "Productivity", "Templates"]
-categories: ["Software"]
+categories: ["Posts", "Productivity Systems"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"

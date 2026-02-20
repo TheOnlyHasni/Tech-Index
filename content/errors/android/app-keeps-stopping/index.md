@@ -4,7 +4,7 @@ date: "2026-02-18"
 draft: false
 description: "Your Android app keeps stopping? Here are 13 fixes — from clearing cache to updating Google Play Services — that get your apps running again fast."
 tags: ["android", "app crash", "troubleshooting", "google play", "android fix"]
-categories: ["Android", "Mobile Troubleshooting"]
+categories: ["Solutions", "Android"]
 error_code: "App keeps stopping"
 software: "Android OS, Google Play Services"
 platforms: "Android 13, Android 14"

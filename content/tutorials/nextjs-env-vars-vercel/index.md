@@ -12,7 +12,7 @@ tags:
     "Environment Variables",
     "Web Development",
   ]
-categories: ["Tutorials", "DevOps"]
+categories: ["Tutorials", "Software Development"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"

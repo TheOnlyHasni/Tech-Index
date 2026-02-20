@@ -4,7 +4,7 @@ date: "2025-02-18"
 draft: false
 description: "npm throwing an EACCES permission error? Here are the exact fixes for global installs, cache errors, and local projects — on Mac, Linux, and Windows."
 tags: ["npm", "Node.js", "EACCES", "permission denied", "npm error", "nvm"]
-categories: ["Errors & Fixes", "Node.js", "DevOps"]
+categories: ["Solutions", "npm"]
 error_code: "EACCES"
 software: "npm v9, npm v10, Node.js v18–v22"
 platforms: "macOS, Ubuntu, Fedora, Windows 11, WSL2, Docker"

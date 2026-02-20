@@ -13,7 +13,7 @@ tags:
     "tech-industry",
     "economics",
   ]
-categories: ["Posts", "Tech Industry"]
+categories: ["Posts", "Industry Trends"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"

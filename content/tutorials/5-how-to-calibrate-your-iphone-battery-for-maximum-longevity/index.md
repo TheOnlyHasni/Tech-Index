@@ -7,7 +7,7 @@ description: "Tired of your iPhone battery dying way too fast? Learn the real ca
 summary: "A no-BS guide to recalibrating your iPhone battery, fixing wrong percentage readings, and squeezing out every last cycle before you need a replacement."
 tags:
   ["iPhone", "battery health", "iOS 18", "battery calibration", "Apple tips"]
-categories: ["Tutorials", "Gadget Hacks & Optimization"]
+categories: ["Tutorials", "Hardware Optimization"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"

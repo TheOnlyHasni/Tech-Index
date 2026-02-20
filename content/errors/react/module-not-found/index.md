@@ -13,7 +13,7 @@ tags:
     "debugging",
     "module-resolution",
   ]
-categories: ["Guides", "Web-hosting-2"]
+categories: ["Solutions", "React"]
 error_code: "Module not found: Error: Can't resolve"
 software: "React, Webpack 4/5, Next.js, Create React App, TypeScript"
 platforms: "Windows, macOS, Linux, Docker, CI/CD"

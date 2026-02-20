@@ -13,7 +13,7 @@ tags:
     "static-sites",
     "troubleshooting",
   ]
-categories: ["Tutorials", "Website & Software Development"]
+categories: ["Tutorials", "Digital Management"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"

@@ -6,7 +6,7 @@ draft: false
 description: "A hands-on dive into swapping a trusty Windows laptop for a Samsung Galaxy Tab S10 Ultra over seven days, spotlighting the real snags in productivity and daily use."
 summary: "Switched my Windows rig to a Samsung tablet for a full week. The hype around tablet-laptop hybrids? Not quite there yet—here’s the breakdowns."
 tags: ["tech", "gadgets", "productivity", "samsung", "tablets", "reviews"]
-categories: ["Posts", "Gadget Hacks & Optimization"]
+categories: ["Posts", "Hardware Reviews"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"

@@ -13,7 +13,7 @@ tags:
     "lithium-ion",
     "battery care",
   ]
-categories: ["Posts", "Creator & Social"]
+categories: ["Posts", "Hardware Optimization"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"

@@ -13,7 +13,7 @@ tags:
     "SFC",
     "DISM",
   ]
-categories: ["Windows", "Error Fixes"]
+categories: ["Solutions", "Windows"]
 error_code: "0x80070005"
 software: "Windows OS, Windows Update, Microsoft Store"
 platforms: "Windows 10, Windows 11"

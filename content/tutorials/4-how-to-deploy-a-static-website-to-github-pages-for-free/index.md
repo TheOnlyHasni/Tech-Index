@@ -6,7 +6,7 @@ draft: false
 description: "A step-by-step guide on deploying static websites to GitHub Pages without spending a dime, covering setup, configuration, and common pitfalls for beginners and pros alike."
 summary: "Learn how to host your static site on GitHub Pages for free, from creating a repository to going live, with tips and troubleshooting."
 tags: ["github", "static-site", "web-development", "deployment", "free-hosting"]
-categories: ["tutorials", "Website & Software Development"]
+categories: ["Tutorials", "Software Development"]
 author: "Hassan Jan"
 cover:
   image: "cover.png"
