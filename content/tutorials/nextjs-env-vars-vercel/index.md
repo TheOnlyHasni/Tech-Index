@@ -18,8 +18,8 @@ cover:
   image: "cover.png"
   alt: "Next.js and Vercel Logo"
   relative: true
-reviewed_by: ""
-reviewer_link: ""
+reviewed_by: "Tahseen - MERN Stack Dev"
+reviewer_link: "https://www.facebook.com/profile.php?id=61583022910518"
 ---
 
 ## TL;DR

@@ -1,57 +1,95 @@
-<div class="sitemap-content">
-    {{ range $name, $taxonomy := site.Taxonomies.categories }}
-    <div class="sitemap-section">
-        <h3>{{ $name | humanize }}</h3>
-        <ul>
-            {{ range $taxonomy.Pages }}
-            <li>
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-                {{ if .Params.Description }}
-                <p class="sitemap-desc">{{ .Description }}</p>
-                {{ end }}
-            </li>
+<div class="sitemap-container">
+    {{ $mainSections := site.Params.mainSections | default (slice "posts") }}
+
+    {{/* Section: Articles (Posts) */}}
+    <div class="sitemap-group">
+        <h2 class="sitemap-title">Articles & Guides</h2>
+        <ul class="sitemap-list">
+            {{ range (where .Site.RegularPages "Section" "posts") }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
             {{ end }}
         </ul>
     </div>
-    {{ end }}
+
+    {{/* Section: Tutorials */}}
+    <div class="sitemap-group">
+        <h2 class="sitemap-title">Comprehensive Tutorials</h2>
+        <ul class="sitemap-list">
+            {{ range (where .Site.RegularPages "Section" "tutorials") }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+
+    {{/* Section: Solutions (Errors) */}}
+    <div class="sitemap-group">
+        <h2 class="sitemap-title">Error Solutions Repository</h2>
+        <ul class="sitemap-list">
+            {{ range (where .Site.RegularPages "Section" "errors") }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+
+    {{/* Section: Legal & Info */}}
+    <div class="sitemap-group">
+        <h2 class="sitemap-title">Company & Legal Information</h2>
+        <ul class="sitemap-list">
+            {{ range (where .Site.RegularPages "Section" "") }}
+            {{ if not (in (slice "sitemap" "search") .File.BaseFileName) }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+            {{ end }}
+        </ul>
+    </div>
 </div>
 
 <style>
-.sitemap-content h3 {
-    margin-top: 2.5rem;
-    margin-bottom: 1.2rem;
-    border-bottom: 2px solid var(--tertiary);
+.sitemap-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.sitemap-group {
+    margin-bottom: 2.5rem;
+}
+.sitemap-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
     padding-bottom: 8px;
-    color: var(--primary);
-    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 }
-.sitemap-content ul {
-    list-style-type: none;
-    padding-left: 0;
+.sitemap-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 8px 20px;
 }
-.sitemap-content li {
-    margin-bottom: 1.2rem;
-    padding-left: 10px;
-    border-left: 3px solid transparent;
-    transition: border-color 0.2s ease;
+.sitemap-list li {
+    padding: 2px 0;
+    position: relative;
 }
-.sitemap-content li:hover {
-    border-left-color: var(--secondary);
-}
-.sitemap-content li a {
-    font-weight: 600;
+.sitemap-list li a {
     color: var(--secondary);
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-.sitemap-content li a:hover {
-    color: var(--primary);
-}
-.sitemap-desc {
-    margin: 4px 0 0 0;
-    font-size: 0.9rem;
-    color: var(--secondary);
-    opacity: 0.75;
+    text-decoration: none !important; /* Force no underline */
+    font-size: 0.95rem; /* Smaller font size as requested */
+    transition: all 0.2s ease;
+    display: block;
     line-height: 1.4;
+    border-bottom: none !important; /* Extra safety for some themes */
+}
+.sitemap-list li a:hover {
+    color: var(--primary);
+    text-decoration: none !important;
+    transform: translateX(4px);
+}
+@media (max-width: 768px) {
+    .sitemap-list {
+        grid-template-columns: 1fr;
+    }
 }
 </style>

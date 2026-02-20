@@ -17,8 +17,15 @@
     {{- with .Params.software }}
     <span class="error-meta-tag">{{ . }}</span>
     {{- end }}
-    {{- range first 3 .Params.platforms }}
-    <span class="platform-badge">{{ . }}</span>
+    {{- $platforms := .Params.platforms }}
+    {{- if reflect.IsSlice $platforms }}
+      {{- range first 3 $platforms }}
+      <span class="platform-badge">{{ . }}</span>
+      {{- end }}
+    {{- else if $platforms }}
+      {{- range first 3 (split $platforms ", ") }}
+      <span class="platform-badge">{{ . }}</span>
+      {{- end }}
     {{- end }}
   </div>
 </a>

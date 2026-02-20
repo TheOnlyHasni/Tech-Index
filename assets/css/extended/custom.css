@@ -1329,6 +1329,12 @@ html {
   border: 0.5px solid hsla(51, 16.5%, 84.5%, 0.15);
   color: hsl(0, 98.4%, 75.1%);
 }
+.dark .post-content pre code {
+  color: hsl(0, 0%, 92%);
+}
+.post-content pre code {
+  color: inherit;
+}
 
 /* Verification Box */
 .error-verification-box {
@@ -1398,14 +1404,6 @@ html {
 .error-page .post-content h2:first-of-type {
   border-top: none;
   padding-top: 0;
-}
-
-.error-page .post-content h3 {
-  color: #6366f1;
-}
-
-.dark .error-page .post-content h3 {
-  color: #a5b4fc;
 }
 
 /* Error Index Dynamic Sections */

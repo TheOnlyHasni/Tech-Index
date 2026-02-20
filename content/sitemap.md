@@ -1,6 +1,6 @@
 ---
 title: "Sitemap"
-description: "A complete overview of all articles, tutorials, and topics on Tech Index, organized by category for easy navigation."
+description: "This sitemap will help you understand the structure of our website, including our main categories and subpages"
 layout: "single"
 url: "/sitemap/"
 ShowReadingTime: false

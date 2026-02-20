@@ -50,7 +50,11 @@
       {{- end }} {{- with .Params.platforms }}
       <span class="error-meta-item">
         <strong>Platforms:</strong>
-        {{- range . }}
+        {{- $platforms := . }}
+        {{- if not (reflect.IsSlice $platforms) }}
+          {{- $platforms = split $platforms ", " }}
+        {{- end }}
+        {{- range $platforms }}
         <span class="platform-badge">{{ . }}</span>
         {{- end }}
       </span>
