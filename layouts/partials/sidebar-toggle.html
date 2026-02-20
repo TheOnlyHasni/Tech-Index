@@ -62,9 +62,23 @@
 
         function updateActiveLink(newActiveLink) {
             if (activeLink !== newActiveLink) {
-                if (activeLink) activeLink.classList.remove('active');
+                // Clear all active classes to handle hierarchical cleanup
+                toc.querySelectorAll('a.active').forEach(a => a.classList.remove('active'));
+                
                 if (newActiveLink) {
                     newActiveLink.classList.add('active');
+                    
+                    // Highlight Parent breadcrumbs
+                    let parent = newActiveLink.parentElement; // The <li>
+                    while (parent && parent !== inner) {
+                        if (parent.tagName === 'LI') {
+                            const parentLink = parent.querySelector(':scope > a');
+                            if (parentLink && parentLink !== newActiveLink) {
+                                parentLink.classList.add('active');
+                            }
+                        }
+                        parent = parent.parentElement;
+                    }
                     
                     // Auto-scroll the inner list
                     const innerRect = inner.getBoundingClientRect();
@@ -96,8 +110,9 @@
         }
 
         function checkScrollPosition() {
-            // 100px offset for sticky header
-            const triggerPoint = window.innerHeight * 0.2; 
+            // Increased sensitivity: Trigger earlier (near top of screen)
+            // 150px aligns better with our 130px scroll-margin-top
+            const triggerPoint = 150; 
             
             let current = null;
             
@@ -142,9 +157,13 @@
             toggle.addEventListener('click', toggleToc);
             overlay.addEventListener('click', toggleToc);
 
-            links.forEach(link => {
+            links.forEach(item => {
+                const link = item.link;
                 link.addEventListener('click', () => {
                     if (window.innerWidth < 845) toggleToc();
+                    
+                    // Instant highlight on click
+                    updateActiveLink(link);
                 });
             });
         }
