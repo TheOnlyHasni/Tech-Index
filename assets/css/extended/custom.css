@@ -1303,7 +1303,6 @@ html {
   font-size: 0.9rem;
   line-height: 1.65rem;
   font-weight: 360;
-  white-space: pre-wrap;
   -webkit-font-smoothing: antialiased;
 
   /* Background: hsl(var(--text-200) / .05) */
@@ -1587,7 +1586,7 @@ body.is-resizing {
 
 .toc li a.active {
   color: var(--nav-active) !important;
-  font-weight: 700;
+  font-weight: 500;
   padding-left: 8px;
   transition: all 0.2s ease;
   background: rgba(var(--primary), 0.05);

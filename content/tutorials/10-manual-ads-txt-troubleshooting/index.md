@@ -2,7 +2,7 @@
 title: "Manual Ads.txt Troubleshooting; Hugo Site Missing Ads.txt Even After the Upload"
 date: "2026-01-08"
 lastmod: "2026-02-17"
-draft: false
+draft: true
 description: "Fix the frustrating missing ads.txt error in Google Search Console for Hugo sites by placing the file in the right static subdirectory and avoiding common pitfalls."
 tags:
   [

@@ -1,6 +1,6 @@
 ---
 title: "npm ERR! code EACCES: Permission Denied — Complete Fix Guide"
-date: "2025-02-18"
+date: "2026-02-18"
 draft: false
 description: "npm throwing an EACCES permission error? Here are the exact fixes for global installs, cache errors, and local projects — on Mac, Linux, and Windows."
 tags: ["npm", "Node.js", "EACCES", "permission denied", "npm error", "nvm"]
