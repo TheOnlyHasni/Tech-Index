@@ -3,10 +3,9 @@ title: "Sitemap"
 description: "This sitemap will help you understand the structure of our website, including our main categories and subpages"
 layout: "single"
 url: "/sitemap/"
-ShowReadingTime: false
-# Exclude from XML sitemap to avoid redundancy
+hidemeta: true
 sitemap:
-  priority: 0.1
+  disable: true
 showToc: false
 ---
 

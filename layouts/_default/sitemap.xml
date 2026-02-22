@@ -1,0 +1,63 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- range .Site.AllPages -}}
+    {{- $skip := false -}}
+    
+    {{- /* 1. Exclude Taxonomies (Categories/Tags) */ -}}
+    {{- if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
+      {{- $skip = true -}}
+    {{- end -}}
+    
+    {{- /* Secondary check for taxonomy paths */ -}}
+    {{- if or (hasPrefix .RelPermalink "/categories/") (hasPrefix .RelPermalink "/tags/") -}}
+      {{- $skip = true -}}
+    {{- end -}}
+    
+    {{- /* 2. Manual Exclusions via Front Matter */ -}}
+    {{- if .Params.sitemap.disable -}}
+      {{- $skip = true -}}
+    {{- end -}}
+
+    {{- /* 3. Exclude hidden or draft pages if needed (Hugo usually does this, but being explicit) */ -}}
+    {{- if .Draft -}}
+      {{- $skip = true -}}
+    {{- end -}}
+    
+    {{- if not $skip -}}
+    <url>
+      <loc>{{ .Permalink }}</loc>
+      {{- if not .Lastmod.IsZero }}
+      <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
+      {{- end -}}
+      
+      {{- /* 4. Tiered Priority Logic */ -}}
+      {{- $priority := 0.5 -}}
+      
+      {{- if .IsHome -}}
+        {{- $priority = 1.0 -}}
+      {{- else if and (eq .Kind "section") (in (slice "posts" "tutorials" "errors") .Section) -}}
+        {{- $priority = 0.8 -}}
+      {{- else if and (eq .Kind "page") (in (slice "posts" "tutorials" "errors") .Section) -}}
+        {{- $priority = 0.6 -}}
+      {{- else if or (in (slice "about" "contact" "privacy" "terms" "disclaimer") .File.BaseFileName) (in (slice "about" "contact" "privacy" "terms" "disclaimer") .Section) -}}
+        {{- $priority = 0.3 -}}
+      {{- end -}}
+      
+      {{- /* Manual Priority Override from Front Matter */ -}}
+      {{- if .Params.sitemap.priority -}}
+        {{- $priority = .Params.sitemap.priority -}}
+      {{- end -}}
+      
+      <priority>{{ printf "%.1f" $priority }}</priority>
+
+      {{- if .IsTranslated -}}
+        {{- range .Translations -}}
+          <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+        {{- end -}}
+        <xhtml:link rel="alternate" hreflang="{{ .Page.Language.Lang }}" href="{{ .Permalink }}" />
+      {{- end -}}
+    </url>
+    {{- end -}}
+  {{- end -}}
+</urlset>

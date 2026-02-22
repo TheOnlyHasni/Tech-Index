@@ -8,7 +8,7 @@ canonifyURLs = true
 pagerSize = 6
 
 [outputs]
-home = ["HTML", "RSS", "SEARCHJSON"]
+home = ["HTML", "RSS", "SEARCHJSON", "SITEMAP"]
 page = ["HTML", "PlainText", "RawMarkdown", "PrintHTML"]
 
 [outputFormats]
@@ -154,7 +154,4 @@ text = "Tech Index"
 icon = "svgs/favicon.svg"
 iconHeight = 35
 
-[sitemap]
-changefreq = "weekly"
-priority = 0.5
-filename = "sitemap.xml"
+
