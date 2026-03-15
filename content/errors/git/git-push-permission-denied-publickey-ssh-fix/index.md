@@ -1,28 +1,38 @@
 ---
-title: 'git push origin main: Permission Denied (publickey) — Complete SSH Fix'
-date: '2026-02-25'
+title: "git push origin main: Permission Denied (publickey) — Complete SSH Fix"
+date: "2026-03-07"
 draft: false
-description: 'Getting Permission denied (publickey) on git push? Here are the exact fixes for missing SSH keys, wrong remote URLs, and agent issues — sorted by cause.'
-tags: ['git', 'ssh', 'github', 'gitlab', 'bitbucket', 'permission-denied', 'publickey', 'git-push']
-categories: ['errors', 'git']
-author: 'Hassan Jan'
-error_code: 'Permission denied (publickey)'
-software: 'Git 2.x+'
-platforms: 'Ubuntu 22.04, macOS Ventura 13.5, Windows 11 (Git Bash)'
-first_seen: '2026-02-25'
-last_updated: '2026-02-25'
-fix_difficulty: 'medium'
+description: "Getting Permission denied (publickey) on git push? Here are the exact fixes for missing SSH keys, wrong remote URLs, and agent issues — sorted by cause."
+tags:
+  [
+    "git",
+    "ssh",
+    "github",
+    "gitlab",
+    "bitbucket",
+    "permission-denied",
+    "publickey",
+    "git-push",
+  ]
+categories: ["errors", "git"]
+author: "Hassan Jan"
+error_code: "Permission denied (publickey)"
+software: "Git 2.x+"
+platforms: "Ubuntu 22.04, macOS Ventura 13.5, Windows 11 (Git Bash)"
+first_seen: "2026-02-25"
+last_updated: "2026-02-25"
+fix_difficulty: "medium"
 verified_count: 143
 success_rate: 94%
 related_errors:
   [
-    'fatal: Could not read from remote repository',
-    'ssh: connect to host github.com port 22: Connection refused',
-    'error: failed to push some refs to git@github.com',
+    "fatal: Could not read from remote repository",
+    "ssh: connect to host github.com port 22: Connection refused",
+    "error: failed to push some refs to git@github.com",
   ]
 cover:
-  image: 'cover.png'
-  alt: 'Terminal showing git push origin main Permission denied publickey SSH error and fix'
+  image: "cover.png"
+  alt: "Terminal showing git push origin main Permission denied publickey SSH error and fix"
   relative: true
 ShowToc: true
 ---
@@ -43,15 +53,15 @@ SSH authentication works by matching a **private key** on your machine with a **
 
 The most common reasons this happens:
 
-| Cause | Likely Fix |
-|---|---|
-| No SSH key generated | Fix 1 |
-| Public key not added to your Git host | Fix 2 |
-| Remote URL is HTTPS, not SSH | Fix 3 |
-| SSH agent not running or key not loaded | Fix 5 |
-| Running Git with `sudo` | Fix: Never use `sudo` with Git |
-| Wrong `.ssh` file permissions | Fix 7 |
-| Multiple accounts, wrong key used | Fix 6 |
+| Cause                                   | Likely Fix                     |
+| --------------------------------------- | ------------------------------ |
+| No SSH key generated                    | Fix 1                          |
+| Public key not added to your Git host   | Fix 2                          |
+| Remote URL is HTTPS, not SSH            | Fix 3                          |
+| SSH agent not running or key not loaded | Fix 5                          |
+| Running Git with `sudo`                 | Fix: Never use `sudo` with Git |
+| Wrong `.ssh` file permissions           | Fix 7                          |
+| Multiple accounts, wrong key used       | Fix 6                          |
 
 ---
 
